@@ -1,3 +1,5 @@
 set_api_keys.sh
 
 textbooks/
+venv/
+__pycache__/
