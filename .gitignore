@@ -1,5 +1,5 @@
 set_api_keys.sh
 
-textbooks/
+textbooks/pdfs/*
 venv/
 __pycache__/
