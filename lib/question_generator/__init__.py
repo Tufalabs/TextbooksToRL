@@ -1,4 +1,4 @@
-from .models import QuestionAnswer, ValidationResult
 from .generator import QuestionGenerator
+from .models import QuestionAnswer, ValidationResult, QuestionDomain
 
-__all__ = ['QuestionGenerator', 'QuestionAnswer', 'ValidationResult'] 
+__all__ = ['QuestionGenerator', 'QuestionAnswer', 'ValidationResult', 'QuestionDomain'] 

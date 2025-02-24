@@ -4,7 +4,7 @@ import random
 from typing import List, Optional, Dict
 import logging
 from .models import Textbook, TextbookPage
-from ..pdf_to_text import convert_pdf_to_text  # Assuming this is your existing converter
+from ..pdf_to_text import convert_pdf_to_text
 
 logger = logging.getLogger(__name__)
 
