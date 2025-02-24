@@ -1,0 +1,8 @@
+{
+    "source": "Chemistry Textbook Chapter 5",
+    "question": "How did J.J. Thomson measure the charge-to-mass ratio of the electron using electric and magnetic fields?",
+    "solution": "J.J. Thomson measured the charge-to-mass ratio of the electron by using electric and magnetic fields to deflect an electron beam in a cathode ray tube. He adjusted the strengths of the electric and magnetic fields until their effects canceled each other out, resulting in an undeflected beam. By knowing the strengths of the fields at this point, he was able to calculate the charge-to-mass ratio of the electron.",
+    "hints": null,
+    "domain": "physics_electricity",
+    "timestamp": "20250224_163104"
+}

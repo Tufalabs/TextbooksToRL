@@ -1,0 +1,12 @@
+{
+    "source": "Chemistry Textbook Chapter 5",
+    "question": "What is the significance of the mass of the electron in relation to hydrogen, and how does it compare?",
+    "solution": "The mass of the electron, calculated to be approximately 9.10 x 10^-28 g, is significant because it is about 2000 times less than the mass of hydrogen, which is the lightest atom. This comparison highlights the fundamental nature of the electron as a building block of matter, emphasizing its relatively small mass in contrast to atomic structures.",
+    "hints": [
+        "Start by considering the basic structure of a hydrogen atom. Think about the components involved, particularly the electron and the proton, and how their masses compare. This will help you understand the role of the electron's mass in the atom's overall properties.",
+        "Recall the concept of mass in atomic physics, especially how the mass of the electron is much smaller than that of the proton. Consider how this difference in mass affects the behavior of the hydrogen atom, such as its stability and energy levels.",
+        "Focus on the implications of the electron's mass in terms of its influence on the hydrogen atom's energy states and the concept of reduced mass when dealing with systems of two particles. This will help you connect the mass of the electron to its significance in hydrogen."
+    ],
+    "domain": "chemistry",
+    "timestamp": "20250224_163014"
+}

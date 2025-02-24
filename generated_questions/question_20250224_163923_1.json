@@ -1,0 +1,11 @@
+{
+    "source": "Millikan calculated the charge on oil droplets falling in an electric field. He found that it was always a whole-number multiple of -1.60*10-19 C, the charge of a single electron.",
+    "question": "Discuss the significance of Millikan's findings regarding the quantization of electric charge. How does this relate to the concept of fundamental particles in modern physics?",
+    "solution": "Millikan's experiments demonstrated that the charge of oil droplets was always a whole-number multiple of -1.60 x 10^-19 C, which is the charge of a single electron. This quantization implies that electric charge is not continuous but rather discrete, consisting of integral multiples of the elementary charge. This finding is foundational in modern physics as it supports the concept of fundamental particles, such as electrons, being the basic building blocks of matter. The quantization of charge is crucial for understanding atomic structure, chemical bonding, and the behavior of matter at the quantum level, leading to the development of quantum mechanics and the Standard Model of particle physics. Millikan's work thus solidified the electron's role as a fundamental particle, influencing subsequent research in both theoretical and experimental physics.",
+    "hints": null,
+    "difficulty": "grad",
+    "domain": null,
+    "timestamp": "20250224_163923",
+    "difficulty_description": "Graduate school level depth and complexity",
+    "model": "gpt-4o-mini"
+}

@@ -1,0 +1,11 @@
+{
+    "source": "By measuring the strength of the electric field required to halt the free fall of the drops and by figuring out the masses of the drops themselves (determined from their radii and density), Millikan calculated the charge of each drop.",
+    "question": "Using the principles of Millikan's oil drop experiment, derive the relationship between the electric field strength (E), the charge (q) of the oil droplet, and the mass (m) of the droplet. Assume the droplet is in free fall and subject to both gravitational and electric forces.",
+    "solution": "In Millikan's oil drop experiment, the forces acting on a charged droplet in an electric field can be described by balancing the gravitational force and the electric force. \n\n1. The gravitational force (F_gravity) acting on the droplet is given by:\n   \\[\n   F_{\\text{gravity}} = mg\n   \\]\n   where \\( m \\) is the mass of the droplet and \\( g \\) is the acceleration due to gravity (approximately \\( 9.81 \\, \\text{m/s}^2 \\)).\n\n2. The electric force (F_electric) acting on the droplet in an electric field (E) is given by:\n   \\[\n   F_{\\text{electric}} = qE\n   \\]\n   where \\( q \\) is the charge of the droplet.\n\n3. When the droplet is suspended in the electric field, the forces balance, leading to the equation:\n   \\[\n   mg = qE\n   \\]\n\n4. Rearranging this equation gives us the relationship between the charge of the droplet and the electric field strength:\n   \\[\n   q = \\frac{mg}{E}\n   \\]\n\nThis equation shows that the charge \\( q \\) of the oil droplet can be determined if the mass \\( m \\) of the droplet and the strength of the electric field \\( E \\) are known. This relationship is fundamental in Millikan's experiment, as it allows for the calculation of the charge on the droplets by measuring the electric field strength required to balance the gravitational force acting on them.",
+    "hints": null,
+    "difficulty": "grad",
+    "domain": null,
+    "timestamp": "20250224_163708",
+    "difficulty_description": "Graduate school level depth and complexity",
+    "model": "gpt-4o-mini"
+}

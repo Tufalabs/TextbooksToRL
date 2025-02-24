@@ -1,0 +1,8 @@
+{
+    "source": "Chemistry Textbook Chapter 5",
+    "question": "What was the charge of the oil droplets measured by Millikan, and how did he determine that it was a whole-number multiple?",
+    "solution": "Millikan measured the charge on oil droplets falling in an electric field and found that it was always a whole-number multiple of -1.60 x 10^-19 C, which is the charge of a single electron. He determined this by measuring the strength of the electric field required to halt the free fall of the negatively charged droplets and calculating the charge based on the mass of the droplets, which he derived from their radii and density.",
+    "hints": null,
+    "domain": "physics_electricity",
+    "timestamp": "20250224_163104"
+}

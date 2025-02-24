@@ -1,0 +1,9 @@
+{
+    "source": "Millikan calculated the charge on oil droplets falling in an electric field. He found that it was always a whole-number multiple of -1.60*10-19 C, the charge of a single electron.",
+    "question": "Discuss the implications of Millikan's findings on the quantization of electric charge. How does the observation that the charge of oil droplets is a whole-number multiple of the electron's charge support the concept of charge quantization in the context of atomic structure?",
+    "solution": "Millikan's experiments provided critical evidence for the quantization of electric charge, a fundamental principle in physics that states that charge exists in discrete units rather than a continuous spectrum. By demonstrating that the charge on oil droplets was always a whole-number multiple of -1.60 x 10^-19 C, Millikan confirmed that electric charge is not arbitrary but rather quantized in units corresponding to the charge of the electron.\n\nThis finding has profound implications for atomic structure. It supports the idea that electrons, as fundamental constituents of atoms, possess a fixed charge, which is essential for understanding atomic interactions and bonding. The quantization of charge implies that atoms can only exist in specific states, leading to the discrete energy levels observed in atomic spectra. Furthermore, it reinforces the concept that matter is composed of indivisible units of charge, which aligns with the modern understanding of atomic theory and the structure of matter.\n\nIn summary, Millikan's results not only validated the existence of the electron but also established the principle that charge is quantized, which is foundational for the field of quantum mechanics and our understanding of atomic and subatomic processes.",
+    "hints": null,
+    "difficulty": "grad",
+    "domain": null,
+    "timestamp": "20250224_163512"
+}

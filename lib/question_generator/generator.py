@@ -1,10 +1,12 @@
 from typing import List, Optional
 import sys
 import os
+import json
+from datetime import datetime
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
 from src.tobyawesomeailibrary.inference import generate_text
 from src.tobyawesomeailibrary.eval_response import evaluate_text
-from .models import QuestionAnswer, ValidationResult, QuestionDomain
+from .models import QuestionAnswer, ValidationResult, QuestionDomain, QuestionDifficulty
 from .prompt_templates import QuestionPromptTemplates
 from .parsers import ResponseParser
 
@@ -15,41 +17,77 @@ class QuestionGenerator:
         self.model_name = model_name
         self.parser = ResponseParser()
         self.templates = QuestionPromptTemplates()
+        self.output_dir = "generated_questions"
+        os.makedirs(self.output_dir, exist_ok=True)
 
     async def generate_questions(
         self, 
         passage: str, 
         num_questions: int = 3,
+        difficulty: QuestionDifficulty = QuestionDifficulty.UNDERGRAD,
         verify: bool = True,
-        verification_threshold: float = 0.8
+        verification_threshold: float = 0.8,
+        src: Optional[str] = None,
+        save_json: bool = True,
+        add_hints: bool = False,
+        classify_domain: bool = False
     ) -> List[QuestionAnswer]:
         """Generate questions from a passage and return structured data."""
         # Generate extra questions if verification is enabled
         target_questions = num_questions * 2 if verify else num_questions
-        prompt = self.templates.question_generation(passage, target_questions)
+        prompt = self.templates.question_generation(passage, target_questions, difficulty)
         response = await generate_text(model=self.model_name, prompt=prompt)
         
         qa_pairs = self.parser.extract_qa_pairs(response)
-        print(f"Generated {len(qa_pairs)} initial questions")  # Debug print
+        print(f"Generated {len(qa_pairs)} initial questions at {difficulty.value} level")
         
         verified_pairs = []
         for qa in qa_pairs:
             if verify:
                 is_valid = await self._verify_question_solution(qa, passage, verification_threshold)
                 if is_valid:
-                    await self._add_hints(qa)
-                    await self._classify_domain(qa)
+                    if add_hints:
+                        await self._add_hints(qa, difficulty)
+                    if classify_domain:
+                        await self._classify_domain(qa)
+                    if src:
+                        qa.source = src
                     verified_pairs.append(qa)
                     if len(verified_pairs) >= num_questions:
                         break
             else:
-                await self._add_hints(qa)
-                await self._classify_domain(qa)
+                if add_hints:
+                    await self._add_hints(qa, difficulty)
+                if classify_domain:
+                    await self._classify_domain(qa)
+                if src:
+                    qa.source = src
                 verified_pairs.append(qa)
                 if len(verified_pairs) >= num_questions:
                     break
 
-        print(f"Returning {len(verified_pairs)} verified questions")  # Debug print
+        # Save questions to JSON files
+        if save_json:
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            for i, qa in enumerate(verified_pairs):
+                question_dict = {
+                    "source": qa.source,
+                    "question": qa.question,
+                    "solution": qa.solution,
+                    "hints": qa.hints,
+                    "difficulty": difficulty.value,
+                    "domain": qa.domain.value if qa.domain else None,
+                    "timestamp": timestamp,
+                    "difficulty_description": difficulty.get_description(),
+                    "model": self.model_name
+                }
+                
+                filename = f"question_{timestamp}_{i+1}.json"
+                filepath = os.path.join(self.output_dir, filename)
+                
+                with open(filepath, 'w') as f:
+                    json.dump(question_dict, f, indent=4)
+
         return verified_pairs
 
     async def _classify_domain(self, qa: QuestionAnswer) -> None:
@@ -102,9 +140,13 @@ class QuestionGenerator:
         
         return validation_result.score >= threshold
 
-    async def _add_hints(self, qa: QuestionAnswer) -> None:
+    async def _add_hints(
+        self, 
+        qa: QuestionAnswer, 
+        difficulty: QuestionDifficulty = QuestionDifficulty.UNDERGRAD
+    ) -> None:
         """Add hints to a QuestionAnswer object."""
-        prompt = self.templates.hint_generation(qa.question)
+        prompt = self.templates.hint_generation(qa.question, difficulty)
         hints_text = await generate_text(model=self.model_name, prompt=prompt)
         qa.hints = self.parser.extract_hints(hints_text)
 

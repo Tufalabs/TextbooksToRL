@@ -1,0 +1,11 @@
+{
+    "source": "By measuring the strength of the electric field required to halt the free fall of the drops and by figuring out the masses of the drops themselves (determined from their radii and density), Millikan calculated the charge of each drop.",
+    "question": "Given that Millikan determined the mass of the oil droplets from their radii and density, derive the expression for the mass of a spherical droplet and discuss the implications of this measurement in the context of charge quantization.",
+    "solution": "The mass \\( m \\) of a spherical droplet can be expressed using the formula for the volume of a sphere and the density \\( \\rho \\):\n\n\\[\nV = \\frac{4}{3} \\pi r^3\n\\]\n\nThus, the mass is given by:\n\n\\[\nm = \\rho V = \\rho \\left(\\frac{4}{3} \\pi r^3\\right) = \\frac{4}{3} \\pi \\rho r^3\n\\]\n\nIn Millikan's experiment, knowing the mass of the droplets allowed him to calculate the charge by balancing the gravitational force with the electric force acting on the droplet in the electric field. The implications of this measurement are profound; it reinforces the idea that charge is quantized, as the calculated charge values were integral multiples of the elementary charge. This relationship between mass and charge in the context of the oil droplets illustrates the fundamental nature of charge and its discrete nature, which is essential for understanding atomic interactions and the structure of matter.",
+    "hints": null,
+    "difficulty": "grad",
+    "domain": null,
+    "timestamp": "20250224_163923",
+    "difficulty_description": "Graduate school level depth and complexity",
+    "model": "gpt-4o-mini"
+}

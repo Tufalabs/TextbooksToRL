@@ -1,10 +1,8 @@
 import os
 from pathlib import Path
-import random
 from typing import List, Optional, Dict
 import logging
 from .models import Textbook, TextbookPage
-from ..pdf_to_text import convert_pdf_to_text
 
 logger = logging.getLogger(__name__)
 
@@ -13,86 +11,60 @@ class TextbookManager:
     
     def __init__(
         self,
-        textbooks_dir: str = "textbooks",
-        parsed_dir: str = "parsed_textbooks"
+        textbooks_dir: str = "textbooks/txt",  # Changed default directory
     ):
         self.textbooks_dir = Path(textbooks_dir)
-        self.parsed_dir = Path(parsed_dir)
-        self.parsed_dir.mkdir(exist_ok=True)
         self.textbooks: Dict[str, Textbook] = {}
         
-        # Create directories if they don't exist
-        self.textbooks_dir.mkdir(exist_ok=True)
+        # Create directory if it doesn't exist
+        self.textbooks_dir.mkdir(exist_ok=True, parents=True)
         
         # Load all textbooks on initialization
         self._load_textbooks()
 
     def _load_textbooks(self) -> None:
-        """Load all textbooks from the textbooks directory."""
-        pdf_files = list(self.textbooks_dir.glob("*.pdf"))
+        """Load all textbooks from the txt directory."""
+        txt_files = list(self.textbooks_dir.glob("*.txt"))
         
-        for pdf_path in pdf_files:
-            name = pdf_path.stem
-            txt_path = self.parsed_dir / f"{name}.txt"
+        for txt_path in txt_files:
+            name = txt_path.stem
             
-            # Create Textbook object without pages initially
+            # Create Textbook object
             textbook = Textbook(
                 name=name,
-                path=pdf_path,
+                path=txt_path,
                 txt_path=txt_path,
                 pages=[],
-                total_pages=0  # Will be updated when parsed
+                total_pages=0
             )
             
-            if textbook.is_parsed:
-                self._load_parsed_content(textbook)
-            else:
-                self._parse_new_textbook(textbook)
-                
+            self._load_text_content(textbook)
             self.textbooks[name] = textbook
 
-    def _parse_new_textbook(self, textbook: Textbook) -> None:
-        """Parse a new textbook and save to txt."""
-        logger.info(f"Parsing new textbook: {textbook.name}")
-        
+    def _load_text_content(self, textbook: Textbook) -> None:
+        """Load content from txt file and split into pages."""
         try:
-            # Use your existing pdf_to_text converter
-            content = convert_pdf_to_text(textbook.path)
+            with open(textbook.txt_path, 'r', encoding='utf-8') as f:
+                content = f.read()
             
-            # Save the content
-            with open(textbook.txt_path, 'w', encoding='utf-8') as f:
-                f.write(content)
+            # Split content into roughly page-sized chunks (3000 characters each)
+            chunk_size = 3000
+            chunks = [content[i:i+chunk_size] for i in range(0, len(content), chunk_size)]
             
-            self._load_parsed_content(textbook)
+            # Create pages
+            textbook.pages = [
+                TextbookPage(
+                    content=chunk,
+                    page_number=i+1,
+                    textbook_name=textbook.name
+                )
+                for i, chunk in enumerate(chunks)
+            ]
+            textbook.total_pages = len(textbook.pages)
             
         except Exception as e:
-            logger.error(f"Error parsing textbook {textbook.name}: {str(e)}")
+            logger.error(f"Error loading textbook {textbook.name}: {str(e)}")
             raise
-
-    def _load_parsed_content(self, textbook: Textbook) -> None:
-        """Load content from parsed txt file."""
-        with open(textbook.txt_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-        
-        # Split content into pages (assuming pages are marked with some delimiter)
-        # Modify this based on your PDF to text conversion format
-        pages = self._split_into_pages(content)
-        
-        textbook.pages = [
-            TextbookPage(
-                content=page_content,
-                page_number=i+1,
-                textbook_name=textbook.name
-            )
-            for i, page_content in enumerate(pages)
-        ]
-        textbook.total_pages = len(textbook.pages)
-
-    def _split_into_pages(self, content: str) -> List[str]:
-        """Split content into pages based on delimiter."""
-        # Modify this based on your PDF to text conversion format
-        # This is just an example assuming pages are separated by a specific marker
-        return [page.strip() for page in content.split("<<<PAGE>>>") if page.strip()]
 
     def get_textbook(self, name: str) -> Optional[Textbook]:
         """Get a textbook by name."""
@@ -107,74 +79,12 @@ class TextbookManager:
 
     def get_random_page(self, textbook_name: str) -> Optional[TextbookPage]:
         """Get a random page from a textbook."""
+        import random
         textbook = self.get_textbook(textbook_name)
         if not textbook or not textbook.pages:
             return None
         return random.choice(textbook.pages)
 
-    def get_page_range(
-        self,
-        textbook_name: str,
-        start_page: int,
-        end_page: int
-    ) -> List[TextbookPage]:
-        """Get a range of pages from a textbook."""
-        textbook = self.get_textbook(textbook_name)
-        if not textbook:
-            return []
-            
-        start_page = max(1, start_page)
-        end_page = min(textbook.total_pages, end_page)
-        
-        return textbook.pages[start_page-1:end_page]
-
-    def search_content(self, query: str) -> List[TextbookPage]:
-        """Search for content across all textbooks."""
-        results = []
-        for textbook in self.textbooks.values():
-            for page in textbook.pages:
-                if query.lower() in page.content.lower():
-                    results.append(page)
-        return results
-
-    def get_all_textbooks(self) -> List[Textbook]:
-        """Get list of all loaded textbooks."""
-        return list(self.textbooks.values())
-
     def get_all_textbook_names(self) -> List[str]:
         """Get list of all textbook names."""
-        return list(self.textbooks.keys())
-
-    def process_directory(self, directory: str = None) -> None:
-        """Process all PDFs in a directory."""
-        if directory:
-            self.textbooks_dir = Path(directory)
-        
-        logger.info(f"Processing all PDFs in {self.textbooks_dir}")
-        pdf_files = list(self.textbooks_dir.glob("**/*.pdf"))  # Include subdirectories
-        
-        for pdf_path in pdf_files:
-            try:
-                relative_path = pdf_path.relative_to(self.textbooks_dir)
-                # Use subdirectory in name if present
-                name = str(relative_path.parent / relative_path.stem).replace('/', '_')
-                txt_path = self.parsed_dir / f"{name}.txt"
-                
-                if txt_path.exists():
-                    logger.info(f"Already processed {name}")
-                    continue
-                    
-                logger.info(f"Processing {name}")
-                textbook = Textbook(
-                    name=name,
-                    path=pdf_path,
-                    txt_path=txt_path,
-                    pages=[],
-                    total_pages=0
-                )
-                
-                self._parse_new_textbook(textbook)
-                self.textbooks[name] = textbook
-                
-            except Exception as e:
-                logger.error(f"Error processing {pdf_path}: {str(e)}") 
+        return list(self.textbooks.keys()) 

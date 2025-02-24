@@ -15,6 +15,23 @@ class QuestionDomain(Enum):
     COMPUTER_SCIENCE = "computer_science"
     OTHER = "other"
 
+class QuestionDifficulty(Enum):
+    HIGH_SCHOOL = "high_school"
+    UNDERGRAD = "undergrad"
+    GRAD = "grad"
+    PHD = "phd"
+    EXPERT = "expert"
+    
+    def get_description(self) -> str:
+        descriptions = {
+            "high_school": "Basic concepts suitable for high school students",
+            "undergrad": "College undergraduate level complexity",
+            "grad": "Graduate school level depth and complexity",
+            "phd": "Advanced theoretical concepts and research-level problems",
+            "expert": "Industry expert level requiring deep domain knowledge"
+        }
+        return descriptions[self.value]
+
 @dataclass
 class QuestionAnswer:
     """Data class representing a question-answer pair with optional hints and source."""
