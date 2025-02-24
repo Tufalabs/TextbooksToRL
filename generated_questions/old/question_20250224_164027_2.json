@@ -1,0 +1,11 @@
+{
+    "source": "By measuring the strength of the electric field required to halt the free fall of the drops and by figuring out the masses of the drops themselves (determined from their radii and density), Millikan calculated the charge of each drop.",
+    "question": "Given that Millikan could vary the strength of the electric field to halt the free fall of the charged oil droplets, derive the relationship between the electric field strength (E), the charge (q) of the droplet, and the mass (m) of the droplet. Assume the gravitational force acting on the droplet is equal to the electric force when the droplet is suspended.",
+    "solution": "When the oil droplet is suspended in the electric field, the gravitational force acting on it is balanced by the electric force. The gravitational force (F_gravity) can be expressed as:\n\n\\[ F_{\\text{gravity}} = mg \\]\n\nwhere \\( m \\) is the mass of the droplet and \\( g \\) is the acceleration due to gravity (approximately 9.81 m/s\u00b2).\n\nThe electric force (F_electric) acting on the droplet is given by:\n\n\\[ F_{\\text{electric}} = qE \\]\n\nwhere \\( q \\) is the charge of the droplet and \\( E \\) is the electric field strength.\n\nSetting these two forces equal gives:\n\n\\[ mg = qE \\]\n\nRearranging this equation to express the electric field strength in terms of charge and mass yields:\n\n\\[ E = \\frac{mg}{q} \\]\n\nThis relationship indicates that the electric field strength required to suspend the droplet is directly proportional to its mass and gravitational acceleration, and inversely proportional to its charge. This equation is fundamental in understanding the dynamics of charged particles in electric fields.",
+    "hints": null,
+    "difficulty": "grad",
+    "domain": null,
+    "timestamp": "20250224_164027",
+    "difficulty_description": "Graduate school level depth and complexity",
+    "model": "gpt-4o-mini"
+}

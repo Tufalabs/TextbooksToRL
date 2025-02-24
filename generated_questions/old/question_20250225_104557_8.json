@@ -1,0 +1,11 @@
+{
+    "source": "De\ufb01nition 3.4.10. The principle of inclusion and exclusion (PIE) is a counting technique that computes the number of elements that satisfy at least one of several properties while guaranteeing that elements satisfying more than one property are not counted twice.",
+    "question": "What is the principle of inclusion and exclusion (PIE) and what is its purpose?",
+    "solution": "The principle of inclusion and exclusion (PIE) is a counting technique that computes the number of elements that satisfy at least one of several properties while ensuring that elements satisfying more than one property are not counted twice. Its purpose is to provide an accurate count of distinct elements across multiple sets by systematically adding and subtracting the sizes of intersections.",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_104557",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

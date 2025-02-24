@@ -23,7 +23,7 @@ class QuestionGenerator:
     async def generate_questions(
         self, 
         passage: str, 
-        num_questions: int = 3,
+        num_questions: int = 3,  # This becomes a minimum number suggestion
         difficulty: QuestionDifficulty = QuestionDifficulty.UNDERGRAD,
         verify: bool = True,
         verification_threshold: float = 0.8,
@@ -33,9 +33,8 @@ class QuestionGenerator:
         classify_domain: bool = False
     ) -> List[QuestionAnswer]:
         """Generate questions from a passage and return structured data."""
-        # Generate extra questions if verification is enabled
-        target_questions = num_questions * 2 if verify else num_questions
-        prompt = self.templates.question_generation(passage, target_questions, difficulty)
+        # Generate questions
+        prompt = self.templates.question_generation(passage, num_questions, difficulty)
         response = await generate_text(model=self.model_name, prompt=prompt)
         
         qa_pairs = self.parser.extract_qa_pairs(response)
@@ -53,8 +52,6 @@ class QuestionGenerator:
                     if src:
                         qa.source = src
                     verified_pairs.append(qa)
-                    if len(verified_pairs) >= num_questions:
-                        break
             else:
                 if add_hints:
                     await self._add_hints(qa, difficulty)
@@ -63,8 +60,6 @@ class QuestionGenerator:
                 if src:
                     qa.source = src
                 verified_pairs.append(qa)
-                if len(verified_pairs) >= num_questions:
-                    break
 
         # Save questions to JSON files
         if save_json:

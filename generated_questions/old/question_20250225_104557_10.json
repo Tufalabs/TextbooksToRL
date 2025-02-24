@@ -1,0 +1,11 @@
+{
+    "source": "Theorem 3.4.6 (Linearity of Expectation)\nFor independent or dependent events,\nE(x1+x2+\u00b7\u00b7\u00b7+xn) =Ex1+Ex2+\u00b7\u00b7\u00b7+Exn",
+    "question": "If you have three independent random variables \\( Y_1, Y_2, Y_3 \\) with expected values \\( E(Y_1) = 1 \\), \\( E(Y_2) = 2 \\), and \\( E(Y_3) = 3 \\), what is the expected value of \\( Y_1 + Y_2 + Y_3 \\)?",
+    "solution": "Using the linearity of expectation:\n\n\\[\nE(Y_1 + Y_2 + Y_3) = E(Y_1) + E(Y_2) + E(Y_3) = 1 + 2 + 3 = 6\n\\]\n\nThus, the expected value of their sum is \\( \\boxed{6} \\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_104557",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

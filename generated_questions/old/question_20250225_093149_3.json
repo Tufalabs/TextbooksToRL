@@ -1,0 +1,11 @@
+{
+    "source": "3.4.2 Principle of Inclusion Exclusion (PIE)\nTheorem 3.4.14 (Principle of Inclusion Exclusion for 3 Sets)\nGiven three sets, |A1|, |A2|, |A3|,\n|A1 \u222a A2 \u222a A3| = |A1| + |A2| + |A3| \u2212 |A1 \u2229 A2| \u2212 |A1 \u2229 A3| \u2212 |A2 \u2229 A3| + |A1 \u2229 A2 \u2229 A3|",
+    "question": "Given three sets A, B, and C where |A| = 8, |B| = 12, |C| = 10, |A \u2229 B| = 4, |A \u2229 C| = 3, |B \u2229 C| = 5, and |A \u2229 B \u2229 C| = 2, find |A \u222a B \u222a C| using the Principle of Inclusion-Exclusion.",
+    "solution": "Using the Principle of Inclusion-Exclusion for three sets, we have:\n\n\\[ |A \u222a B \u222a C| = |A| + |B| + |C| - |A \u2229 B| - |A \u2229 C| - |B \u2229 C| + |A \u2229 B \u2229 C|. \\]\n\nSubstituting the given values:\n\n\\[ |A \u222a B \u222a C| = 8 + 12 + 10 - 4 - 3 - 5 + 2 = 20. \\]\n\nThus, the number of elements in the union of sets A, B, and C is \\(\\boxed{20}\\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_093149",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o"
+}

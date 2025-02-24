@@ -1,0 +1,11 @@
+{
+    "source": "Theorem 3.4.15 (Principle of Inclusion Exclusion Generalized)\nIf (Ai)1\u2264i\u2264nare \ufb01nite sets, then:\n\\sum_{i=1}^{n}|A_i| - \\sum_{i<j}|A_i \\cap A_j| + \\sum_{i<j<k}|A_i \\cap A_j \\cap A_k| - \\cdots + (-1)^{n-1}|A_1 \\cap \\cdots \\cap A_n|",
+    "question": "Using the generalized principle of inclusion-exclusion, express the formula for the union of \\( n \\) sets.",
+    "solution": "The generalized principle of inclusion-exclusion states that for \\( n \\) finite sets \\( A_i \\):\n\n\\[\n|A_1 \\cup A_2 \\cup \\cdots \\cup A_n| = \\sum_{i=1}^{n}|A_i| - \\sum_{i<j}|A_i \\cap A_j| + \\sum_{i<j<k}|A_i \\cap A_j \\cap A_k| - \\cdots + (-1)^{n-1}|A_1 \\cap \\cdots \\cap A_n|\n\\]\n\nThis formula accounts for the overlaps among the sets to avoid double counting.",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_104557",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

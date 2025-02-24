@@ -1,0 +1,11 @@
+{
+    "source": "Theorem 3.4.6 (Linearity of Expectation) For independent or dependent events, E(x1+x2+\u00b7\u00b7\u00b7+xn) = Ex1+Ex2+\u00b7\u00b7\u00b7+Exn.",
+    "question": "Explain the concept of the Linearity of Expectation and provide an example using two independent random variables.",
+    "solution": "The Linearity of Expectation states that the expected value of the sum of random variables is equal to the sum of their expected values, regardless of whether the variables are independent or dependent. Mathematically, it is expressed as:\n\nE(X1 + X2 + ... + Xn) = E(X1) + E(X2) + ... + E(Xn).\n\nFor example, consider two independent random variables X1 and X2, where X1 represents the outcome of rolling a fair six-sided die (E(X1) = 3.5) and X2 represents the outcome of flipping a fair coin (where heads = 1 and tails = 0, E(X2) = 0.5). \n\nUsing the Linearity of Expectation:\n\nE(X1 + X2) = E(X1) + E(X2) = 3.5 + 0.5 = 4.\n\nThus, the expected value of the sum of the two random variables is boxed{4}.",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_104355",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

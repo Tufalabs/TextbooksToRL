@@ -1,0 +1,11 @@
+{
+    "source": "Definition 3.4.8. Geometric probability is a way to calculate probability by measuring the number of outcomes geometrically, in terms of length, area, or volume. The key to solving geometric probability is...",
+    "question": "What is geometric probability and how does it differ from classical probability?",
+    "solution": "Geometric probability is defined as a method of calculating probability by measuring the number of outcomes geometrically, in terms of length, area, or volume. This differs from classical probability, which typically counts the number of favorable outcomes over the total number of outcomes. Geometric probability is particularly useful when the number of possible outcomes is infinite, allowing for a continuous range of outcomes rather than discrete counts.",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_092949",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

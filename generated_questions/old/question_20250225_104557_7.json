@@ -1,0 +1,11 @@
+{
+    "source": "Theorem 3.4.6 (Linearity of Expectation)\nFor independent or dependent events,\nE(x1+x2+\u00b7\u00b7\u00b7+xn) =Ex1+Ex2+\u00b7\u00b7\u00b7+Exn",
+    "question": "If \\( E(X_1) = 4 \\), \\( E(X_2) = 5 \\), and \\( E(X_3) = 6 \\), what is \\( E(X_1 + X_2 + X_3) \\)?",
+    "solution": "Using the linearity of expectation:\n\n\\[\nE(X_1 + X_2 + X_3) = E(X_1) + E(X_2) + E(X_3) = 4 + 5 + 6 = 15\n\\]\n\nThus, the expected value of their sum is \\( \\boxed{15} \\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_104557",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

@@ -12,3 +12,18 @@
 2025-02-24 15:53:32,691 - INFO - Parsing new textbook: Rodney Cotterill - Biophysics_ An Introduction  -Wiley (2002)
 2025-02-24 15:53:43,831 - INFO - Parsing new textbook: Bruno Siciliano, Oussama Khatib - Springer Handbook of Robotics-Springer (2008) (1)
 2025-02-24 15:54:18,470 - INFO - Parsing new textbook: Jonathan Wickert_ Kemper Lewis - An Introduction to Mechanical Engineering-Cengage Learning (2016)
+2025-02-25 09:08:14,040 - ERROR - Error during processing: __init__() got an unexpected keyword argument 'parsed_dir'
+2025-02-25 09:11:39,915 - ERROR - Error during processing: __init__() got an unexpected keyword argument 'parsed_dir'
+2025-02-25 09:11:55,141 - ERROR - Error during processing: __init__() got an unexpected keyword argument 'output_dir'
+2025-02-25 09:12:12,717 - INFO - Starting PDF processing...
+2025-02-25 09:12:12,717 - ERROR - Error during processing: 'TextbookManager' object has no attribute 'process_directory'
+2025-02-25 09:12:21,338 - ERROR - Error during processing: __init__() got an unexpected keyword argument 'pdf_dir'
+2025-02-25 09:12:41,180 - INFO - Starting PDF processing...
+2025-02-25 09:12:41,180 - INFO - PDF processing complete!
+2025-02-25 09:13:43,005 - INFO - Found 0 PDF files to process
+2025-02-25 09:13:43,005 - INFO - PDF processing complete!
+2025-02-25 09:13:51,441 - INFO - Found 3 PDF files to process
+2025-02-25 09:13:56,732 - INFO - Processed Mastering_AMC_1012_Book.pdf
+2025-02-25 09:13:59,890 - INFO - Processed ACE The AMC 10_12!.pdf
+2025-02-25 09:14:00,627 - INFO - Processed TheBookOfMathFormulasAndStrategies.pdf
+2025-02-25 09:14:00,627 - INFO - PDF processing complete!

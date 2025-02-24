@@ -1,0 +1,11 @@
+{
+    "source": "Theorem 3.4.6 (Linearity of Expectation)\nFor independent or dependent events,\nE(x1+x2+\u00b7\u00b7\u00b7+xn) = Ex1+Ex2+\u00b7\u00b7\u00b7+Exn",
+    "question": "If a fair six-sided die is rolled three times, what is the expected value of the sum of the numbers rolled?",
+    "solution": "The expected value of a single dice roll is 3.5. By the linearity of expectation, the expected value of the sum of three independent dice rolls is the sum of their individual expected values:\n\n\\[ E(X_1 + X_2 + X_3) = E(X_1) + E(X_2) + E(X_3) = 3.5 + 3.5 + 3.5 = 10.5. \\]\n\nThus, the expected value of the sum of the numbers rolled is \\(\\boxed{10.5}\\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_093149",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o"
+}

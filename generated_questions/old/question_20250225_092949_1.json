@@ -1,0 +1,11 @@
+{
+    "source": "Theorem 3.4.6 (Linearity of Expectation)\nFor independent or dependent events,\nE(x1+x2+\u00b7\u00b7\u00b7+xn) = Ex1 + Ex2 + \u00b7\u00b7\u00b7 + Exn\nBasically, what this means is that the total expected value of n events is just the sum of the expected values of each individual event.",
+    "question": "What is the expected value of the sum of two independent dice rolls, given that the expected value of a single dice roll is 3.5?",
+    "solution": "To find the expected value of the sum of two independent dice rolls, we can use the linearity of expectation. \n\nLet E(x1) be the expected value of the first dice roll and E(x2) be the expected value of the second dice roll. \n\nSince both rolls are independent and each has an expected value of 3.5, we have:\n\nE(x1 + x2) = E(x1) + E(x2) = 3.5 + 3.5 = 7.\n\nThus, the expected value of the sum of two independent dice rolls is boxed{7}.",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_092949",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

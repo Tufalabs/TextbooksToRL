@@ -1,0 +1,11 @@
+{
+    "source": "3.4.1 Geometric Probability\nDefinition 3.4.8. Geometric probability is a way to calculate probability by measuring the number of outcomes geometrically, in terms of length, area, or volume.",
+    "question": "A rectangle has dimensions 6 units by 8 units. A point is chosen at random inside the rectangle. What is the probability that the point lies within a circle of radius 3 units centered at one of the rectangle's corners?",
+    "solution": "The area of the rectangle is:\n\n\\[ \\text{Area of rectangle} = 6 \\times 8 = 48. \\]\n\nThe area of the circle is:\n\n\\[ \\text{Area of circle} = \\pi \\times 3^2 = 9\\pi. \\]\n\nThe probability that the point lies within the circle is the ratio of the area of the circle to the area of the rectangle:\n\n\\[ \\text{Probability} = \\frac{9\\pi}{48}. \\]\n\nThus, the probability is \\(\\boxed{\\frac{9\\pi}{48}}\\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_093149",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o"
+}

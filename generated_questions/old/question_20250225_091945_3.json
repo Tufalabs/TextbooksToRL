@@ -1,0 +1,11 @@
+{
+    "source": "Let S be the set of all perfect squares whose rightmost three digits in base 10 are 256. Let T be the set of all numbers of the form x - 256, where x is in S. In other words, T is the set of numbers that result when the last three digits of each number in S are truncated. Find the remainder when the tenth smallest element of T is divided by 1000.",
+    "question": "Identify the tenth smallest element of the set \\( T \\) derived from the perfect squares ending in 256, and find the remainder when this element is divided by 1000.",
+    "solution": "A perfect square \\( n^2 \\) ends in 256 if \\( n \\) ends in 6 or 4 (since \\( 6^2 = 36 \\) and \\( 4^2 = 16 \\)). \n\n1. For \\( n \\equiv 6 \\mod 10 \\):\n   - \\( n = 10k + 6 \\)\n   - \\( n^2 = (10k + 6)^2 = 100k^2 + 120k + 36 \\)\n   - The last three digits are \\( 120k + 36 \\equiv 256 \\mod 1000 \\) leads to \\( 120k \\equiv 220 \\mod 1000 \\).\n   - Solving gives \\( k \\equiv 1.833 \\mod 8.33 \\) which gives integer solutions for \\( k = 1, 9, 17, \\ldots \\).\n\n2. For \\( n \\equiv 4 \\mod 10 \\):\n   - \\( n = 10k + 4 \\)\n   - \\( n^2 = (10k + 4)^2 = 100k^2 + 80k + 16 \\)\n   - The last three digits are \\( 80k + 16 \\equiv 256 \\mod 1000 \\) leads to \\( 80k \\equiv 240 \\mod 1000 \\).\n   - Solving gives \\( k \\equiv 3 \\mod 12.5 \\) which gives integer solutions for \\( k = 3, 15, 27, \\ldots \\).\n\nCalculating the values of \\( n \\) for both cases:\n- For \\( n \\equiv 6 \\): \\( n = 6, 16, 26, 36, 46, 56, 66, 76, 86, 96 \\) gives \\( n^2 = 36, 256, 676, 1296, 2116, 3136, 3966, 4624, 5184, 5764 \\).\n- For \\( n \\equiv 4 \\): \\( n = 4, 14, 24, 34, 44, 54, 64, 74, 84, 94 \\) gives \\( n^2 = 16, 196, 576, 1156, 1936, 2916, 4096, 5476, 7056, 8836 \\).\n\nCombining both sets and sorting gives the smallest elements of \\( T \\):\n- The tenth smallest element is \\( 5764 \\).\n\nFinally, the remainder when \\( 5764 \\) is divided by \\( 1000 \\) is \\( 764 \\). Thus, the answer is \\( \\boxed{764} \\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_091945",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

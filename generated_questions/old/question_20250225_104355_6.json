@@ -1,0 +1,11 @@
+{
+    "source": "Theorem 3.4.14 (Principle of Inclusion Exclusion for 3 Sets) Given three sets, |A1|, |A2|, |A3|, |A1\u222aA2\u222aA3|=|A1|+|A2|+|A3|\u2212|A1\u2229A2|\u2212|A1\u2229A3|\u2212|A2\u2229A3|+|A1\u2229A2\u2229A3|.",
+    "question": "How does the Principle of Inclusion-Exclusion extend to three sets, and what is the formula used?",
+    "solution": "The Principle of Inclusion-Exclusion extends to three sets by accounting for the overlaps among all three sets to avoid double counting. The formula for three sets A1, A2, and A3 is given by:\n\n|A1 \u222a A2 \u222a A3| = |A1| + |A2| + |A3| - |A1 \u2229 A2| - |A1 \u2229 A3| - |A2 \u2229 A3| + |A1 \u2229 A2 \u2229 A3|.\n\nThis formula adds the sizes of the individual sets, subtracts the sizes of the pairwise intersections (to remove double counting), and then adds back the size of the intersection of all three sets (to correct for triple counting).\n\nThis method ensures that each element is counted exactly once in the total count of the union of the three sets.",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_104355",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

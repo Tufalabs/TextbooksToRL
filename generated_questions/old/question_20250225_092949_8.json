@@ -1,0 +1,11 @@
+{
+    "source": "Concept 3.4.16\nA bijection is a one to one mapping between...",
+    "question": "Define a bijection and explain its significance in mathematics.",
+    "solution": "A bijection is defined as a one-to-one mapping between two sets, meaning that each element in the first set corresponds to exactly one unique element in the second set, and vice versa. The significance of bijections in mathematics lies in their ability to establish equivalence between sets, allowing for the comparison of their sizes and properties. Bijections are fundamental in various areas, including combinatorics, set theory, and functions, as they facilitate the understanding of relationships between different mathematical structures.",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_092949",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

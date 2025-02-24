@@ -3,6 +3,7 @@ from pathlib import Path
 from typing import List, Optional, Dict
 import logging
 from .models import Textbook, TextbookPage
+import PyPDF2  # Add this import at the top
 
 logger = logging.getLogger(__name__)
 
@@ -11,13 +12,17 @@ class TextbookManager:
     
     def __init__(
         self,
-        textbooks_dir: str = "textbooks/txt",  # Changed default directory
+        textbooks_dir: str = "textbooks/txt",
+        pdf_dir: Optional[str] = None,
     ):
         self.textbooks_dir = Path(textbooks_dir)
+        self.pdf_dir = Path(pdf_dir) if pdf_dir else None
         self.textbooks: Dict[str, Textbook] = {}
         
-        # Create directory if it doesn't exist
+        # Create directories if they don't exist
         self.textbooks_dir.mkdir(exist_ok=True, parents=True)
+        if self.pdf_dir:
+            self.pdf_dir.mkdir(exist_ok=True, parents=True)
         
         # Load all textbooks on initialization
         self._load_textbooks()
@@ -87,4 +92,40 @@ class TextbookManager:
 
     def get_all_textbook_names(self) -> List[str]:
         """Get list of all textbook names."""
-        return list(self.textbooks.keys()) 
+        return list(self.textbooks.keys())
+
+    def process_directory(self) -> None:
+        """Process all PDFs in the pdf directory to text files."""
+        if not self.pdf_dir:
+            raise ValueError("PDF directory not specified")
+        
+        pdf_files = list(self.pdf_dir.glob("*.pdf"))
+        for pdf_path in pdf_files:
+            try:
+                # Process PDF to text
+                output_path = self.textbooks_dir / f"{pdf_path.stem}.txt"
+                self._process_pdf(pdf_path, output_path)
+                logger.info(f"Processed {pdf_path.name}")
+            except Exception as e:
+                logger.error(f"Error processing {pdf_path.name}: {str(e)}")
+                raise
+
+    def _process_pdf(self, pdf_path: Path, output_path: Path) -> None:
+        """Convert a PDF file to text."""
+        try:
+            with open(pdf_path, 'rb') as pdf_file:
+                # Create PDF reader object
+                pdf_reader = PyPDF2.PdfReader(pdf_file)
+                
+                # Extract text from all pages
+                text = []
+                for page in pdf_reader.pages:
+                    text.append(page.extract_text())
+                
+                # Write combined text to output file
+                with open(output_path, 'w', encoding='utf-8') as txt_file:
+                    txt_file.write('\n'.join(text))
+                
+        except Exception as e:
+            logger.error(f"Error processing PDF {pdf_path}: {str(e)}")
+            raise 

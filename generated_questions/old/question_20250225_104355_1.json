@@ -1,0 +1,11 @@
+{
+    "source": "The expected value of a dice roll rather than evaluating 1/6\u00b71 + 1/6\u00b72 + 1/6\u00b73 + 1/6\u00b74 + 1/6\u00b75 + 1/6\u00b76 = 3.5 we can see that since all rolls from 1 to 6 are equally likely, the expected value is just the average roll which is just the average of the 2 middle terms which is 3.5.",
+    "question": "What is the expected value of a single roll of a fair six-sided die, and how is it derived?",
+    "solution": "The expected value (E) of a single roll of a fair six-sided die can be calculated using the formula for expected value, which is the sum of the products of each outcome and its probability. For a die, the outcomes are 1, 2, 3, 4, 5, and 6, each with a probability of 1/6. Thus, \n\nE = (1/6)\u00b71 + (1/6)\u00b72 + (1/6)\u00b73 + (1/6)\u00b74 + (1/6)\u00b75 + (1/6)\u00b76 \n  = (1 + 2 + 3 + 4 + 5 + 6) / 6 \n  = 21 / 6 \n  = 3.5.\n\nTherefore, the expected value of a single roll of a fair six-sided die is boxed{3.5}.",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_104355",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

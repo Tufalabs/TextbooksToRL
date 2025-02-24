@@ -1,0 +1,11 @@
+{
+    "source": "3.4.1 Geometric Probability\nRemark 3.4.9\nGeometric probability can be useful when the number of possible outcomes is infinite.",
+    "question": "A dart is thrown at a circular dartboard with a radius of 10 units. What is the probability that the dart lands within a smaller circle of radius 5 units centered at the same point?",
+    "solution": "The area of the larger circle (dartboard) is:\n\n\\[ \\text{Area of larger circle} = \\pi \\times 10^2 = 100\\pi. \\]\n\nThe area of the smaller circle is:\n\n\\[ \\text{Area of smaller circle} = \\pi \\times 5^2 = 25\\pi. \\]\n\nThe probability that the dart lands within the smaller circle is the ratio of the area of the smaller circle to the area of the larger circle:\n\n\\[ \\text{Probability} = \\frac{25\\pi}{100\\pi} = \\frac{1}{4}. \\]\n\nThus, the probability is \\(\\boxed{\\frac{1}{4}}\\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_093149",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o"
+}

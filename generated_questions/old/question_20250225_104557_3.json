@@ -1,0 +1,11 @@
+{
+    "source": "De\ufb01nition 3.4.8. Geometric probability is a way to calculate probability by measuring the number of outcomes geometrically, in terms of length, area, or volume.",
+    "question": "Define geometric probability and explain how it is calculated.",
+    "solution": "Geometric probability is defined as a way to calculate probability by measuring the number of outcomes geometrically, in terms of length, area, or volume. It is calculated by determining the favorable outcomes in relation to the total possible outcomes, often represented as a ratio of areas or lengths in geometric terms.",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_104557",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

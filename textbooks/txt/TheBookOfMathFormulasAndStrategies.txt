@@ -1,0 +1,2864 @@
+
+Contents
+Preface . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+1 Algebra . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+2 Number Theory . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+3 Counting and Probability . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+4 Geometry . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+5 Trigonometry . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 113
+6 Logarithms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 124
+7 Complex Numbers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 127
+8 Additional Techniques and Strategies . . . . . . . . . . . . . . . . . . . . . . 133
+9 Mastering AMC 8 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 143
+10 Mastering AMC 10/12 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
+2
+Preface
+Motivation
+This book was created to share our passion for math with the entire math community. If you
+have any feedback, ﬁnd any errors, or think of any important formula that should be added
+here, please email us at omegalearn.info@gmail.com.
+We appreciate your support and will keep working hard to improve the book. We will
+also raﬄe out some prizes including Brilliant Premium Subscriptions to anyone who ﬁlls out
+this Raﬄe Form .
+We will update the book regularly and add new formulas and strategies. Please check
+OmegaLearn.org to get the Latest Version of This Book . The website also provides a com-
+prehensive list of resources for various subjects like Math, Science, Programming, Physics,
+Chemistry, Biology, and should be useful for students in all grade levels.
+Most of the formulas and strategies covered in this book were discussed in our free on-
+line classes. All the class videos are available on our YouTube channel . These classes should
+provide a good foundation for anyone preparing for math competitions.
+Information about math competitions
+These videos provide some useful strategies for anyone just starting with math competitions
+or working towards speciﬁc competitions like the AMC 10/12.
+1. All you need to know about Math Competitions from Elementary to High School
+2. How to prepare for AMC 10/12 and qualify for AIME and USA(J)MO
+3
+OmegaLearn.org Preface
+Free AMC 8 Fundamentals Course
+AMC 8 Fundamentals Course Details
+This course covered the most important topics for the AMC 8 math competition. Here
+is the list of topics that were covered:
+1. Permutations & Combinations
+2. Casework, Complementary Counting, Overcounting
+3. Probability and Geometric Counting
+4. Primes, Factorizations, Number of Factors, Divisibility
+5. Modular Arithmetic, Digit Cycles, Algebraic Number Theory
+6. Ratios/Proportions/Percents, System of Equations, Speed Time Distance
+7. Mean/Median/Mode, Telescoping
+8. Pythagorean Theorem/Triples, Area of Complex Shapes
+9. Area of Complex Shapes, Extending Lines, Breaking Up Areas
+10. Length of Complex Shapes, Angle Chasing
+Free AMC 8 Advanced/MATHCOUNTS Course
+AMC 8 Advanced/MATHCOUNTS Course Details
+This course covered some advanced topics for the AMC 8 and MATHCOUNTS compe-
+titions. Here is the list of topics that were covered:
+1. Casework, Complementary Counting, Probability, Stars & Bars, Recursion
+2. Arithmetic Sequence, Geometric Sequence, System of Equations
+3. Number Theory, Money Problems, GCD/LCM, Triangular Numbers
+4. Angle Chasing, Similar Triangles, 3D Geometry
+5. Omega Learn Math Competition
+6. Omega Learn Math Competition Problem Review
+7. All you need to know to ACE the AMC 8
+4
+OmegaLearn.org Preface
+Free AMC 10/12 Course
+AMC 10/12 Course Details
+This course covered the most important topics for the AMC 10/12 math competitions.
+Here is the list of topics that were covered:
+1. Quadratics, Polynomials, Vieta’s Formulas, Roots
+Homework Solutions
+2. Algebraic Manipulations, Factorizations, SFFT, Sophie Germain’s Identity
+Homework solutions
+3. Permutations, Combinations, Casework, Complementary Counting
+Homework Solutions
+4. Probability, Expected Value, Geometric Probability, States
+Homework Solutions
+5. Number Theory: Factors, Multiples, and Bases
+Homework Solutions
+6. GCD/LCM, Modular Arithmetic, Diophantine Equations
+Homework Solutions
+7. Triangles, Polygons, Basic Trigonometry
+Homework Solutions
+8. Circular Geometry, Power of a Point, Cyclic Quadrilaterals
+9. Logarithms
+10. Meta-solving Techniques - how to ﬁnd answers without solving the problem
+2021 AMC 10/12 Video Solutions
+1. 2021 AMC 10A Solutions
+2. 2021 AMC 12A Solutions
+3. 2021 AMC 10B Solutions
+4. 2021 AMC 12B Solutions
+5
+Chapter 1
+Algebra
+1.1 Mean, Median, Mode
+Video Lectures
+Mean, Median, Mode
+Deﬁnition 1.1.1 (Mean/Average) .
+Mean = average of all terms =sum of all terms
+number of terms
+Deﬁnition 1.1.2 (Mode) .
+Mode = Most common term(s)
+Remark 1.1.3
+There could be multiple modes. If the problem says “unique mode”, it means that there
+is only one mode.
+Deﬁnition 1.1.4 (Median) .After arranging the numbers in increasing or decreasing order:
+If number of terms is odd,
+Median = middle number
+If number of terms is even,
+Median = average of middle two numbers
+6
+OmegaLearn.org Chapter 1. Algebra
+Deﬁnition 1.1.5.
+Harmonic Mean of Numbers a1,a2,a3,...,an
+=1
+1
+a1+1
+a2+···+1
+an
+n=n
+1
+a1+1
+a2+···+1
+an
+This means the harmonic mean is
+n
+sum of reciprocals of all ak
+1.2 Arithmetic Sequences
+Video Lectures
+Arithmetic Sequence
+Deﬁnition 1.2.1 (Arithmetic Sequence) .An arithmetic sequence is a sequence of numbers
+with the same diﬀerence between consecutive terms.
+1,4,7,10,13,..., 40
+is an arithmetic sequence because there is always a diﬀerence of 3 between consecutive terms.
+Remark 1.2.2
+Note that an arithmetic sequence can also have a negative common diﬀerence. For
+example, in the arithmetic sequence
+40,37,34,..., 4,1
+the common diﬀerence is −3.
+Deﬁnition 1.2.3 (Arithmetic Sequence Notation) .In general, the terms of an arithmetic
+sequence can be represented as:
+a1,a2,a3,a4,...,an
+where
+•dis the common diﬀerence between consecutive terms
+•nis the number of terms
+7
+OmegaLearn.org Chapter 1. Algebra
+Theorem 1.2.4 (nth term in an Arithmetic Sequence)
+an=a1+ (n−1)d
+which basically means the nth term of an arithmetic sequence is equal to
+ﬁrst term + (number of terms −1)(common diﬀerence)
+We also have that
+an=am+ (n−m)d
+which means
+the nth term = mth term + (number of terms −m)(common diﬀerence)
+Theorem 1.2.5 (Number of Terms in an Arithmetic Sequence)
+n=an−a1
+d+ 1
+Essentially,
+Number of Terms =Last Term−First Term
+Common Diﬀerence+ 1
+8
+OmegaLearn.org Chapter 1. Algebra
+Theorem 1.2.6 (Average of Terms in an Arithmetic Sequence)
+Average of Terms =a1+an
+2
+Average of Terms =a1+a2+···+an
+n
+which essentially means
+Average of Terms =First Term + Last Term
+2
+Average of Terms =Sum of all Terms
+Number of Terms
+If the number of terms is even, x= average of middle 2 terms
+.
+If number of terms is odd, x= middle term
+Theorem 1.2.7 (Sum of all Terms in an Arithmetic Sequence)
+Sn=a1+an
+2×n
+which essentially means
+Sum of All Terms = Average of Terms ×Number of Terms
+We can also substitute
+an=a1+ (n−1)d
+to get
+Sn=2a1+ (n−1)·d
+2×n
+9
+OmegaLearn.org Chapter 1. Algebra
+1.3 Geometric Sequences
+Video Lectures
+Geometric Sequences
+Deﬁnition 1.3.1 (Geometric Sequence) .A geometric sequence is a sequence of numbers
+with the same ratio between consecutive terms.
+1,2,4,8,16,32...,1024
+is a geometric sequence because there is always a ratio of 2 between consecutive terms.
+Deﬁnition 1.3.2 (Geometric Sequence Notation) .In general, the terms of a geometric
+sequence can be represented as:
+g1,g2,g3,g4,...,gn
+where
+•ris the common ratio between consecutive terms
+•nis the number of terms
+Remark 1.3.3
+Note that a geometric sequence can also have a negative common ratio. For example the
+sequence 1,−2,4,−8,..., 512,−1024 has a common ratio of −2.
+Theorem 1.3.4 (nth term in a Geometric Sequence)
+gn=g1·rn−1
+which basically means
+the nth term of a geometric sequence = ﬁrst term ×(common ratio)number of terms−1
+A general form for calculating the nth term
+gn=gm·r(n−m)
+which basically means
+the nth term = mth term ×common ratio(n−m)
+10
+OmegaLearn.org Chapter 1. Algebra
+Theorem 1.3.5 (Number of Terms in a Finite Geometric Sequence)
+n= logr/parenleftBigggn
+g1/parenrightBigg
++ 1
+Essentially,
+Number of Terms = 1 more than the number of times we needed to multiply rbyg1to getgn
+Theorem 1.3.6 (Sum of all Terms in a Finite Geometric Sequence)
+Sn=g1(1−rn)
+1−r
+which essentially means
+Sum of All Terms = First Term ×1−common ration
+1−common ratio
+Theorem 1.3.7 (Sum of all Terms in an Inﬁnite Geometric Sequence)
+For−1<r< 1,
+S∞=g1
+1−r
+Remark 1.3.8
+The reason the formula only works for |r|<1 is because if|r|≥1 the sum will diverge
+or essentially be inﬁnite. We can only ﬁnd the sum of a converging geometric sequence
+for which the sum approaches a constant value. Some Examples:
+1 +1
+2+1
+4+1
+8+···=1
+1−1
+2= 2
+1 +1
+3+1
+9+1
+27+···=1
+1−1
+3=3
+2
+11
+OmegaLearn.org Chapter 1. Algebra
+1.4 Special Series
+Theorem 1.4.1 (Sum of Numbers Formula)
+1 + 2 + 3 +···+n=(n)(n+ 1)
+2
+Theorem 1.4.2 (Sum of Odd Numbers Formula)
+1 + 3 + 5 +···+ (2n−1) =n2
+In simple terms, the
+Sum of ﬁrst n odd numbers = n2
+Theorem 1.4.3 (Sum of Even Numbers Formula)
+2 + 4 + 6 +···+ 2n=n(n+ 1)
+To intuitively think about it, just take 2 common from each term
+2(1 + 2 + 3 +···+n) = 2(n)(n+ 1)
+2=n(n+ 1)
+In simple terms, the
+Sum of ﬁrst n even numbers = 2 ×sum of ﬁrst n numbers
+Theorem 1.4.4 (Sum of Squares Formula)
+12+ 22+···+n2=(n)(n+ 1)(2n+ 1)
+6
+Theorem 1.4.5 (Sum of Cubes Formula)
+13+ 23+···+n3=/parenleftBigg(n)(n+ 1)
+2/parenrightBigg2
+12
+OmegaLearn.org Chapter 1. Algebra
+1.5 Telescoping
+Video Lectures
+Telescoping
+Concept 1.5.1 (Telescoping)
+Expand the ﬁrst few and last few terms, and cancel out any terms you see.
+Remark 1.5.2
+Generally, whenever you have long expressions that seem to be hard or impossible to
+compute manually, telescoping is probably at play.
+Concept 1.5.3 (Partial Fraction Decomposition)
+Partial fraction decomposition is a telescoping technique in where you split terms into
+multiple terms in order for terms to cancel. In general, to ﬁnd the partial decomposition
+of1
+abfor any arbitrary variables a and b, we write the equation
+x
+a+y
+b=1
+ab
+and then solve for x and y. For example, the partial fraction decomposition of
+1
+n(n+ 1)
+(in this case a=nandb=n+ 1 is
+1
+n−1
+n+ 1
+Using partial fraction decomposition, we can telescope and evaluate expressions easily.
+1.6 Speed, Distance, and Time
+Video Lectures
+Speed, Distance, and Time
+13
+OmegaLearn.org Chapter 1. Algebra
+Theorem 1.6.1
+Distance = Speed ×Time
+Equivalently,
+Speed =Distance
+Time
+Time =Distance
+Speed
+Theorem 1.6.2
+Average Speed =Total Distance
+Total Time
+Remark 1.6.3
+A common mistake is to assume that average speed is the averages of all speeds (especially
+when the distance you are traveling at each of those speeds are the same). Remember,
+that’s not true unless you are traveling at those speeds for the same amount of time!
+14
+OmegaLearn.org Chapter 1. Algebra
+1.7 Work, Rate, and Time
+Theorem 1.7.1
+Work = Rate×Time
+Equivalently,
+Rate =Work
+Time
+Time =Work
+Rate
+1.8 System of Equations
+Video Lectures
+System of Equations
+Concept 1.8.1 (System of Equations Word Problems)
+This is one of the most common topics on the AMC 10 especially. The trick to solving
+these types of problems is to just assign variables to the unknowns in the problem and
+solve them.
+Concept 1.8.2 (Solving Systems of Equations)
+Once you’ve found the system of equations in your word problem and/or the problem
+itself gives you a system of equation, you should consider one or more of the following
+methods for solving them.
+1. Substitution
+2. Elimination
+3. Diagonal Product Method (Only for 2 variable Equations)
+4. Adding/Subtracting Equations
+5. Be on the lookout for common factorization tricks (see factorization section)
+15
+OmegaLearn.org Chapter 1. Algebra
+6.Constructing Polynomials from your equations using Vieta’s Formula (see Polyno-
+mials Section)
+7. Graphing your equation (I recommend you use graph paper)
+8. Using Symmetry
+9. Creating a geometric setup using geometric formulas such as the
+•Law of Cosines
+•Heron’s Formula
+•Sin area formula
+•Stewart’s theorem
+•Trig Identities
+(See the geometry section for information about these formulas)
+1.9 Polynomials
+Video Lectures
+Polynomials
+Concept 1.9.1 (Discriminant)
+In the quadratic formula,
+b2−4ac
+(the part inside the square root) is the discriminant of the quadratic.
+1. If the discriminant b2−4acis 0, then the quadratic has a double or repeated root
+2. If the discriminant b2−4acis positive, the quadratic has 2 diﬀerent real roots
+3. If the discriminant b2−4acis negative, the quadratic has no real roots
+Remark 1.9.2
+Also note that the quadratic can only have integer solutions if the discriminant b2−4ac
+16
+OmegaLearn.org Chapter 1. Algebra
+is a perfect square.
+Theorem 1.9.3 (Quadratic Formula)
+The solutions to the quadratic equation
+ax2+bx+c= 0
+are
+x=−b±√
+b2−4ac
+2a
+Theorem 1.9.4 (Vieta’s Formula For Quadratics)
+In a quadratic equation
+ax2+bx+c= 0
+the sum of its roots is−b
+a
+and the product of its roots isc
+a
+.
+17
+OmegaLearn.org Chapter 1. Algebra
+Theorem 1.9.5 (Vieta’s Formula For Higher Degree Polynomials)
+In a polynomial
+anxn+an−1xn−1+...+a1x+a0= 0
+, with roots
+r1,r2,r3,...rn
+the following hold:
+r1+r2+r3+...+rn(the sum of all products of 1 term) = −an−1
+an
+r1r2+r1r3+..+rn−1rn(the sum of all products of 2 terms) =an−2
+an
+r1r2r3+r1r2r4+...+rn−2rn−1rn(the sum of all products of 3 terms) = −an−3
+an
+...
+r1r2r3...rn(the sum of all products of n terms) = ( −1)na0
+an
+Note that the negative and positive signs alternate. When summing the products
+for an odd number of terms, we will have a negative sign and otherwise we will have a
+positive sign.
+18
+OmegaLearn.org Chapter 1. Algebra
+Theorem 1.9.6 (Rational Root theorem)
+In a polynomial
+P(x) =anxn+an−1xn−1+...a 1x1+a0
+whereanis nonzero and each aiis integral, all rational roots of the polynomial ±p
+qmust
+have
+•pdividesa0
+•qdividesan
+Essentially,
+•the numerators of all fractional roots divide the constant term of the polynomial
+•the denominators of all fractional roots divide the coeﬃcient of the largest degree
+term.
+Corollary 1.9.7 (Integer Root theorem)
+In a polynomial
+P(x) =anxn+an−1xn−1+...a 1x1+a0
+whereanis nonzero and each aiis integral
+•All integer roots of the polynomial must divide a0or the constant term of the
+polynomial
+Remark 1.9.8
+This means for polynomials with a leading coeﬃcient of 1 (monic polynomials), the only
+rational roots will be integers.
+Theorem 1.9.9 (Remainder Theorem)
+The remainder when when a polynomial P(x) is divided by x−risP(r)
+Corollary 1.9.10 (Factor Theorem)
+x−rwill divide a polynomial P(x) ifP(r) = 0
+This is a direct consequence of the remainder theorem.
+19
+OmegaLearn.org Chapter 1. Algebra
+Theorem 1.9.11 (Representation of Polynomial in terms of roots)
+In a polynomial
+P(x) =anxn+an−1xn−1+···+a1x1+a0
+it can be expressed in the form
+an(x−r1)(x−r2)(x−r3)...(x−rn)
+wherer1,r2,r3,...,rnare thenroots of the polynomial.
+Corollary 1.9.12 (Representation of Monic Polynomial in terms of roots)
+In a polynomial
+P(x) =xn+an−1xn−1+...a 1x1+a0
+(with leading coeﬀecient 1), it can be expressed in the form
+(x−r1)(x−r2)(x−r3)...(x−rn)
+wherer1,r2,r3,...,rnare thenroots of the polynomial.
+Theorem 1.9.13 (Fundamental theorem of Algebra)
+A polynomial of degree n(the largest term is to the power of n) has n complex roots
+including multiplicity (for example, a double root would be counted as 2 roots when
+including multiplicity)
+Theorem 1.9.14 (Conjugate Root Theorem)
+Ifa+biis a root of a polynomial with real coeﬃcients, then a−biwill be too.
+Theorem 1.9.15
+Ifa+b√cis a root of a polynomial with rational coeﬃcients, then a−b√cwill be too.
+20
+OmegaLearn.org Chapter 1. Algebra
+1.9.1 Polynomial Manipulations
+Concept 1.9.16 (Reciprocal Roots)
+In a polynomial
+P(x) =anxn+an−1xn−1+...+a1x+a0
+with rootsr1,r2,r3,...,rn,
+Q(x) =a0xn+a1xn−1+...+an−1x+an
+will have roots1
+r1,1
+r2,...,1
+rn
+Essentially, when ﬂipping the coeﬃcients of a polynomial, it will have roots that are
+reciprocals of the original roots.
+Concept 1.9.17 (Roots That Are More or Less)
+In a polynomial
+P(x) =anxn+an−1xn−1+...+a1x+a0
+with rootsr1,r2,r3,...,rn,
+Q(x) =an(x−k)n+an−1(x−k)n−1+...+a1(x−k) +a0
+will have roots
+r1+k,r2+k,r3+k,...,rn+k
+Remark 1.9.18
+Remember, if the roots are k more, than we subtract k from each of the x terms in our
+polynomial.
+Remark 1.9.19
+Polynomial Manipulations are useful when evaluating complex expressions in terms of
+roots. For example, in order to evaluate
+1
+(r−3)3+1
+(s−3)3+1
+(t−3)3
+of a polynomial with roots r,s,t , rather than expanding it out and bashing with Vieta’s
+21
+OmegaLearn.org Chapter 1. Algebra
+Formulas, we can simplify construct a new polynomial with roots
+1
+(r−3)3,1
+(s−3)3,1
+(t−3)3
+by the above methods and then simply ﬁnd the sum of the roots of the polynomial.
+Theorem 1.9.20 (Newton Sums)
+In a polynomial
+P(x) =anxn+an−1xn−1+...+a1x+a0
+with roots
+r1,r2,r3,...,rn
+letS1=r1+r2+···+rn
+S2=r2
+1+r2
+2+···+r2
+n
+...
+Sk=rk
+1+rk
+2+···+rk
+n
+...
+then the following holds true
+anS1+an−1= 0
+anS2+an−1S1+ 2an−2= 0
+anS3+an−1S2+an−2S1+ 3an−3= 0
+...
+Note thatanegative number = 0 as that might show up in your expansion.
+Essentially, what this is saying is
+1.Start oﬀ with a Skvalue and multiply by it by the leftmost polynomial coeﬃcient.
+2. Then, multiply Sn−1by the polynomial’s coeﬃcient right after it.
+3. Continue doing so and summing the products until either
+•k= 0 in which case instead of multiplying S0by last the last a term we
+multiplyk
+•an−ibecomes 0 in which case we simply add the last term and stop
+4. Set your ﬁnal sum of terms to be equal to 0
+22
+OmegaLearn.org Chapter 1. Algebra
+Theorem 1.9.21
+If
+x+1
+x=a
+then
+x2+1
+x2=a2−2
+x3+1
+x3=a3−3a
+x4+1
+x4= (a2−2)2−2
+Deﬁnition 1.9.22 (Symmetric Polynomials) .A polynomial
+P(x) =anxn+an−1xn−1+...+a1x+a0
+is symmetric if
+an=a0
+an−1=a1
+an−2=a2
+an−3=a3
+etc.
+Basically, opposite coeﬃcients are equal.
+Concept 1.9.23 (Solving Symmetric Polynomials of Even Degree)
+To solve a symmetric polynomial P(x) =a0xn+a1xn−1+...+a1x+a0of even degree,
+•Divide byxn
+2
+•Group thexkand1
+xkterms together
+•Make the substitution
+y=x+1
+x
+and write all the terms in your expression that way
+•Solve the reduced polynomial
+23
+OmegaLearn.org Chapter 1. Algebra
+Remark 1.9.24
+Note that by each Newton Sum Equation, we can iteratively calculate each Pkrather
+than having to bash with Vieta’s Formulas.
+1.10 Algebraic Manipulations
+Video Lectures
+Algebraic Manipulations
+1.10.1 Quadratic Factorizations
+Theorem 1.10.1 (Exponent Rules)
+x−a=1
+xa
+xa×xb=xa+b
+xa÷xb=xa−b
+(xa)b=xab
+Theorem 1.10.2 (Diﬀerence of Squares)
+x2−y2= (x−y)(x+y)
+24
+OmegaLearn.org Chapter 1. Algebra
+Theorem 1.10.3 (Binomial Square Expansions)
+(x+y)2=x2+ 2xy+y2= (x−y)2+ 4xy
+(x−y)2=x2−2xy+y2= (x+y)2−4xy
+(x+y)2+ (x−y)2= 2(x2+y2)
+(x+y)2−(x−y)2= 4xy
+(x+y+z)2=x2+y2+z2+ 2(xy+yz+xz)
+Video Lectures
+Quadratic Factorizations
+1.10.2 Simon’s Favorite Factoring Trick
+Theorem 1.10.4 (Simon’s Favorite Factoring Trick)
+xy+kx+jy+jk= (x+j)(y+k)
+Remark 1.10.5
+You can generally apply this factorization when you have xy,x, andyterms. After
+applying the factorization, you can then ﬁnd all possible values for each of your terms in
+your factorization (remember negatives!).
+Video Lectures
+Simon’s Favorite Factoring Trick
+25
+OmegaLearn.org Chapter 1. Algebra
+1.10.3 Cubic Factorizations
+Video Lectures
+Cubic Factorizations
+Theorem 1.10.6 (Diﬀerence of Cubes)
+x3−y3= (x−y)(x2+xy+y2)
+Theorem 1.10.7 (Sum of Cubes)
+x3+y3= (x+y)(x2−xy+y2)
+Theorem 1.10.8 (Binomial Cube Expansions)
+(x+y)3=x3+ 3xy(x+y) +y3
+(x+y)3=x3+ 3x2y+ 3xy2+y3
+(x−y)3=x3−3xy(x−y)−y3
+(x−y)3=x3−3x2y+ 3xy2−y3
+x3+y3+z3−3xyz= (x+y+z)(x2+y2+z2−xy−xz−yz)
+26
+OmegaLearn.org Chapter 1. Algebra
+1.10.4 Higher Power Factorizations
+Theorem 1.10.9 (nth power Factorizations)
+Sum of odd powers
+x2n+1+y2n+1= (x+y)(x2n−x2n−1y+x2n−2y2−···−xy2n−1+y2n)
+Note: The signs in the second term alternate between positive and negative
+xn−yn= (x−y)(xn−1+xn−2y+xn−3y2+···+xyn−2+yn−1)
+Note: The signs in second term are all positive
+1.10.5 Sophie Germain’s Identity
+Theorem 1.10.10 (Sophie Germain’s Identity)
+x4+ 4y4= (x2−2xy+ 2y2)(x2+ 2xy+ 2y2)
+Remark 1.10.11
+Be on the lookout for 4th powers to apply Sophie Germain’s Identity!
+Video Lectures
+Sophie Germain’s Identity
+Concept 1.10.12 (Algebraic Manipulation Techniques)
+Here are some ideas for algebraic manipulation:
+1. Group terms that are similar together
+2. Be on the lookout for factorizations
+3. Take advantage of symmetry, you can use to it construct polynomials
+4.Make smart substitutions that can simplify your expression (for example, if the
+term√
+49−x2
+27
+OmegaLearn.org Chapter 1. Algebra
+appears multiple times in your expression just let
+y=√
+49−x2
+to simplify it)
+1.11 Floor and Ceiling Functions
+Deﬁnition 1.11.1 (Floor, Ceiling, and Fractional Part Functions) .
+⌊x⌋= Greatest integer less than or equal to x
+⌈x⌉= Smallest integer greater than or equal to x
+{x}= Fractional part of x (the value after the decimal point)
+Remark 1.11.2
+[Common Floor and Ceiling Problems Techniques]
+Most ﬂoor and ceiling problems can be solved using these techniques.
+1. Make the substitution x=⌊x⌋+{x}
+2. Use the ﬂoor or ceiling function to ﬁnd an inequality
+For example, if you know that y=⌊x⌋, theny≤x<y + 1
+3.Graph your equations and look for intersection points (we recommend using graph
+paper)
+1.12 Inequalities
+Video Lectures
+Inequalities and Optimizations Basics
+Theorem 1.12.1 (Trivial Inequality)
+For realx,x2≥0
+This means all perfect squares are 0 or more.
+28
+OmegaLearn.org Chapter 1. Algebra
+Corollary 1.12.2 (Completing the Square)
+In a quadratic Q(x) =ax2+bx+c,
+•Ifa>0, then the minimum value of Q(x) isc−b2
+4aand occurs when x=−b
+2a
+•Ifa<0, then the maximum value of Q(x) isc−b2
+4aand occurs when x=−b
+2a
+Remark 1.12.3
+Simple, yet powerful. This is the core of all inequalities and how more advanced
+inequalities are derived.
+The rest of the inequalities are optional for the AMC 10 but are still good to know.
+Theorem 1.12.4 (AM-GM Inequality For 2 variables)
+For non-negative reals a and b,
+a+b
+2≥√
+ab
+Basically, this means the average of 2 non-negative numbers (arithmetic mean) is always
+at least as big as the square root of the product of the 2 numbers (the geometric mean).
+Note that equality in this expression occurs when a=b.
+Corollary 1.12.5
+The minimum value of x+1
+xis 2 and occurs when x= 1
+Corollary 1.12.6 •The minimum value of a+b(ifabremains constant) occurs
+whena=b
+•The maximum value of ab(ifa+bremains constant) occurs when a=b
+29
+OmegaLearn.org Chapter 1. Algebra
+Theorem 1.12.7 (AM-GM Inequality For More Variables)
+For non-negative reals a1,a2,...an,
+a1+a2+···+an
+n≥n√a1·a2·a3····an
+Note that equality occurs when a1=a2···=an. (essentially all the variables are equal).
+Another way to say this is
+Average of n numbers =n/radicalBig
+product of all n numbers
+Remark 1.12.8
+This means in general,
+min(a1+a2+a3+···+an) =n·n√a1·a2·a3····an
+max(a1·a2·a3····an) =/parenleftbigga1+a2+···+an
+n/parenrightbiggn
+Essentially,
+min(sum of all numbers) = n·n/radicalBig
+product of all numbers)
+max(product of all numbers) = (average of all numbers)n
+Remark 1.12.9
+Generally, we use AM-GM to maximize products or minimize sums.
+Theorem 1.12.10 (Weighted AM-GM Inequality)
+For non-negative reals, ai,ci,
+c1·a1+c2·a2+···+cn·an
+c1+c2+···+cn≥c1+c2+···+cn/radicalBig
+ac1
+1·ac2
+2·ac3
+3·····acnn
+Remark 1.12.11
+Weighted AM-GM is very similar to AM-GM. One way to visualize weighted AM-GM
+is that there are cknumber of terms which are all equal to ak. So instead of writing
+30
+OmegaLearn.org Chapter 1. Algebra
+ak+ak+···+akcktimes in our sum we simply write ak·ck, and instead of writing
+ak·ak·... cktimes in our product we simply write ack
+k.
+Remark 1.12.12
+We use weighted AM-GM when we are trying to make the sum of all terms a constant
+by multiplying weights to all (or some) the terms. Remember to divide by the weights
+you multiplied at the end.
+Theorem 1.12.13 (Cauchy Schwarz)
+For realsaiandbi,
+(a1·b1+a2·b2+···+an·bn)2≤(a2
+1+a2
+2+...a2
+n)(b2
+1+b2
+2+...b2
+n)
+This means
+(the sum of the products of all akandbk)2≤
+product of the sum of squares of all akandbk
+Equality holds when the ratio ofai
+bi
+for all i is the same.
+Remark 1.12.14
+If you ever forget which side the ≥sign faces, just try a small example like a1= 1,
+a2= 2,b1= 3, andb2= 4.
+Remark 1.12.15
+You generally want to apply Cauchy Schwarz when you are dealing with sums of squares.
+Corollary 1.12.16 (Titu’s Lemma)
+For realsaiandbi,
+a2
+1
+b1+a2
+2
+b2+···+a2
+n
+bn≥(a1+a2+···+an)2
+b1+b2+b3+···+bn
+Alternately,
+a1
+b1+a2
+b2+···+an
+bn≥(√a1+√a2+···+√an)2
+b1+b2+b3+···+bn
+31
+OmegaLearn.org Chapter 1. Algebra
+Note that this is a direct consequence of Cauchy Schwartz.
+Concept 1.12.17 (Techniques For Optimization Problems)
+Steps to ﬁnd maximum/minimum of expressions
+1.Try to ﬁnd another simple expression for maximization is greater than or equal to
+the expression you are given OR minimization is less than the expression you are
+given by using 1 (or possibly even more) of the inequalities
+(a) Trivial Inequality
+(b) AM-GM
+(c)Weighted AM-GM (AM-GM weighted and unweighted are useful for maxi-
+mizing products and minimizing sums)
+(d)Cauchy Schwartz (Cauchy Schwartz is useful when dealing with sums of
+squares)
+2.Verify that the equality case of your inequality holds true with your problem
+conditions
+3. Simplify your equality case and solve for the answer
+32
+Chapter 2
+Number Theory
+2.1 Primes
+Deﬁnition 2.1.1 (Primes) .Primes are numbers that have exactly two factors: 1 and the
+number itself. Ex. 2, 3, 5, 7, 11, 13, 17, 19, 23, etc. are all primes
+Note: 1 is not a prime and 2 is the only even prime.
+Remark 2.1.2
+In order to check whether a number nis prime, we need to check all the primes that are
+less than or equal to√n
+Concept 2.1.3 (Prime Factorization)
+Prime factorization is a way to express each number as a product of primes.
+Examples:
+The prime factorization of 21 is 3 ×7
+The prime factorization of 60 is 22×3×5
+33
+OmegaLearn.org Chapter 2. Number Theory
+Theorem 2.1.4 (Number of Factors of a Number)
+If the prime factorization of the number is expressed as:
+pe1
+1×pe2
+2×···×pek
+k
+then the number of factors of this number is
+(e1+ 1)(e2+ 1)...(ek+ 1)
+Remark 2.1.5
+Basically, in order to ﬁnd the number of factors of a number:
+1. Find the prime factorization of the number
+2. Add 1 to all of the exponents
+3. Multiply them together
+Concept 2.1.6 (Divisibility Rules)
+2 Last digit is even
+3 Sum of digits is divisible by 3
+4 Last 2 digits divisible by 4
+5 Last digit is 0 or 5
+6 Divisible by 2 and 3
+7 Take out factors of 7 until you reach a small number that is either
+divisible or not divisible by 7
+8 Last 3 digits are divisible by 8
+9 Sum of digits is divisible by 9
+10 Last digit is 0
+11 Calculate the sum of odd digits (O) and even digits (E). If |O−E|
+is divisible by 11, then the number is also divisible by 11
+12 Divisible by 3 and 4
+15 Divisible by 3 and 5
+Video Lectures
+Primes and Prime Factorization
+34
+OmegaLearn.org Chapter 2. Number Theory
+Concept 2.1.7 (Digit Cycles)
+To calculate large digit(s) of a number ab, a strategy that may work is to just look for a
+pattern by computing the ﬁrst few values of aband then seeing that the pattern will
+repeat for large values of b.
+Video Lectures
+More on Digit Cycles
+2.2 Integer Sequences
+Video Lectures
+Integer Sequences
+2.3 Palindromes
+Deﬁnition 2.3.1. A palindrome is a number that reads the same forward and backward.
+Video Lectures
+Palindromes
+2.4 GCD/LCM
+Deﬁnition 2.4.1 (Greatest Common Divisor) .The Greatest Common Divisor (GCD) of
+two or more integers (which are not all zero) is the largest positive integer that divides each
+of the integers.
+Note: This is also known as GCF (Greatest Common Factor), and the terms GCF and GCD
+are often used interchangeably.
+Deﬁnition 2.4.2 (Least Common Multiple) .The Least Common Multiple (LCM) of two or
+more integers (which are not all zero) is the smallest positive integer that is divisible by both
+the numbers.
+35
+OmegaLearn.org Chapter 2. Number Theory
+Concept 2.4.3
+GCD/LCM Greatest common divisor of m and n =GCD (m,n) can be found by taking
+the lowest prime exponents from the prime factorizations of m and n.
+Least common multiple of m and n =LCM (m,n) can be found by taking the high-
+est prime exponents from the prime factorizations of m and n.
+Theorem 2.4.4
+The product of GCD and LCM of two numbers is equal to the product of the two
+numbers:
+GCD (m,n)·LCM (m,n) =m·n
+Theorem 2.4.5
+If two numbers have a common factor c, then
+gcd(ac,bc ) =c·gcd(a,b)
+Video Lectures
+More on GCD/LCM
+Theorem 2.4.6 (Euclidean Algorithm)
+The Euclidean algorithm states that
+gcd(x,y) =gcd(x−ky,y)
+wherex>y andkis a positive integer.
+Remark 2.4.7
+We can apply the Euclidean Algorithm multiple times to easily ﬁnd the GCD of large
+numbers since after applying the Euclidean algorithm, we know have 2 smaller numbers
+which we can apply the Euclidean Algorithm again until we get 2 very small numbers.
+36
+OmegaLearn.org Chapter 2. Number Theory
+For example,
+gcd(186,92) = gcd((186−(2·92)),92)
+= gcd(2,92)
+= gcd(2,(92−(2·46)))
+= gcd(2,0)
+= 2
+Video Lectures
+Euclidean Algorithm
+Theorem 2.4.8 (Bezout’s Identity)
+Integer solutions to the equation
+ax+by=c
+will only exist if and only if gcd( a,b) dividesc
+Video Lectures
+GCD/LCM Basics
+GCD/LCM Advanced
+2.5 Modular Arithmetic
+Video Lectures
+Modular Arithmetic
+Deﬁnition 2.5.1.
+n≡a(modb)
+means the number ’ n’ leaves the same remainder as ’ a’ when divided by b
+37
+OmegaLearn.org Chapter 2. Number Theory
+Theorem 2.5.2
+Ifa=x(modn) andb≡y(modn), then
+ab≡xy (modn)
+Theorem 2.5.3
+Ifa≡x(modn), then
+am≡xm(modn)
+Theorem 2.5.4 (Euler’s Totient Function)
+If number n has the prime factorization
+pe1
+1·pe2
+2·pe3
+3...pen
+n
+then
+φ(n) =n·/parenleftBigg
+1−1
+p1/parenrightBigg/parenleftBigg
+1−1
+p2/parenrightBigg
+.../parenleftBigg
+1−1
+pn/parenrightBigg
+whereφ(n) denotes the number of positive integers less than or equal to n that are
+relatively prime to n.
+Steps to ﬁnd totient of a number
+1. Find prime factorization
+2. For all primes, calculate and multiply
+1−1
+pi
+3. Multiply this product to the number n to get the totient
+Theorem 2.5.5 (Euler’s Totient Theorem)
+aφ(n)≡1 (modn)
+if and only if
+gcd(a,n) = 1
+38
+OmegaLearn.org Chapter 2. Number Theory
+Video Lectures
+Euler’s Totient Function
+Euler’s Totient Theorem
+Corollary 2.5.6 (Fermat’s Little Theorem)
+ap−1≡1 (modp)
+if an only if pis a prime and
+gcd(a,n) = 1
+Note that this follows directly from Euler’s Totient Theorem.
+Fact 2.5.7. For any integer x,
+x2≡0,1 (mod 3)
+x2≡0,1 (mod 4)
+Concept 2.5.8
+If a is denoted as the modular inverse of b(modn), then
+ab≡1 (modn)
+We also write that
+a−1≡b(modn)
+since a and b are inverses (mod n).
+Theorem 2.5.9 (Wilson’s Theorem)
+(p−1)!≡p−1≡−1 (modp)
+39
+OmegaLearn.org Chapter 2. Number Theory
+Theorem 2.5.10 (Chinese Remainder Theorem)
+If a positive number x satisﬁes
+x≡a1(modn1)
+x≡a2(modn2)
+...
+x≡ak(modnk)
+where allniare relatively prime, then xhas a unique solution (mod n1·n2·n3...nk)
+Remark 2.5.11
+Be careful! This may not necessarily be true if any nishare common factors as then
+congruences might contradict each other.
+Video Lectures
+Chinese Remainder Theorem
+Concept 2.5.12 (Solving Linear Congruences)
+To solve a linear congruence with 2 congruences you can either
+•Guess and Check until you reach a value that works and satisﬁes both mods
+•Algebraic Method
+1. Find 2 congruences
+n≡r1(modm1)
+n≡r2(modm2)
+such thatbanddare relatively prime
+2. Rewrite them algebraically
+n=k(m1) +r1
+n=j(m2) +r2
+40
+OmegaLearn.org Chapter 2. Number Theory
+3. Set them equal mod the smaller of m1andm2(in this case, say m2>m 1)
+k(m1) +r1≡r2(modm2) =⇒m1≡(r2−r1)·k−1(modm2)
+4. Guess and check to ﬁnd the value of
+k−1(modm2)
+5. Using the value of what bis (modd), rewrite it algebraically.
+6. Substitute it back into the expression
+n=k(m1) +r1
+7. Convert it back to mods to get the ﬁnal congruence
+Concept 2.5.13
+The solution to
+n≡r1(modm1)
+n≡r2(modm2)
+is
+n≡r1+m1(r2−r1)·i
+wherei≡m−1
+1(modm2)
+Remark 2.5.14
+To solve a general congruence of more than 2 congruences, just solve them 2 at a time
+until you are left with just 1 congruence.
+Video Lectures
+More on Modular Arithmetic
+41
+OmegaLearn.org Chapter 2. Number Theory
+2.6 Diophantine Equations
+Video Lectures
+Diophantine Equations
+Deﬁnition 2.6.1. A Diophantine equation is a polynomial equation such that the only
+solutions of interest are the integer ones (an integer solution is such that all the variables
+have integer values).
+Concept 2.6.2 (Strategies to Solve Diophantine Equations)
+Here are some ideas on how to solve diophantine equations
+•Take mods of diﬀerent numbers. This is generally useful when you
+1. Show there are no solutions to a Diophantine equation
+2. Show that there are only a speciﬁc type of solution
+•You can try to bound the possible values of diﬀerent terms. This is generally useful
+when there are a ﬁnite number of solutions to your Diophantine equations
+•Factoring, using the various factorizations (see the algebra section on this), can
+help ﬁnd all the solutions
+•Make substitutions to simplify your Diophantine equation
+•Look for conditions on what must be multiples/divisors of your variables and
+rewrite your Diophantine equation in terms of that
+2.7 Bases
+Deﬁnition 2.7.1 (Bases) .A number expressed in base-n is similar to base 10 except instead
+of regrouping to a new place value every 10, we regroup every n.
+A number in base n with digits am,am−1. . .a2,a1,a0can be expressed in the form
+a0·n0+a1·n1+a2·n2+...am−1·nm−1+am·nm
+where allaiare digits of the number
+42
+OmegaLearn.org Chapter 2. Number Theory
+Video Lectures
+Base Conversion Basics
+AMC 10/12 problems related to bases
+Theorem 2.7.2 (Chicken McNugget Theorem)
+The maximum value that cannot be expressed as the sum of non-negative multiples of a
+andbisab−a−bifaandbare relatively prime.
+For relatively prime positive integers a,b,there are exactly(a−1)(b−1)
+2positive integers
+which cannot be expressed in the form ma+nbwheremandnare positive integers.
+Remark 2.7.3
+This theorem is useful in ﬁnding solutions to problems like ”the maximum amount of
+money that can’t be created with 3 cent and 5 cent coins” .
+2.8 P-adic Evaluation
+Deﬁnition 2.8.1. [Vp Notation] vp(n) is deﬁned as the exponent of p in the prime factoriza-
+tion of n.
+For example, v5(75) = 2 since 75 has 2 factors of 5. v2(27) = 0 since 27 is odd and has no
+factors of 2.
+Theorem 2.8.2 (Vp Exponentiation Formula)
+vp(nk) =k·vp(n)
+This basically means the power of pin a number nkisktimes that of the power of pin
+n.
+43
+OmegaLearn.org Chapter 2. Number Theory
+Theorem 2.8.3 (Vp Product Formula)
+vp(ab) =vp(a) +vp(b)
+This basically means
+exponent of pinab= exponent of pina+ exponent of pinb
+Theorem 2.8.4 (Vp Division Formula)
+vp(a
+b) =vp(a)−vp(b)
+This basically means
+exponent of pina
+b= exponent of pina−exponent of pinb
+Theorem 2.8.5 (Vp Sum Formula)
+Ifvp(a)/negationslash=vp(b), then
+vp(a+b) =min(vp(a),vp(b))
+Ifvp(a) =vp(b), then
+vp(a+b)≥min(vp(a),vp(b))
+Theorem 2.8.6 (Lifting the exponent (LTE) for odd primes)
+If
+a≡b/negationslash≡0 (modp)
+then
+vp(an−bn) =vp(a−b) +vp(n)
+.
+This basically means
+exponent of pinan−bn= ( exponent of pina−b) + ( exponent of pinn)
+ifaandbleave the same remainder when divided by pthat is not 0.
+44
+OmegaLearn.org Chapter 2. Number Theory
+Remark 2.8.7
+Be very careful of the ﬁrst condition that is bold! Also remember 2 doesn’t work for p in
+this equation! Sometimes when we can’t directly apply LTE to our exponent, we can
+modify our exponents by rewriting our exponent terms.
+Theorem 2.8.8 (Lifting the exponent (LTE) for 2)
+v2(an−bn) =v2(a2−b2) +v2(n)−1
+This basically means
+exponent of 2 in an−bn= ( exponent of 2 in a2−b2) + ( exponent of pinn)−1
+Theorem 2.8.9 (Legendre’s Theorem)
+vp(n!) =/floorleftBiggn
+p/floorrightBigg
++/floorleftBiggn
+p2/floorrightBigg
++...
+This basically means the
+number of factors of p in n! =
+the number of multiples of p ≤n+ the number of multiples of p2≤n+...
+45
+Chapter 3
+Counting and Probability
+3.1 Basic Deﬁnitions
+3.1.1 Factorials
+Deﬁnition 3.1.1. A Factorial is the product of all positive integers less than or equal to a
+given positive integer. In other words n! =n×(n−1)×(n−2)×···× 1.
+Video Lectures
+Permutations and Combinations
+Theorem 3.1.2 (Factorials in Combinatorics)
+The number of ways of arranging n objects in a line is n!
+The number of ways of arranging n objects in a circle where rotations of the same
+arrangement aren’t considered distinct is ( n−1)!
+The number of ways of arranging n objects in a circle where rotations of the same
+arrangement aren’t considered distinct and reﬂections of the same arrangement aren’t
+considered distinct is(n−1)!
+2
+46
+OmegaLearn.org Chapter 3. Counting and Probability
+3.1.2 Combinations
+Deﬁnition 3.1.3. A combination is a possible arrangement in a collection of items where
+the order of the selection does not matter.
+Theorem 3.1.4 (Combinations Formula)
+The number of ways to choose kobjects out of a total of nobjects is
+/parenleftBiggn
+k/parenrightBigg
+=n!
+k!·(n−k)!=n·(n−1)····· (n−k+ 1)
+k!
+.
+Remark 3.1.5
+The second way of evaluating choosing expressions is faster for math contests.
+Remark 3.1.6
+Notice that /parenleftBiggn
+k/parenrightBigg
+=/parenleftBiggn
+n−k/parenrightBigg
+This is true because we can see choosing kobjects on the left hand side is the same as
+choosing the kobjects that will not be selected on the right hand side.
+3.1.3 Permutations
+Deﬁnition 3.1.7. A permutation is a possible arrangement of objects in a set where the
+order of objects matters.
+Theorem 3.1.8 (Permutations Formula)
+The number of ways to order kobjects out of ntotal objects is
+nPk=n!
+(n−k)!
+.
+47
+OmegaLearn.org Chapter 3. Counting and Probability
+Remark 3.1.9
+Usually, the words permute, order does matter, etc. imply a permutation while the
+words choose, select, order does not matter, etc. imply a combination.
+3.1.4 Subsets
+Theorem 3.1.10
+The number of subsets of a set of size nis 2n.
+Remark 3.1.11
+We have 2 choices for each element in the set: whether to include or not include the
+element in our subset. This means that one of our subsets is the empty subset, where we
+decide to not include all of the elements. If a problem trying to count subsets appears,
+make sure to check whether we should count the empty subset.
+3.2 Combinatoric Strategies
+Video Lectures
+Casework, Complementary Counting and Overcounting
+48
+OmegaLearn.org Chapter 3. Counting and Probability
+3.2.1 Complementary Counting
+Complementary counting is the problem solving technique of counting the opposite of what we
+want and subtracting that from the total number of cases. The keyword “at least” indicates
+that complementary counting may be helpful.
+3.2.2 Overcounting
+Overcounting is the process of counting more than what you need and then systematically
+subtracting the parts which do not belong.
+3.2.3 Casework
+Many counting or probability problems can be solved by dividing a problem into several cases
+and calculating arrangements and probabilities for each case before summing them together.
+Remark 3.2.1
+Casework can be a very useful strategy to solve combinatorics problem, especially when
+there are no other obvious approach.
+Remark 3.2.2
+Often times, we have to use casework in conjuction with other techniques like comple-
+mentary counting.
+3.3 Advanced Concepts
+3.3.1 Word Rearrangements and Counting
+Theorem 3.3.1 (Word Rearrangements)
+The number of ways to order a word is
+n!
+d1!×d2!×d3!×...
+wherenis the number of letters and d1,d2,d3,... are the number of times each of the
+letters that occur more than 1 time appear in the word.
+49
+OmegaLearn.org Chapter 3. Counting and Probability
+Remark 3.3.2
+This is not only true for words! The number of ways of arranging objects or anything
+else is also the same.
+Theorem 3.3.3
+The general formula for the number of rectangles of all sizes in a rectangular grid of size
+m×nis /parenleftBiggm+ 1
+2/parenrightBigg
+×/parenleftBiggn+ 1
+2/parenrightBigg
+.
+Remark 3.3.4
+Each combination of two horizontal lines and two vertical lines creates a unique rectangle.
+We have /parenleftBiggm+ 1
+2/parenrightBigg
+ways to choose two horizontal lines and
+/parenleftBiggn+ 1
+2/parenrightBigg
+ways to choose two vertical lines.
+50
+OmegaLearn.org Chapter 3. Counting and Probability
+Remark 3.3.5
+A similar application of combinatorics is the classic problem of how many intersection
+points occur in a n-gon. Becuase we know an intersection point is created by 2 lines and
+each line is created by 2 points, the number of intersection points is simply the number
+of ways to choose 4 points out of n, which is just
+/parenleftBiggn
+4/parenrightBigg
+.
+3.3.2 Stars and Bars
+Video Lectures
+Stars and Bars Basics
+Stars and Bars Advanced
+Theorem 3.3.6 (Stars and Bars)
+The number of ways to place nobjects into kdistinguishable bins is
+/parenleftBiggn+k−1
+n/parenrightBigg
+Remark 3.3.7
+The reason this is true is because you can consider placing k−1 bars innobjects which
+would have /parenleftBiggn+k−1
+n/parenrightBigg
+ways of arranging. It’s important you understand this because problems may modify the
+stars and bars a little...
+Remark 3.3.8
+Stars and Bars is extremely useful, and can often be adapted based on situations. For
+example, if each bin has to have at least 1 object in it we assign each bin 1 object to
+start oﬀ with and apply our formula with n−kobjects and kdistinguishable bins.
+51
+OmegaLearn.org Chapter 3. Counting and Probability
+3.3.3 Binomial Theorem
+Theorem 3.3.9 (Binomial Theorem)
+For non-negative n,
+(x+y)n=/parenleftBiggn
+0/parenrightBigg
+xny0+/parenleftBiggn
+1/parenrightBigg
+xn−1y+/parenleftBiggn
+2/parenrightBigg
+xn−2y2+···+/parenleftBiggn
+n/parenrightBigg
+x0yn
+Remark 3.3.10
+The binomial theorem has many powerful applications. It’s useful for expanding expres-
+sions like
+(x+y)n
+Also, if we want to ﬁnd the value of an expression like
+(x+y)n(modnk)
+we can just expand the last kterms of the binomial expansion.
+Theorem 3.3.11 (Binomial Identity)
+The binomial identity states that
+/parenleftBiggn
+0/parenrightBigg
++/parenleftBiggn
+1/parenrightBigg
++···+/parenleftBiggn
+n/parenrightBigg
+= 2n
+3.3.4 Combinatorial Identities
+Video Lectures
+Combinatorial Identities
+Theorem 3.3.12 (Vandermonde’s Identity)
+Vandermonde’s Identity states that
+/parenleftBiggn
+0/parenrightBigg/parenleftBiggm
+m/parenrightBigg
++/parenleftBiggn
+1/parenrightBigg/parenleftBiggm
+m−1/parenrightBigg
++···+/parenleftBiggn
+m/parenrightBigg/parenleftBiggm
+0/parenrightBigg
+=/parenleftBiggm+n
+n/parenrightBigg
+.
+52
+OmegaLearn.org Chapter 3. Counting and Probability
+Theorem 3.3.13 (Special Case of Vandermonde’s Identity)
+k/summationdisplay
+i=0/parenleftBiggk
+i/parenrightBigg2
+=/parenleftBigg2k
+k/parenrightBigg
+Concept 3.3.14 (Pascal’s Triangle)
+Pascal’s triangle is pictured below. It can be represented in terms of combinations,
+which is depicted in the image below.
+Theorem 3.3.15 (Pascal’s Identity)
+Pascal’s identity states that
+/parenleftBiggn
+k/parenrightBigg
++/parenleftBiggn
+k+ 1/parenrightBigg
+=/parenleftBiggn+ 1
+k+ 1/parenrightBigg
+53
+OmegaLearn.org Chapter 3. Counting and Probability
+Theorem 3.3.16 (Hockey Stick Identity)
+Hockey Stick Identity states
+/parenleftBiggk
+k/parenrightBigg
++/parenleftBiggk+ 1
+k/parenrightBigg
++···+/parenleftBiggn
+k/parenrightBigg
+=/parenleftBiggn+ 1
+k+ 1/parenrightBigg
+Theorem 3.3.17 (Hockey Stick Identity Generalization)
+/parenleftBiggj
+k/parenrightBigg
++/parenleftBiggj+ 1
+k/parenrightBigg
++···+/parenleftBiggn
+k/parenrightBigg
+=/parenleftBiggn+ 1
+k+ 1/parenrightBigg
+−/parenleftBiggj
+k+ 1/parenrightBigg
+Theorem 3.3.18 (Choosing Odd Even Identity)
+This identity states
+m/summationdisplay
+k=0(−1)k/parenleftBiggn
+k/parenrightBigg
+= (−1)m/parenleftBiggn−1
+m/parenrightBigg
+Remark 3.3.19
+These identities can be helpful in combinatorics problem, but their applications may not
+always be straightforward, so a good approach to many combinatorics problem may be
+to just manipulate expressions.
+54
+OmegaLearn.org Chapter 3. Counting and Probability
+3.3.5 Pigeonhole Principle
+Theorem 3.3.20 (Generalized Pigeonhole Principle)
+If you have at least nk+ 1 objects to distribute into kgroups, at least 1 group will have
+n+ 1 objects.
+3.4 Probability and Expected Value
+Deﬁnition 3.4.1. Probability is the chance something occurs.
+Theorem 3.4.2 (Probability)
+probability =Total number of Desired Outcomes
+Total Outcomes
+Video Lectures
+Probability Basics
+Probability Advanced
+Deﬁnition 3.4.3. Expected value is the weighted average of outcomes.
+Theorem 3.4.4 (Expected Value)
+The expected value of some event Xis
+/summationdisplay
+xi·P(xi)
+wherexiare the possible values of XandP(xi) is the probability they occur.
+Basically the expected value is just sum the probabilities of events happening times
+the number or amount of that event
+Remark 3.4.5
+Often times, in ﬁnding the expected value, we can just look for symmetry instead
+of summing each individual probability times number. For example, to calculate the
+55
+OmegaLearn.org Chapter 3. Counting and Probability
+expected value of a dice roll rather than evaluating
+1
+6·1 +1
+6·2 +1
+6·3 +1
+6·4 +1
+6·5 +1
+6·6 = 3.5
+we can see that since all rolls from 1 to 6 are equally likely, the expected value is just
+the average roll which is just the average of the 2 middle terms which is 3 .5. (See the
+arithmetic sequences section)
+Video Lectures
+Expected Value
+Theorem 3.4.6 (Linearity of Expectation)
+For independent or dependent events,
+E(x1+x2+···+xn) =Ex1+Ex2+···+Exn
+Basically, what this means is that the total expected value of n events is just the sum
+of the expected values of each individual event.
+Remark 3.4.7
+This theorem is powerful as it as it allows us to ﬁnd the expected value of the individual
+events rather than of the whole thing at once.
+3.4.1 Geometric Probability
+Video Lectures
+Geometric Probability
+Deﬁnition 3.4.8. Geometric probability is a way to calculate probability by measuring the
+number of outcomes geometrically, in terms of length, area, or volume. The key to solving
+geometric probability is
+1.Try a few examples for the diﬀerent cases, make sure to always mark the extreme cases
+2. Try to ﬁgure out the region the shape maps out
+56
+OmegaLearn.org Chapter 3. Counting and Probability
+3. Use geometry to ﬁnd the area of this region
+Remark 3.4.9
+Geometric probability can be useful when the number of possible outcomes is inﬁnite.
+3.4.2 Principle of Inclusion Exclusion (PIE)
+Deﬁnition 3.4.10. The principle of inclusion and exclusion (PIE) is a counting technique
+that computes the number of elements that satisfy at least one of several properties while
+guaranteeing that elements satisfying more than one property are not counted twice.
+Deﬁnition 3.4.11 (Union Symbol) .|A∪B|is the union of elements in both A and B
+(duplicates are only written once)
+Deﬁnition 3.4.12 (Intersection Symbol) .|A∩B|is the intersection of elements in both A
+and B (only those elements which are in both sets)
+Theorem 3.4.13 (Principle of Inclusion Exclusion for 2 Sets)
+Given two sets,|A1|and|A2|
+|A1∪A2|=|A1|+|A2|−|A1∩A2|
+.
+Basically, we count the number of possibilities in 2 ”things” and subtract the dupli-
+cates.
+Theorem 3.4.14 (Principle of Inclusion Exclusion for 3 Sets)
+Given three sets, |A1|,|A2|,|A3|,
+|A1∪A2∪A3|=|A1|+|A2|+|A3|−|A1∩A2|−|A1∩A3|−|A2∩A3|+|A1∩A2∩A3|
+.
+In this formula, we count the number of possibilities in 3 ”things”, subtract the
+possibilities that are duplicates in all 3 pairs of sets, and add back the number of
+duplicates in all 3 sets.
+57
+OmegaLearn.org Chapter 3. Counting and Probability
+Theorem 3.4.15 (Principle of Inclusion Exclusion Generalized)
+If (Ai)1≤i≤nare ﬁnite sets, then:
+/vextendsingle/vextendsingle/vextendsingle/vextendsingle/vextendsinglen/uniondisplay
+i=1Ai/vextendsingle/vextendsingle/vextendsingle/vextendsingle/vextendsingle=n/summationdisplay
+i=1|Ai|−/summationdisplay
+i<j|Ai∩Aj|+/summationdisplay
+i<j<k|Ai∩Aj∩Ak|−··· + (−1)n−1|A1∩···∩An|
+.
+3.4.3 Bijections
+Concept 3.4.16
+A bijection is a one to one mapping between the elements of two sets. Bijections can
+be useful because they allow you to convert diﬃcult problems to ones that can be more
+easily calculated. When approaching a diﬃcult problem that may involve bijections, you
+should start out by trying examples and looking for patterns.
+Concept 3.4.17 (Recursion)
+Recursion is the process solving the problem for small values and writing a recurrence
+equation to iteratively calculate the values for larger values.
+Steps to Solve Recursion Problems:
+1. Base Cases: Manually ﬁnd the values for small values of n
+2.Recursion Equation: Look at the diﬀerent cases for any general value of n(ex.
+whether the last digit is 0 or 1)
+•If you are stuck, you can try a few small cases and look for a pattern
+3. Iteratively calculate higher values of nuntil you reach your answer
+Remark 3.4.18
+Note that you can get the answer to many recursion problems by using engineering
+induction (see the meta-solving section).
+Video Lectures
+Recursion
+58
+OmegaLearn.org Chapter 3. Counting and Probability
+Concept 3.4.19 (States)
+We use states in problems when we are trying to ﬁnd the probability of ”a win” from
+diﬀerent positions or turns
+When encountering states problems we use the following steps
+1. Assign variables to the probabilities of winning from the diﬀerent positions
+2.Write your equations for the probability of winning from each of these positions in
+terms of the other states
+3. Solve your system of equations
+Remark 3.4.20 (Symmetry in States)
+Always be on the lookout for symmetry in states problems (positions where you have an
+equal probability of winning from) to help simplify your equations.
+Remark 3.4.21
+Often times in state problems when you have a lot of states, you may have to write a
+state recursion equation.
+Video Lectures
+Probability States
+59
+Chapter 4
+Geometry
+4.1 Triangles
+Video Lectures
+Area of Triangles
+4.1.1 Area of a Triangle
+There are many ways to calculate the area of a triangle. Here are some of the most useful
+formulas for calculating the area of a triangle:
+Theorem 4.1.1 (Using base and height)
+A triangle with base band height hhas an area of
+1
+2·b·h
+60
+OmegaLearn.org Chapter 4. Geometry
+Theorem 4.1.2 (Heron’s Formula)
+A triangle with sides a,b,c and semiperimeter shas an area of
+/radicalBig
+s(s−a)(s−b)(s−c)
+Deﬁnition 4.1.3 (In-radius) .The inradius of a triangle is the radius of the inscribed circle
+in the triangle.
+Theorem 4.1.4 (Using inradius)
+A triangle with inradius r(the radius of the circle that can be inscribed in a triangle)
+and semiperimeter shas an area of:
+inradius·semiperimeter
+rs
+Remark 4.1.5
+Note that if we know the area of the triangle and it’s semi-perimeter, we can apply the
+inradius formula to ﬁnd the inradius of the triangle.
+Deﬁnition 4.1.6 (Circumradius) .The circum-radius of a triangle is the radius of circle that
+a triangle is inscribed in.
+61
+OmegaLearn.org Chapter 4. Geometry
+Theorem 4.1.7 (Using circumradius)
+A triangle with circumradius R (the radius of the circle that the triangle can be inscribed
+in) and sides a,b,c has an area of
+abc
+4R
+Remark 4.1.8
+Similar to the inradius problem, if we know all 3 sides of a triangle, we can apply Heron’s
+and easily calculate the circumradius of the triangle.
+Theorem 4.1.9 (Using Trigonometry)
+A triangle with 2 sides aandb, which has an angle between the sides to be C, has an
+area of1
+2·a·b·sin(C)
+62
+OmegaLearn.org Chapter 4. Geometry
+Video Lectures
+Using Trigonometry for ﬁnding area
+Theorem 4.1.10 (Pick’s Theorem)
+If a polygon has vertices with integer coordinates (lattice points) then the area of the
+polygon is
+i+b
+2−1
+whereiis the number of lattice points inside the polygon and bis the number of lattice
+points on the boundary of the polygon.
+Basically, this is
+Area = Number of interior lattice points +Number of boundary lattice points
+2−1
+63
+OmegaLearn.org Chapter 4. Geometry
+Theorem 4.1.11 (Shoelace Theorem using coordinates)
+Suppose the polygon Phas vertices ( a1,b1), (a2,b2), ... , (an,bn), listed in clockwise
+order. Then the area ( A) ofPis
+A=1
+2|(a1b2+a2b3+···+anb1)−(b1a2+b2a3+···+bna1)|
+You can also go counterclockwise order, as long as you ﬁnd the absolute value of the
+answer.
+The Shoelace Theorem gets its name because if one lists the coordinates in a column,
+(a1,b1)
+(a2,b2)
+...
+(an,bn)
+(a1,b1)
+and marks the pairs of coordinates to be multiplied,
+Remark 4.1.12 (Intuitive Way of Thinking about Shoelace Theorem)
+Steps to Shoelace Theorem
+1. Line up all of your polygon’s coordinates in a vertical line
+2. Repeat your ﬁrst coordinate at the bottom of your line
+3. Let the sum of products of all rightward diagonally pairs be A
+4. Let the sum of products of all leftward diagonally pairs be B
+5. Find1
+2|A−B|
+64
+OmegaLearn.org Chapter 4. Geometry
+4.1.2 Special Triangles
+4.1.2.1 Equilateral Triangle
+Theorem 4.1.13
+If the side length of an equilateral triangle is a
+Height of the triangle =√
+3
+2a
+This follows directly from the 30 −60−90 triangle.
+Area of the triangle =√
+3
+4a2
+65
+OmegaLearn.org Chapter 4. Geometry
+4.1.2.2 45-45-90 Triangle
+Theorem 4.1.14
+If the side length of a 45-45-90 triangle is a
+hypotenuse of the triangle =√
+2×side length =√
+2a
+Area of the triangle =1
+2×side length2=1
+2a2
+4.1.2.3 30-60-90 Triangle
+Theorem 4.1.15
+If the short leg length of a 30-60-90 triangle is a
+Long Leg of the triangle =√
+3×short leg =√
+3a
+hypotenuse of the triangle = 2 ×short leg = 2 a
+Area =√
+3
+2×short leg2=√
+3
+2a2
+66
+OmegaLearn.org Chapter 4. Geometry
+4.1.2.4 13-14-15 Triangle
+Theorem 4.1.16
+If the three sides of a triangle are 13, 14, and 15, it can be divided into two right triangles
+with side lengths:
+5, 12, 13 and 9, 12, 15
+Area of this triangle = 84
+67
+OmegaLearn.org Chapter 4. Geometry
+4.1.3 Pythagorean Theorem
+Theorem 4.1.17 (Pythagorean Theorem)
+A right triangle with legs a and b and hypotenuse c satisﬁes the following relation:
+c2=a2+b2
+Fact 4.1.18. Important Pythagorean Triples
+3, 4, 5
+5, 12, 13
+7, 24, 25
+8, 15, 17
+9, 40, 41
+20, 21, 29
+If all numbers in a pythagorean triple are multiplied by a constant, the resulting num-
+bers still form a pythagorean triple.
+For example: These are all pythagorean triples:
+3, 4, 5
+6, 8, 10
+9, 12, 15
+12, 16, 20
+15, 20, 25
+68
+OmegaLearn.org Chapter 4. Geometry
+Theorem 4.1.19 (Special Properties of right triangles)
+In a right triangle ABC where B is the right angle, the following triangles are similar
+/triangleABC∼/triangleADB∼/triangleBDC
+Length of the perpendicular to the hypotenuse (BD) =/radicalBigg
+AB·BC
+AC
+Also note that:
+AD·CD = BD2
+AD·AC = AB2
+CD·CA = CB2
+69
+OmegaLearn.org Chapter 4. Geometry
+Theorem 4.1.20 (Median in a Right Triangle)
+In a right triangle ABC , let the median from point Bintersect ACat a point P. Then
+AP = BP = CP.
+Basically, in a right triangle AC is the diameter of the circumcircle, and PC, PA, and
+PB are radii of the circumcircle.
+Video Lectures
+More on Pythagorean Theorem and Area Formulas
+70
+OmegaLearn.org Chapter 4. Geometry
+4.1.4 Similar Triangles
+Concept 4.1.21 (Similarity Test)
+Two triangles are similar if the three angles in the triangle are the same. In other words,
+the triangles are the same shape multiplied by a scale factor.
+In general, triangles are similar if:
+•AA similarity: Two angles of the triangles are same, which basically means that
+the third angle will be equal)
+•SAS similarity (Side Angle Side): Two sides are proportional and the angle between
+the sides is equal
+•SSS similarity (Side Side Side): All three sides are proportional
+•HL similarity (Hypotenuse Leg): In a right triangle, the hypotenuse and leg are
+proportional
+•LL similarity (LL Leg): In a right triangle, the two legs are proportional
+Warning: SSA does not mean triangles are similar
+An easy way to detect similar triangles is if bases of triangles are parallel and the
+sides of the triangles are collinear (see ﬁgure below)
+71
+OmegaLearn.org Chapter 4. Geometry
+Theorem 4.1.22
+For similar triangles:
+1. All the angles of the triangles are same
+2. All corresponding sides have same ratio
+3. Area ratio is the square of side length ratio
+Video Lectures
+Similar Triangles Basic
+Similar Triangles Advanced
+4.1.5 Angle Bisector Theorem
+Theorem 4.1.23 (Angle Bisector Theorem)
+If the lineADbisects angle A, then
+AB
+BD=AC
+CD
+Video Lectures
+More on Angle Bisector Theorem
+72
+OmegaLearn.org Chapter 4. Geometry
+4.1.6 Viviani’s Theorem
+Theorem 4.1.24
+If P is a point inside an equilateral triangle ABC, then the sum of the distances from P
+to the sides of the triangle is equal to the length of its altitude.
+Basically, if the height of the triangle is h, and PQ, PR, and PS are altitudes to AB,
+BC, and AC respectively, then:
+PQ+PR+PS=h
+4.1.7 van Schooten’s theorem
+Theorem 4.1.25 (van Schooten’s theorem)
+Let P be a point on the minor arc BC of equilateral triangle ABC. Then
+PA=PB+PC
+73
+OmegaLearn.org Chapter 4. Geometry
+Theorem 4.1.26
+For a point Pinside an equilateral triangle ABC and side length s,
+3(PA4+PB4+PC4+s4) = (PA2+PB2+PC2+s2)2
+4.2 Quadrilaterals
+4.2.1 Square
+Theorem 4.2.1 (Area of a Square)
+Any square with side length shas an area of
+s2
+and a perimeter of
+4s
+74
+OmegaLearn.org Chapter 4. Geometry
+4.2.2 Rectangle
+Theorem 4.2.2 (Area of a Rectangle)
+Any rectangle with base band height hhas an area of
+bh
+and a perimeter of
+2b+ 2h
+Theorem 4.2.3 (British Flag Theorem)
+If a point P is chosen inside rectangle ABCD, then
+(PA)2+ (PC)2= (PB)2+ (PD)2
+75
+OmegaLearn.org Chapter 4. Geometry
+4.2.3 Rhombus
+Theorem 4.2.4 (Area of a Rhombus)
+A rhombus with diagonals d1andd2has an area of
+1
+2d1d2
+and a perimeter of
+2×/radicalBig
+d2
+1+d2
+2
+76
+OmegaLearn.org Chapter 4. Geometry
+4.2.4 Parallelogram
+Theorem 4.2.5 (Area of a Parallelogram)
+A parallelogram with base b and height h has an area of
+bh
+77
+OmegaLearn.org Chapter 4. Geometry
+4.2.5 Trapezoid
+Theorem 4.2.6 (Area of a Trapezoid)
+A trapezoid with 2 bases b1andb2and a height hhas an area of
+b1+b2
+2·h
+78
+OmegaLearn.org Chapter 4. Geometry
+4.3 Circles
+Video Lectures
+Circular Geometry Basics Circular Geometry Advanced, Power of a point, Cyclic Quadrilaterals
+4.3.1 Circle Properties
+Theorem 4.3.1 (Area and Circumference)
+A circle with radius rhas
+Area =πr2
+Circumference = 2 πr
+Theorem 4.3.2 (Arcs of a circle)
+An arc of a circle with radius rand anglea°
+Area of a sector = πr2×a°
+360=π×radius2×fraction of circle in sector
+Length of the arc = 2 πr×a°
+360= 2π×radius×fraction of circle in sector
+Deﬁnition 4.3.3 (Angle of an arc) .This is the angle that the arc makes at the center of
+the circle.
+79
+OmegaLearn.org Chapter 4. Geometry
+Theorem 4.3.4 (Inscribed Arc Theorem)
+The angle formed by an arc in the center or the arc angle is double of the angle formed
+on the edge.
+Corollary 4.3.5 (Inscribed Right Triangle)
+Inscribed triangle with diameter as one side is always a right triangle.
+Deﬁnition 4.3.6 (Chord) .A Chord is a line segment between any two distinct points on
+the circle. The diameter of the circle is the longest chord in the circle.
+80
+OmegaLearn.org Chapter 4. Geometry
+Theorem 4.3.7
+The perpendicular bisector of any chord passes through the center. In the ﬁgure below,
+the perpendicular bisectors of AB and CD intersect at the center O.
+Corollary 4.3.8 •Congruent chords are equidistant from the center of a circle.
+•If two chords in a circle are congruent, then their intercepted arcs are congruent.
+•If two chords in a circle are congruent, then they determine two central angles that
+are congruent.
+Theorem 4.3.9
+The angle marked in the diagram is half of the diﬀerence of the 2 red arcs.
+\APC =BD_−AC_
+2
+81
+OmegaLearn.org Chapter 4. Geometry
+Theorem 4.3.10
+If two chords AB and CD intersect at P, then the \BPC and\APD are equal to the
+average of the two arcs.
+\BPC =\APD =BC_+ AD_
+2
+Theorem 4.3.11
+If a tangent R intersects the circle at Q, and a chord QP is drawn, then the \RQP is
+equal to half the arc angle
+Remark 4.3.12
+Circles are really useful for angle chasing so keep an eye out for the inscribed arc theorem
+that can be used in many angle chasing problems.
+Remark 4.3.13
+A useful trick to solving angle chasing problems with regular polygons is to draw a circle
+around the polygon and use the inscribed arc theorem.
+82
+OmegaLearn.org Chapter 4. Geometry
+Theorem 4.3.14
+Equal chords mark out equal arcs
+This basically means that if you have 2 chords of the same length, the sector of the
+circle they mark out will be equal
+Deﬁnition 4.3.15 (Tangent) .A tangent is any line from a point external to the circle that
+just touches the circle.
+Theorem 4.3.16 (Right Angle Tangency Point)
+If you connect the center of a circle to the point where the circle and a line are tangent,
+they will form a right angle.
+Remark 4.3.17
+This property is very useful in circle problems as it allows us to work with right angles.
+In addition, another helpful technique is drawing useful radii to various points in your
+diagram as that opens up new information to work with.
+83
+OmegaLearn.org Chapter 4. Geometry
+4.4 Power of a Point
+Video Lectures
+Power of a point
+Theorem 4.4.1 (Power of Point For 2 Tangents)
+From a given point P external to a circle, the two tangents to the circle are equal.
+PS=PT
+Theorem 4.4.2 (Power of Point For 2 Secants)
+If AB and CD are two secants in a circle, which intersect at a point P, the line segments
+satisfy the following property:
+PA·PB=PC·PD
+84
+OmegaLearn.org Chapter 4. Geometry
+Theorem 4.4.3 (Power of a Point For Secants and Tangents)
+If P is a point external to the circle, PT is a tangent to the circle, and the secants AB
+and CD intersect P, then the line segments satisfy the following property:
+PA·PB=PC·PD=PT2
+Remark 4.4.4
+It’s a common mistake to get confused and think PA·AB=PC·CD. Just remember
+that all line segments must have the point P (maybe that’s why it is called the ”Power
+of a Point”)
+Theorem 4.4.5
+If AB and CD are two secants in a circle, which intersect at a point P inside the circle,
+the line segments satisfy the following property:
+PA·PB=PC·PD=r2−OP2
+where r is the radius of the circle
+85
+OmegaLearn.org Chapter 4. Geometry
+Theorem 4.4.6
+If AB and CD are two secants in a circle, which intersect at a point P outside the circle,
+the line segments satisfy the following property:
+PA·PB=PC·PD=OP2−r2
+where r is the radius of the circle
+Remark 4.4.7
+Power of a point is useful when dealing with circles and chord lengths.
+86
+OmegaLearn.org Chapter 4. Geometry
+Deﬁnition 4.4.8 (Curvature) .The curvature of a circle is 1 divided by its radius1
+r.
+Theorem 4.4.9
+In a tangential quadrilateral (i.e. one in which a circle can be inscribed) the two sums of
+lengths of opposite sides are the same.
+AB+CD=AD+BC
+87
+OmegaLearn.org Chapter 4. Geometry
+Theorem 4.4.10 (Descartes Theorem)
+Let the radii of the 3 black externally tangent circles be r1,r2,andr3. Let the radius of
+the green circle be s1. Then we have
+/parenleftbigg1
+r1+1
+r2+1
+r3−1
+s1/parenrightbigg2
+= 2/parenleftBigg1
+r12
++1
+r22
++1
+r32
++1
+s12/parenrightBigg
+Note the term1
+s1is negative because the green circle is internally tangent to the other
+circles, which means its curvature is negative.
+Also, let the radius of the red circle be s2. Then we know
+/parenleftbigg1
+r1+1
+r2+1
+r3+1
+s2/parenrightbigg2
+= 2/parenleftBigg1
+r12
++1
+r22
++1
+r32
++1
+s22/parenrightBigg
+Note the term1
+s2is positive because the red circle is externally tangent to the other
+circles which means its curvature is positive.
+Remark 4.4.11
+This formula also works if instead of a circle, one of the circles was a line. In that case,
+we can just say1
+r= 0.
+88
+OmegaLearn.org Chapter 4. Geometry
+Theorem 4.4.12 (Carnot’s Theorem)
+in a triangle ABC with circumradius R and inradius r, the signed sum of perpendicular
+distances from the circumcenter Oto the sides is:
+OP+OQ+OR=R+r
+Note: The sign of the distance is chosen to be negative if the line lies outside the
+triangle as shown below
+In the ﬁgure below, OQis negative as the segment lies outside the triangle
+OP+OR−OQ=R+r
+89
+OmegaLearn.org Chapter 4. Geometry
+4.5 Area of Complex Shapes
+Concept 4.5.1
+Tricks to ﬁnding the area of complex shapes
+•Divide the shape into “nicer” areas which are easier to calculate
+•Extend Lines
+–You generally want to extend lines when they form nicer shapes/areas to work
+with, such as triangles
+•Break up areas
+–A common way to do so is to drop altitudes as doing so generally allows you
+to form right triangles
+Remark 4.5.2
+A common technique is to ﬁnd the area of shapes and then ﬁnd the area of a shape in
+terms of a variable (like altitude, inradius, circumradius, etc.) and then solve for that
+variable.
+4.6 Length of complex shapes
+Video Lectures
+Length of Complex Shapes
+Concept 4.6.1
+Finding Length of Complex Shapes
+•Having equal angles means equal lengths and vice versa
+•Be on the lookout for 90 degree angles, as you can use Pythagorean theorem
+•Split the length into multiple components by using some of these techniques
+–Drawing extra lines
+–Dropping Altitudes
+90
+OmegaLearn.org Chapter 4. Geometry
+•Extending lines to create similar triangles, special triangles, etc. and then sub-
+tracting the extra length
+4.7 Angle Chasing
+Concept 4.7.1 (Angle Chasing Tricks) •Sum of Angles in Triangle is 180
+•A triangle with 2 angles equal will have their corresponding sides equal and a
+triangle with 2 sides equal will have their corresponding angles equal (isosceles
+triangle)
+•Opposite angles in intersecting lines are equal
+•Corresponding angles in parallel lines are equal
+•The angle made by the arc at the center of the circle is double the angle made by
+the arc at the boundary of the circle
+Concept 4.7.2 (Complementary Angle)
+Complementary angles are a pair of angles with the sum of 90 degrees
+Concept 4.7.3 (Supplementary Angle)
+Supplementary angles are a pair of angles with the sum of 180 degrees
+Concept 4.7.4 (Intersecting lines)
+When two lines intersect, the vertical angles are equal. Vertical angles are each of the
+pairs of opposite angles made by two intersecting lines. ”Vertical” in this case means
+they share the same Vertex (corner point), not the usual meaning of up-down.
+91
+OmegaLearn.org Chapter 4. Geometry
+Concept 4.7.5
+Parallel Lines: Corresponding angles equal
+4.8 Polygons
+4.8.1 Angles of a Polygon
+Theorem 4.8.1
+Sum of interior angle of a polygon = ( n−2)·180
+Interior angle of a regular polygon =(n−2)
+n·180
+Exterior angle of a regular polygon =360
+n
+Fact 4.8.2. Important Interior Angles
+Number of sides in regular polygon Interior Angle of regular polygon
+3 60
+4 90
+5 108
+6 120
+8 135
+9 140
+10 144
+92
+OmegaLearn.org Chapter 4. Geometry
+4.8.1.1 Hexagon
+Theorem 4.8.3
+Sum of interior angle of a regular hexagon = (6 −2)·180 = 720
+Interior angle of a regular hexagon =(6−2)
+6·180 = 120
+Exterior angle of a regular hexagon =360
+6= 60
+Area of a regular hexagon = 6 ·√
+3
+4s2
+Length of the diagonal of a regular hexagon = 2 s
+93
+OmegaLearn.org Chapter 4. Geometry
+4.8.1.2 Octagon
+Theorem 4.8.4
+Sum of interior angle of a regular octagon = (8 −2)·180 = 1080
+Interior angle of a regular octagon =(8−2)
+6·180 = 135
+Exterior angle of a regular octagon =360
+8= 45
+Area of a regular octagon = 2(1 +√
+2)s2
+Remark 4.8.5
+A regular hexagon can be divided into 6 congruent equilateral triangles.
+94
+OmegaLearn.org Chapter 4. Geometry
+Video Lectures
+Angle Chasing Basics
+Angle Chasing Advanced
+4.9 Cyclic Quadrilaterals
+Video Lectures
+Cyclic Quadrilaterals
+Theorem 4.9.1 (Properties of a Cyclic quadrilateral)
+Sum of opposite angles = 180
+95
+OmegaLearn.org Chapter 4. Geometry
+Theorem 4.9.2 (Ptolemy’s Theorem)
+In a cyclic quadrilateral ABCD
+Product of diagonals = Sum of the product of both pairs of opposite sides
+AC·BD = AB·CD + AD·BC
+Video Lectures
+Ptolemy’s Theorem
+96
+OmegaLearn.org Chapter 4. Geometry
+Theorem 4.9.3 (Brahmagupta’s Formula)
+In a cyclic quadrilateral with side lengths a,b,c,d, the area of the quadrilateral can be
+found as:
+A=/radicalBig
+(s−a)(s−b)(s−c)(s−d)
+wheresis the semiperimeter of the quadrilateral and can be calculated as
+s=a+b+c+d
+2
+Basically, to ﬁnd the area of a cyclic quadrilateral
+1. Find the perimeter and divide by 2
+2. Subtract each of the side lengths from it to get 4 values
+3. Multiply your 4 values
+4. Take the square root of your product
+97
+OmegaLearn.org Chapter 4. Geometry
+4.10 3D Geometry
+4.10.1 Cube
+Theorem 4.10.1 (Volume and Surface Area of a cube)
+Volume of a cube = side length3=a3
+Surface area of a cube = 6 ×side length2= 6a2
+Length of space diagonal of a cube =√
+3×side length =√
+3a
+4.10.2 Rectangular Prism
+Theorem 4.10.2 (Volume and Surface Area of a rectangular prism)
+Volume of a rectangular prism = l×w×h= product of all 3 dimensions
+Surface area of a rectangular prism = 2( lw+wh+lh)
+Length of space diagonal of a rectangular prism =√
+l2+b2+h2
+98
+OmegaLearn.org Chapter 4. Geometry
+4.10.3 Cylinder
+Theorem 4.10.3 (Volume and Surface Area of a cylinder)
+Volume of a cylinder = πr2h
+Surface area of a cylinder = 2 πr2+ 2πrh
+= 2πr(r+h)(4.1)
+99
+OmegaLearn.org Chapter 4. Geometry
+4.10.4 Cone
+Theorem 4.10.4 (Volume and Surface Area of a cone)
+Volume of a cone =1
+3πr2h
+which basically means
+Volume of a Cone =1
+3π·radius2·height
+Surface area of a cone = πr2+πrs=πr(r+s)
+wheresis the lateral or slant height
+which can also be written as
+π·radius2+π·radius×slant height
+Remark 4.10.5
+The slant height scan be calculated by the following formula
+s=√
+r2+h2
+or
+slant height =/radicalBig
+radius2+ height2
+100
+OmegaLearn.org Chapter 4. Geometry
+4.10.5 Sphere
+Theorem 4.10.6 (Volume and Surface Area of a sphere)
+Volume of a sphere =4
+3πr3
+Surface area of a sphere = 4 πr2
+101
+OmegaLearn.org Chapter 4. Geometry
+4.10.6 Tetrahedron
+Theorem 4.10.7 (Volume of a tetrahedron)
+Volume of any tetrahedron =1
+3·base area·height
+Theorem 4.10.8 (Volume of a regular tetrahedron (all sides equal))
+Volume of a regular tetrahedron =√
+2
+12s3
+4.10.7 Pyramid
+Theorem 4.10.9 (Volume of a pyramid)
+Volume of any pyramid =1
+3·base area·height
+102
+OmegaLearn.org Chapter 4. Geometry
+Theorem 4.10.10 (Volume of a regular pyramid (all sides equal))
+When the pyramid has a square base, and all the sides are equal
+Volume of a regular pyramid =√
+2
+6s3
+Concept 4.10.11 (Cavalieri’s principle)
+If there are two solids of equal altitude, the sections made by planes parallel to and at
+the same distance from their respective bases are always equal, then the volumes of the
+two solids are equal
+103
+OmegaLearn.org Chapter 4. Geometry
+4.10.8 Polyhedron
+Theorem 4.10.12 (Euler’s Polyhedron Formula)
+Edges = Faces + Vertices - 2
+E = F + V - 2
+Remark 4.10.13
+If you ever forget this theorem, just think of a cube and remember that it has 6 faces, 8
+vertices, and 12 edges.
+Remark 4.10.14
+Note that in a polyhedron, if we know or can get information about the number of
+faces/edges coming out of 1 point, and the number of vertices shared for every face/edge,
+we can easily calculate the number of faces/edges from the number of vertices and vice
+versa.
+Video Lectures
+3D Geometry
+104
+OmegaLearn.org Chapter 4. Geometry
+4.11 Advanced Formulas
+Deﬁnition 4.11.1 (Median) .A median is a line connecting a point to the midpoint of the
+opposite side.
+Deﬁnition 4.11.2 (Centroid) .In a triangle, the intersection of all 3 medians in a triangle is
+the centroid.
+Theorem 4.11.3
+The centroid of a triangle is on the median and it is2
+3of the way from from one of
+vertices to the midpoint of the opposite side.
+Deﬁnition 4.11.4 (Circumcenter) .The circumcenter of a triangle is the intersection of all
+3 perpendicular bisectors (the line that bisects a segment and is perpendicular to it). This
+point is also the center of the circumcircle and equidistant from all the three vertices.
+Deﬁnition 4.11.5 (Incenter) .The incenter of a triangle is the intersection of all the angle
+bisectors. This point is also the center of the incircle, and equidistant from all the three sides.
+105
+OmegaLearn.org Chapter 4. Geometry
+Theorem 4.11.6
+Inradiusrof a right triangle:
+r=1
+2(a+b−c)
+whereaandbare the legs of the triangle, and cis the hypotenuse.
+Deﬁnition 4.11.7 (Cevian) .A cevian is any line from any vertex of a triangle to the opposite
+side. Medians and angle bisectors are special cases of cevians.
+106
+OmegaLearn.org Chapter 4. Geometry
+Theorem 4.11.8 (Ceva’s Theorem)
+In a triangle ABC , and letD,E,F be points on lines BC,CA,AB , respectively. Lines
+AD,BE,CF are concurrent if and only if
+BD
+DC·CE
+EA·AF
+FB= 1
+Note: It is not necessary that these cevians lie within the triangle
+Remark 4.11.9
+A way to remember this is that you are going around the triangle multiplying ratios.
+107
+OmegaLearn.org Chapter 4. Geometry
+Theorem 4.11.10 (Menelaus’s Theorem)
+If linePQintersecting ABon/triangleABC , wherePis onBC,Qis on the extension of AC,
+andRon the intersection of PQandAB, then
+PB
+CP·QC
+QA·AR
+RB= 1.
+108
+OmegaLearn.org Chapter 4. Geometry
+Theorem 4.11.11 (Stewart’s Theorem)
+Given a triangle/triangleABC with sides of length a,b,c opposite vertices of A,B,C respectively.
+If cevianADis drawn so that BD=m,DC=nandAD=d, we have that
+man +dad=bmb+cnc
+.
+Remark 4.11.12
+A way to remember this is the saying ”A Man and his Dad put a Bomb in the Sink
+Corollary 4.11.13 (Stewart’s For Angle Bisector)
+IfADis an angle bisector, then d2+mn=bc.
+Note that this follows from Stewart’s Theorem and the Angle Bisector Theorem.
+Corollary 4.11.14 (Stewart’s Theorem For Medians)
+IfADis a median, then d2=1
+2(b2+c2)−1
+4a2
+109
+OmegaLearn.org Chapter 4. Geometry
+Theorem 4.11.15 (Euler’s Geometry Theorem)
+Euler’s theorem states that the distance dbetween the circumcenter and incenter of a
+triangle is given by
+d2=R(R−2r)
+or equivalently
+1
+R−d+1
+R+d=1
+r
+whereRandrdenote the circumradius and inradius respectively.
+4.12 Coordinate Geometry
+4.12.1 Line in Coordinate Plane
+Deﬁnition 4.12.1 (Equation of a Line) .The equation of a line is ax+by+c= 0.
+Deﬁnition 4.12.2 (Slope-Intercept Form) .An equation of a line in slope-intercept form is
+y=mx+b
+110
+OmegaLearn.org Chapter 4. Geometry
+Theorem 4.12.3 (Slope of a line through 2 points)
+The slope of a line passing through 2 points ( x1,y1) and (x2,y2) is
+y2−y1
+x2−x1
+Theorem 4.12.4 (Slope of a line through angle)
+The slope of a line with an angle of θabove the x-axis is tan( θ)
+Theorem 4.12.5 (Distance between 2 points)
+The distance between 2 points ( x1,y1) and (x2,y2) is
+/radicalBig
+(x1−x2)2+ (y1−y2)2
+Theorem 4.12.6 (Point to line formula)
+The distance between a point ( x0,y0) and a line ax+by+c= 0 is
+|a·x0+b·y0+c|√
+a2+b2
+.
+Remark 4.12.7
+Be careful not to get the equation of the line confused with ax+by=c
+Remark 4.12.8
+Note that this distance represents the shortest possible distance which would be length
+of the perpendicular line.
+Remark 4.12.9
+This formula is a bit confusing so an easy way to remember the numerator is that it’s
+just the equation of the line with the values of the point plugged in as the xandyvalues
+111
+OmegaLearn.org Chapter 4. Geometry
+4.12.2 Circle in Coordinate Plane
+Theorem 4.12.10 (Equation of a Circle)
+A circle with center ( a,b) and radius rhas equation
+(x−a)2+ (y−b)2=r2
+Theorem 4.12.11 (Equation of a Parabola)
+A parabola with vertex ( a,b) has an equation of y=k(x−a)2+bfor any real non-zero
+constant k.
+Theorem 4.12.12 (Equation of an Ellipse)
+An ellipse has an equation of
+x2
+a2+y2
+b2= 1
+where the length of the 2 radii of the ellipse are aandb
+Remark 4.12.13
+Note that when a=b, it becomes a circle.
+Theorem 4.12.14 (Equation of a Hyperbola)
+A hyperbola has an equation of
+x2
+a2−y2
+b2= 1
+where the the rectangle that the hyperbola can ﬁt inside has a width of aand length of
+b. A hyperbola consists of 2 symmetric parts that can be reﬂected across the y-axis.
+112
+Chapter 5
+Trigonometry
+Note: This topic is mainly relevant for AMC 12, but knowing some concepts like Law of
+Cosines can help make some AMC 10 problems easier to solve.
+5.1 Trigonometric Identities
+Theorem 5.1.1 (Trigonometric Identities)
+Sine: sin(a) =Opposite
+Hypotenuse
+Cosine: cos( a) =Adjacent
+Hypotenuse
+Tangent: tan( a) =Opposite
+Adjacent=sin(a)
+cos(a)
+113
+OmegaLearn.org Chapter 5. Trigonometry
+Remark 5.1.2
+To remember the relationships, just use the mnemonics SOH, CAH, TOA:
+SOH = Sin is Opposite over Hypotenuse
+CAH = Cos is Adjacent over Hypotenuse
+TOA = Tan is Opposite over Adjacent
+5.2 More Trigonometric Identities
+Theorem 5.2.1 (More Trigonometric Identities)
+Cosecant: csc( a) =Hypotenuse
+Opposite=1
+sin(a)
+Secant: sec( a) =Hypotenuse
+Adjacent=1
+cos(a)
+Cotangent: cot( a) =Adjacent
+Opposite=1
+tan(a)=cos(a)
+sin(a)
+114
+OmegaLearn.org Chapter 5. Trigonometry
+5.3 Important Trigonometric Values
+cos 0°= 1 sin 0°= 0
+cos 15 °=√
+3+1
+2√
+2sin 15°=√
+3−1
+2√
+2
+cos 30 °=√
+3
+2sin 30°=1
+2
+cos 45 °=√
+2
+2sin 45°=√
+2
+2
+cos 60 °=1
+2sin 60°=√
+3
+2
+cos 75 °=√
+3−1
+2√
+2sin 75°=√
+3+1
+2√
+2
+cos 0°= 1 sin 0°= 0
+cos 90 °= 0 sin 90°= 1
+cos 120 °=−1
+2sin 120 °=√
+3
+2
+cos 135 °=−√
+2
+2sin 135 °=√
+2
+2
+cos 150 °=−√
+3
+2sin 150 °=1
+2
+cos 180 °= 1 sin 0°= 0
+115
+OmegaLearn.org Chapter 5. Trigonometry
+5.4 Unit Circle Identities
+Theorem 5.4.1 (Unit Circle Identities)
+sin(−a) =−sin(a)
+sin(a) = sin(180−a)
+cos(a) = cos(−a)
+cos(a) =−cos(180−a)
+tan(a) =−tan(180−a)
+tan(−a) =−tan(a)
+116
+OmegaLearn.org Chapter 5. Trigonometry
+5.5 Area of a Triangle using trigonometry
+Theorem 5.5.1 (Area of a Triangle using trigonometry)
+In a triangle with side lengths, a, b, c, where the angle between sides a and b is denoted
+by C
+Area of the triangle =1
+2·ab·sin(C)
+5.6 Law of Sines
+Theorem 5.6.1 (Law of Sines)
+In a triangle with sides a, b, c and angles A, B, and C where the side a is opposite to
+the angle A, the side b is opposite to the angle B, and the side c is opposite the angle C,
+we have
+a
+sinA=b
+sinB=c
+sinC= 2R
+where R is the circumradius of the triangle.
+117
+OmegaLearn.org Chapter 5. Trigonometry
+5.7 Law of Cosines
+Theorem 5.7.1 (Law of Cosines)
+In a triangle with side lengths, a, b, c, where the angle between sides a and b is denoted
+by C
+c2=a2+b2−2ab·cosC
+Video Lectures
+Solving area problems using trigonometry
+118
+OmegaLearn.org Chapter 5. Trigonometry
+5.8 Pythagorean Identities
+Theorem 5.8.1 (Pythagorean Identities)
+sin2(a) + cos2(a) = 1
+tan2(a) + 1 = sec2(a)
+cot2(a) + 1 = csc2(a)
+5.9 Double Angle Identities
+Theorem 5.9.1 (Double Angle Identities)
+sin(2a) = 2 sin(a) cos(a)
+cos(2a) = cos2(a)−sin2(a) = 2 cos2(a)−1 = 1−2 sin2(a)
+tan(2a) =2 tan(a)
+1−tan2(a)
+119
+OmegaLearn.org Chapter 5. Trigonometry
+5.10 Addition and Subtraction Identities
+Theorem 5.10.1 (Addition and Subtraction Identities)
+sin(a+b) = sin(a) cos(b) + sin(b) cos(a)
+sin(a−b) = sin(a) cos(b)−sin(b) cos(a)
+cos(a+b) = cos(a) cos(b)−sin(a) sin(b)
+cos(a−b) = cos(a) cos(b) + sin(a) sin(b)
+tan(a+b) =tan(a) + tan(b)
+1−tanatanb
+tan(a−b) =tan(a)−tan(b)
+1 + tanatanb
+120
+OmegaLearn.org Chapter 5. Trigonometry
+5.11 Half Angle Identities
+Theorem 5.11.1 (Half Angle Identities)
+sin/parenleftbigga
+2/parenrightbigg
+=±/radicalBigg
+1−cos(a)
+2
+cos/parenleftbigga
+2/parenrightbigg
+=±/radicalBigg
+1 + cos(a)
+2
+5.12 Sum to Product Identities
+Theorem 5.12.1 (Sum to Product Identities)
+sin(a) + sin(b) = 2 sin/parenleftBigga+b
+2/parenrightBigg
+cos/parenleftBigga−b
+2/parenrightBigg
+sin(a)−sin(b) = 2 sin/parenleftBigga−b
+2/parenrightBigg
+cos/parenleftBigga+b
+2/parenrightBigg
+cos(a) + cos(b) = 2 cos/parenleftBigga−b
+2/parenrightBigg
+cos/parenleftBigga+b
+2/parenrightBigg
+cos(a)−cos(b) =−2 sin/parenleftBigga−b
+2/parenrightBigg
+sin/parenleftBigga+b
+2/parenrightBigg
+121
+OmegaLearn.org Chapter 5. Trigonometry
+5.13 Product to Sum Identities
+Theorem 5.13.1 (Product to Sum Identities)
+sin(a) sin(b) =1
+2(cos(a−b)−cos(a+b))
+cos(a) cos(b) =1
+2(cos(a−b) + cos(a+b))
+sin(a) cos(b) =1
+2(sin(a+b) + sin(a−b))
+Deﬁnition 5.13.2. A periodic function is a trigonometric function which repeats a pattern
+of y-values at regular intervals. One complete repetition of the pattern is called a cycle. The
+period of a function is the horizontal length of one complete cycle.
+Period of sin, cos, and tan is 2 π
+5.14 Periods and Graphs of Trigonometric Functions
+Concept 5.14.1 (Sine Graph)
+Concept 5.14.2 (Cosine Graph)
+Concept 5.14.3 (Tan Graph)
+122
+OmegaLearn.org Chapter 5. Trigonometry
+Remark 5.14.4
+Long trigonometric expressions can be evaluated by telescoping, using identities in clever
+ways, complex number substitutions (see complex numbers section below).
+123
+Chapter 6
+Logarithms
+Note: This topic is mainly relevant for AMC 12.
+Video Lectures
+Logarithms
+6.1 Basic Deﬁnitions
+Deﬁnition 6.1.1 (Logarithm) .A logarithm is the power to which a number must be raised
+in order to get some other number.
+Logarithms are expressed as
+a=logbn
+wherebis the base and nis the number.
+Basically, we are trying to calculate how many times we need to multiply the base to
+get the number a, or what power do we need to raise the base to get the number a.
+Theorem 6.1.2 (Converting to Logarithm and Exponents)
+logxy=a=⇒xa=y
+.
+124
+OmegaLearn.org Chapter 6. Logarithms
+6.2 Logarithmic Formulas
+Theorem 6.2.1 (Important Formulas)
+logaar=r
+logabc= logab+ logac
+logab
+c= logab−logac
+logabc=clogab
+logab·logbc=logb
+loga·logc
+logb=logc
+loga= logac
+logba=1
+logab
+logba=logda
+logdb
+Remark 6.2.2
+This last formula is known as the ”Base Change Formula” and is the most useful of them
+all. Often times in logarithm problems you can just expand out your expression in terms
+of this formula and simplify the expression to get the answer.
+Remark 6.2.3
+These formulas are extremely important for working with logarithms and should deﬁnitely
+be memorized.
+Remark 6.2.4
+If you ever forget which way the sign of these logarithms are, you can just try a small
+example like log10100 +log101000 =log10100,000 so from here for example you could
+ﬁgure out the sum of logarithms identity.
+125
+OmegaLearn.org Chapter 6. Logarithms
+Theorem 6.2.5 (Advanced Formulas)
+logaman=n
+m
+loga/parenleftbigg1
+b/parenrightbigg
+=−logab
+log 1
+ab=−logab
+Remark 6.2.6
+These formulas are less important and aren’t necessary for most logarithm problems,
+but still good to know.
+126
+Chapter 7
+Complex Numbers
+Note: This topic is mainly relevant for AMC 12.
+7.1 Basic Deﬁnitions
+Deﬁnition 7.1.1. A complex number is a number that can be expressed in the form a+bi,
+whereaandbare real numbers, and irepresents the “imaginary unit” . ais the real part of
+our number, and biis the imaginary part. Complex numbers are often represented by the
+variablez.
+Deﬁnition 7.1.2. i=√−1,i2=−1,i3=−i,i4= 1
+Remark 7.1.3
+Powers oficycle every 4 terms, so i4n=i4= 1,i4n+1=i=√−1,i4n+2=i2=
+−1,i4n+3=i3=−i
+Theorem 7.1.4 (Adding Complex Numbers)
+(a+bi) + (c+di) = (a+c) + (b+d)i
+Theorem 7.1.5 (Subtracting Complex Numbers)
+(a+bi)−(c+di) = (a−c) + (b−d)i
+127
+OmegaLearn.org Chapter 7. Complex Numbers
+Theorem 7.1.6 (Multiplying Complex Numbers)
+(a+bi)·(c+di) = (ac−bd) + (bc+ad)i
+Deﬁnition 7.1.7 (Real and Imaginary Parts) .The imaginary part of a complex number
+a+biis b and the real part is a.
+Remark 7.1.8
+The imaginary part does not include a factor of i.
+7.2 Conjugates
+Deﬁnition 7.2.1. A complex conjugate is found by ﬂipping the sign of the imaginary part
+of complex number, and is represented as ¯ z.
+Theorem 7.2.2 (Finding Conjugates)
+z=a+bi=a−bi
+Theorem 7.2.3 (Multiplying Complex Numbers with their Conjugates)
+(a+bi)(a−bi) =a2+b2
+128
+OmegaLearn.org Chapter 7. Complex Numbers
+7.3 Complex Roots
+Deﬁnition 7.3.1. A polynomial of degree nhasnroots, and these roots may be complex.
+For binomials, if our discriminant is negative we have complex roots.
+7.4 Complex Plane
+Deﬁnition 7.4.1. A complex number can also be represented geometrically by expressing
+a+bias (a,b) on the Complex plane. The x-axis represents the Real axis and the y-axis
+represents the Imaginary axis.
+Deﬁnition 7.4.2. The magnitude of a complex number is represented by |z|, and is the
+distance of a complex number ( a,b) from the origin.
+Theorem 7.4.3 (Magnitude of a Complex Number)
+|z|=|a+bi|=√
+a2+b2
+7.5 Polar Form
+Deﬁnition 7.5.1. The angle that the positive real axis makes with the ray that connects
+the origin with a complex number is called the argument of that complex number and is
+represented by θ.
+Theorem 7.5.2 (Argument of a Complex Number)
+The argument θof a complex number a+biis
+tanθ=b
+a
+.
+Deﬁnition 7.5.3. The distance between 0 and a complex number is sometimes called the
+modulus of that complex number and is represented by r.
+129
+OmegaLearn.org Chapter 7. Complex Numbers
+Theorem 7.5.4 (Modulus of a Complex Number)
+The modulus rof a complex number a+biis
+r=|a+bi|=√
+a2+b2
+.
+Deﬁnition 7.5.5. Polar form is another way to represent a complex number based on its
+modulusrand argument θ.
+Theorem 7.5.6 (Polar Form)
+z=a+bi=r(cosθ+isinθ) =rcisθ
+Remark 7.5.7
+cisθis just short for cos θ+isinθ
+Remark 7.5.8
+Trigonometric ratios tell us that cosθ=a
+randsinθ=b
+r, which we can rearrange to see
+thatrcosθ=aandrsinθ=b. Plugging in these values gives us the polar form formula.
+Remark 7.5.9
+cosθ+isinθcan also be written as cis θ.
+Theorem 7.5.10 (Euler’s Formula)
+Euler’s Formula tells us that
+cosθ+isinθ=eiθ
+, which tells us that
+z=a+bi=r(cosθ+isinθ) =reiθ
+.
+Remark 7.5.11
+Euler’s Identity is a special case of Euler’s Formula and tells us that
+eπi=−1
+130
+OmegaLearn.org Chapter 7. Complex Numbers
+.
+Theorem 7.5.12 (De Moivre’s Theorem)
+For a complex number z=reiθand a real number n,
+zn= (reiθ)n=rn[cos(nθ) +isin(nθ)]
+Remark 7.5.13
+We can use this to evaluate expressions like
+(3 + 2i)8
+much easier because we just convert to polar form and apply De Moivre’s Theorem.
+Remark 7.5.14
+DeMoivre’s Theorem is very useful when dealing with complex numbers and exponents.
+Theorem 7.5.15 (Rotating a Point)
+To rotate a point θradians counterclockwise, covert a coordinate to its corresponding
+complex number and multiply it by eiθ. Converting this back to ordered pairs gives us
+our answer.
+Concept 7.5.16
+Complex numbers and their relations to circles makes them easy to work with for many
+geometry problems, especially when dealing with polygons such as equilateral triangles
+or squares.
+How to solve geometry problems using complex numbers:
+1. Assign a complex number to 1 or more of the coordinates
+2. To ﬁnd the complex numbers for other points, multiple/divide by eiθ
+3. Use the information you have to solve for what you are asked in the problem
+Remark 7.5.17
+We can also view algebraic complex number problems geometrically.
+131
+OmegaLearn.org Chapter 7. Complex Numbers
+7.6 Roots of Unity
+Deﬁnition 7.6.1. Roots of unity are the complex solutions to an equation xn= 1, for some
+positive integer n. There will always be nsolutions to xn= 1.
+Theorem 7.6.2 (Roots of Unity)
+The set of the nth roots of unity is
+e2kπi/n
+for
+k∈{1,2,...n}
+.
+7.7 Complex Numbers for Trigonometry
+Theorem 7.7.1 (Sin and Cos values in terms of complex numbers)
+sinθ=eiθ+ei(180−θ)
+2i
+cosθ=eiθ+ei(−θ)
+2
+tanθ=eiθ+ei(180−θ
+eiθ+ei(−θ)i
+Remark 7.7.2
+By using these substitutions, we can bash out the value of trigonometric expressions
+easily without clever manipulation of trigonometric identities that would be needed to
+solve the problem otherwise.
+132
+Chapter 8
+Additional Techniques and Strategies
+8.1 Meta-solving Techniques
+Video Lectures
+Meta-solving Techniques
+Deﬁnition 8.1.1. Meta-solving is ﬁnding the answer to a problem without actually solving
+it.
+Remark 8.1.2
+These techniques may not work for all problems. These techniques are especially useful
+when the problem provides answer choices.
+Remark 8.1.3 (Meta-Solving Warning)
+Don’t get too carried away with these techniques to the point where you don’t even try
+to solve the problem legitimately.
+Concept 8.1.4 (Engineering Induction)
+Engineering Induction is the process of trying and ﬁnding the value to small cases and
+assuming it’s true for larger ones.
+Steps for Engineering Induction Problems:
+1. Try small cases
+2. Look for a pattern amongst those small cases (there may not always be one)
+133
+OmegaLearn.org Chapter 8. Additional Techniques and Strategies
+3. Assume the pattern can continue for larger cases and ﬁnd the answer
+Remark 8.1.5
+We can try to apply engineering induction when we see the values in the problem seem
+hard/impossible to compute.
+134
+OmegaLearn.org Chapter 8. Additional Techniques and Strategies
+Concept 8.1.6 (Looking for unique properties of numbers)
+Rather than computing the exact answer, we can compute unique properties of your
+answer choices so that you can eliminate all answer choices that don’t satisfy the property
+and so that you will be left with 1 answer choice (or possibly more in which case you
+can just guess from the remaining ones)
+Some unique properties you can look for in your answer choices and try to compute are
+•Units Digit
+•Last 2 digits
+•Parity (Even, Odd)
+•Perfect square or not one
+•Prime/composite
+•Modulus (remainders when divided by 3, 4, 5, etc.)
+•Denominators of common fractions (or what they must divide)
+•Multiples/Factors of numbers
+•etc.
+Remark 8.1.7
+These last 2 properties are especially useful in combinatorics problems as you can easily
+ﬁnd numbers you have to multiply with each other to get your answer.
+Concept 8.1.8
+Look for the option choices that are the ”odd one out” or that are diﬀerent from all
+others
+•Look for outliers (primes, large/small numbers, odd/even numbers, powers of 2,
+etc)
+Concept 8.1.9 (Trying all the Option choices)
+In some problems, you can
+•Try all the option choices into the conditions in the problem
+•Look at the conditions in the problem and see which of the option choices could
+work
+135
+OmegaLearn.org Chapter 8. Additional Techniques and Strategies
+•etc.
+After doing so, you will either have a better guess or exact answer.
+Concept 8.1.10 (Elimination of Option Choices)
+Tying closely to the previous technique, you can also usually eliminate option choices
+based on
+•Unique properties of Numbers (See Above)
+•How large or small the number must be
+Remark 8.1.11
+We would recommend guessing ONLY if you can narrow it to 2 or 3 option choices.
+Concept 8.1.12 (Estimation of Answer)
+Often times in problems (especially geometry) you can easily ﬁnd an approximate answer
+and see which of the option choices most closely matches what you got.
+In geometry, a common strategy to do so is to mark out areas approximately equal to
+those of areas you know.
+Concept 8.1.13 (Using Freedom in Problems)
+Assuming facts when you have freedom in the problem statement can be very useful.
+Essentially, as long as the problem is not telling you ”this fact is not true” (so, whatever
+assumption you want to make will satisfy the problem’s conditions) you can assume the
+fact is true to simplify your problem and make it really easy to solve.
+For example, if you are asked to ﬁnd some universal ratio in a triangle and you aren’t
+speciﬁcally told that the triangle isn’t equilateral, you can just assume the triangle is
+equilateral and solve the remaining problem from there.
+Remark 8.1.14
+Make sure not to assume false information! Be very careful that your assumption can be
+true.
+In our previous example, if we were told the triangle had 2 sides of length 7 and
+8, then our assumption would be false, so it wouldn’t work then.
+136
+OmegaLearn.org Chapter 8. Additional Techniques and Strategies
+8.2 Silly Mistakes
+Silly mistakes are very common and can really lower your score on the AMC 10/12. Here are
+some tips on how to avoid the diﬀerent kinds of silly mistakes:
+Concept 8.2.1 (Avoiding Arithmetic Errors)
+A good way to avoid arithmetic errors is to
+•Do your computation 2 ways (e.g. If you have to do 87 ·93, you can multiply them
+with 87 on the top and with 93 on top)
+•Be more organized, and write more steps
+Concept 8.2.2 (Avoiding Mathematical Errors)
+An easy way to avoid mathematical errors is to
+•Do your work neatly!
+•Make boxes for each problem on scratch paper per problem
+•Don’t skip steps
+•Check your work, following the tip above will make it easier to do so
+•Do your steps methodically
+•Try to substitute your answer back into the problem (if you can)
+•Try an alternate solution to conﬁrm your answer
+•Estimate what the answer has to be, and see if your answer is close to what your
+estimate is
+Concept 8.2.3 (Avoid Reading Errors)
+Reading the problem wrong is one of the most common mistakes. Often times, you might
+forget about important key words like
+•inclusive, except
+•even, odd
+•prime, composite
+•integer, natural, real, complex
+137
+OmegaLearn.org Chapter 8. Additional Techniques and Strategies
+Some strategies to avoid them are
+•After solving the problem, reread the question part of the problem to make sure
+you are answering what the question asks for!
+•Underline key words while reading (that’s probably gonna be hard this year with
+the test being online, but as an alternative you can take note of the important
+words on your scratch paper)
+Concept 8.2.4 (Avoid Missing a Final Step Errors)
+Sometimes in problems, you might be so caught up in moving forward in the test that
+you might forget an important step at the end.
+For example, in a problem you might think ”I’ll multiply by 5 to whatever answer
+I get” and then you ﬁnd that answer but forget to multiply by 5. A way to avoid this is:
+•Write ”Remember ... ” big and bold on your scratch or the question paper
+Remark 8.2.5
+A very common reading mistake is getting confused between the words non-negative and
+positive. Remember, non-negative includes 0 while positive doesn’t!
+Concept 8.2.6 (Avoid Making False Assumptions)
+Often times, you might just think something is true and assume it’s true for the rest
+of the problem, when really it was false. Proving all your assumptions can be too time
+consuming. However we recommend at least seeing some sort of reasoning for why your
+assumption should be correct (unless of course you are using one of the meta-solving
+techniques).
+Concept 8.2.7 (Avoid Casework Errors)
+Many times, in casework problems you might
+•Undercount possibilities
+•Overcount possibilities
+•Miss edges/extreme cases
+Some strategies to avoid them are
+•Be methodical in your casework
+138
+OmegaLearn.org Chapter 8. Additional Techniques and Strategies
+•Make sure all your cases work
+–An easy way to do this is just to try a few examples in your case to see if
+they actually work
+–Especially, make sure to check if extremes work
+–Make sure all your cases are disjoint and that you are not overcounting
+anything that’s common between the cases
+–Make sure your cases cover all possibilities that the problem asks for
+–Solve the problem in multiple ways (for example, by both casework and
+complementary counting)
+Remark 8.2.8
+I know that some of these strategies may take a lot of extra time to follow so we
+recommend analyzing how you are making silly mistakes and from there see which
+strategies you will want to follow.
+139
+OmegaLearn.org Chapter 8. Additional Techniques and Strategies
+8.3 Other Strategies To Maximize Your Score
+Concept 8.3.1 (Plan Your Time)
+Make sure to plan your time.
+•Questions 1-10 are generally easy, 11-20 are medium, 21-25 are hard
+•Sometimes one of the early questions can be hard or bashy, or a later question can
+be easy
+•Don’t get stuck on a question. Move on and come back to it later.
+•Star any question you are unsure about but you feel you can solve it, or any
+questions that you solved but are not conﬁdent of your answer
+•Budget your time properly
+•Leave enough time for last 10 problems
+•Leave some time to review starred problems and check your work
+Concept 8.3.2 (Guessing Strategies)
+If you want to guess, make sure to keep these things in mind:
+•You get 1.5 points for leaving a question blank, so if you don’t know how to solve
+the problem, just leave it blank
+•Try using meta-solving strategies above
+•If you can narrow down the choices to 2-3 options, only then make an educated
+guess
+Concept 8.3.3 (Test Day Strategies)
+Here are some test day strategies:
+•Don’t try to cram or study on the day before the test
+–Just review a few formulas or strategies from this book
+•Be relaxed
+–Get a good night’s sleep
+–Eat a healthy meal
+140
+OmegaLearn.org Chapter 8. Additional Techniques and Strategies
+–Meditate
+–Eat dark chocolate
+–Listen to music
+–Or whatever else makes you feel relaxed
+Concept 8.3.4 (Problem Solving Strategies)
+Try to remember these problem solving strategies:
+•When you are stuck, try to use the information in the problem you haven’t used
+yet
+•When solving a problem, think of what technique would likely be at play
+•Don’t get too stuck with one approach to a problem, move on, and come back to
+the problem with a fresh perspective
+•In problems that seem complex, try small cases to look for a pattern that can allow
+you to ﬁgure out how to approach the problem and what patterns may exist (this
+is similar to engineering induction)
+Concept 8.3.5 (AIME Qualiﬁcation)
+To qualify for AIME, based on recent cutoﬀ scores, you will need a score of at least
+105. However you should aim for 110+ to be safe. For this, you’ll need a 17-0-8 split
+(right-wrong-skipped), a 18-5-2 split, a 19-6-0 split or something better.
+Concept 8.3.6 (USAJMO/USAMO Qualiﬁcation)
+To qualify for USAJMO/USAMO, you’ll probably need a score of at least 120 to have a
+good chance (of course this also depends heavily on your AIME score).
+Remark 8.3.7
+Another strategy for the AMC 10/12B is that if you are expecting a AIME qualifying
+score on the AMC 10/12A, then you should try to solve more problems and take a
+”higher risk higher reward” approach for the AMC 10/12B, however if you didn’t do
+good on the A, you should take a safe path.
+Remark 8.3.8
+Last, but most important, don’t stress out too much about how you will do! It’s just a
+math contest, and you’ll probably have many more opportunities in the future.
+Good luck to you on your math competitions. We hope you found this
+141
+OmegaLearn.org Chapter 8. Additional Techniques and Strategies
+book useful! We really appreciate your feedback and can be reached at
+omegalearn.info@gmail.com. Thanks!
+142
+Chapter 9
+Mastering AMC 8
+Check out Mastering AMC 8 Book to learn the concepts needed for the AMC 8 math
+contest.
+143
+Chapter 10
+Mastering AMC 10/12
+Check out Mastering AMC 10/12 Book to learn the concepts needed for the AMC 10
+and AMC 12 math contests.
+144

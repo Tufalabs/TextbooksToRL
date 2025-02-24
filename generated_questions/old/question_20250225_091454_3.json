@@ -1,0 +1,11 @@
+{
+    "source": "For how many integers \\( n \\) is \\( n(20-n) \\) the square of an integer?",
+    "question": "Determine the number of integer values of \\( n \\) such that the expression \\( n(20-n) \\) is a perfect square.",
+    "solution": "Let \\( n(20-n) = k^2 \\) for some integer \\( k \\). Then, we have:\n\\[\nn(20-n) = 20n - n^2 = k^2.\n\\]\n\nRearranging gives:\n\\[\nn^2 - 20n + k^2 = 0.\n\\]\n\nThis is a quadratic equation in \\( n \\). For \\( n \\) to be an integer, the discriminant must be a perfect square. The discriminant \\( \\Delta \\) is given by:\n\\[\n\\Delta = 20^2 - 4 \\cdot 1 \\cdot k^2 = 400 - 4k^2.\n\\]\n\nSet \\( \\Delta = m^2 \\) for some integer \\( m \\):\n\\[\n400 - 4k^2 = m^2.\n\\]\n\nRearranging gives:\n\\[\n400 - m^2 = 4k^2.\n\\]\n\nThus:\n\\[\n4k^2 = (20-m)(20+m).\n\\]\n\nSince \\( 4k^2 \\) is a perfect square, both \\( (20-m) \\) and \\( (20+m) \\) must be even. Let \\( 20-m = 2a \\) and \\( 20+m = 2b \\), then:\n\\[\n4k^2 = 4ab \\Rightarrow k^2 = ab.\n\\]\n\nThe possible values of \\( m \\) are such that \\( 400 - m^2 \\) is a perfect square. Solving for \\( m \\), we find:\n\\[\nm^2 = 400 - 4k^2.\n\\]\n\nThe possible integer values of \\( m \\) range from \\( -20 \\) to \\( 20 \\). Solving for each \\( m \\), we find that \\( m = 0, \\pm 12, \\pm 16, \\pm 20 \\) yield perfect squares for \\( k^2 \\).\n\nThus, the number of integer values of \\( n \\) is \\(\\boxed{9}\\).",
+    "hints": null,
+    "difficulty": "grad",
+    "domain": null,
+    "timestamp": "20250225_091454",
+    "difficulty_description": "Graduate school level depth and complexity",
+    "model": "gpt-4o"
+}

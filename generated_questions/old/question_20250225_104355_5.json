@@ -1,0 +1,11 @@
+{
+    "source": "Theorem 3.4.13 (Principle of Inclusion Exclusion for 2 Sets) Given two sets, |A1| and |A2| |A1\u222aA2|=|A1|+|A2|\u2212|A1\u2229A2|.",
+    "question": "Using the Principle of Inclusion-Exclusion for two sets, if |A1| = 8, |A2| = 10, and |A1 \u2229 A2| = 4, what is |A1 \u222a A2|?",
+    "solution": "Using the Principle of Inclusion-Exclusion for two sets, we can calculate |A1 \u222a A2| using the formula:\n\n|A1 \u222a A2| = |A1| + |A2| - |A1 \u2229 A2|.\n\nSubstituting the given values:\n\n|A1 \u222a A2| = 8 + 10 - 4 = 14.\n\nTherefore, the number of elements in the union of the two sets is boxed{14}.",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_104355",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

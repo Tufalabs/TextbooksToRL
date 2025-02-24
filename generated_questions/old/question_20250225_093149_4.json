@@ -1,0 +1,11 @@
+{
+    "source": "3.4.1 Geometric Probability\nDefinition 3.4.8. Geometric probability is a way to calculate probability by measuring the number of outcomes geometrically, in terms of length, area, or volume.",
+    "question": "A point is chosen at random inside a square with side length 4. What is the probability that the point lies within a circle of radius 2 centered at the center of the square?",
+    "solution": "The area of the square is:\n\n\\[ \\text{Area of square} = 4 \\times 4 = 16. \\]\n\nThe area of the circle is:\n\n\\[ \\text{Area of circle} = \\pi \\times 2^2 = 4\\pi. \\]\n\nThe probability that the point lies within the circle is the ratio of the area of the circle to the area of the square:\n\n\\[ \\text{Probability} = \\frac{4\\pi}{16} = \\frac{\\pi}{4}. \\]\n\nThus, the probability is \\(\\boxed{\\frac{\\pi}{4}}\\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_093149",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o"
+}

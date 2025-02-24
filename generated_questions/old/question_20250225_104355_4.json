@@ -1,0 +1,11 @@
+{
+    "source": "Definition 3.4.10. The principle of inclusion and exclusion (PIE) is a counting technique that computes the number of elements that satisfy at least one of several properties while guaranteeing that elements satisfying more than one property are not counted twice.",
+    "question": "What is the Principle of Inclusion-Exclusion (PIE) and how can it be used to find the number of elements in the union of two sets?",
+    "solution": "The Principle of Inclusion-Exclusion (PIE) is a counting technique used to determine the number of elements in the union of multiple sets while avoiding double counting of elements that belong to more than one set. \n\nFor two sets A1 and A2, the formula is given by:\n\n|A1 \u222a A2| = |A1| + |A2| - |A1 \u2229 A2|.\n\nThis means that to find the total number of elements in the union of A1 and A2, we add the number of elements in each set and subtract the number of elements that are common to both sets (the intersection).\n\nFor example, if |A1| = 5, |A2| = 7, and |A1 \u2229 A2| = 2, then:\n\n|A1 \u222a A2| = 5 + 7 - 2 = 10.\n\nThus, the number of elements in the union of the two sets is boxed{10}.",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_104355",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

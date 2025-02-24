@@ -1,0 +1,11 @@
+{
+    "source": "Theorem 3.4.15 (Principle of Inclusion Exclusion Generalized)\nIf (Ai)1\u2264i\u2264n are finite sets, then...",
+    "question": "What is the generalized principle of inclusion and exclusion for n sets, and how does it extend the basic principle for two and three sets?",
+    "solution": "The generalized principle of inclusion and exclusion for n sets states that the size of the union of n finite sets can be calculated using the formula:\n\n|\u222a(Ai)| = \u03a3|Ai| \u2212 \u03a3|Ai \u2229 Aj| + \u03a3|Ai \u2229 Aj \u2229 Ak| \u2212 ... + (\u22121)^(n\u22121)|A1 \u2229 A2 \u2229 ... \u2229 An|.\n\nThis extends the basic principle for two and three sets by incorporating additional terms that account for intersections among all possible combinations of the sets, allowing for accurate counting of elements in overlapping sets as the number of sets increases.",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_092949",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

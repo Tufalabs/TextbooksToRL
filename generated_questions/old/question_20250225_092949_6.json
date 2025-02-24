@@ -1,0 +1,11 @@
+{
+    "source": "Theorem 3.4.14 (Principle of Inclusion Exclusion for 3 Sets)\nGiven three sets, |A1|, |A2|, |A3|, |A1\u222aA2\u222aA3| = |A1| + |A2| + |A3| \u2212 |A1\u2229A2| \u2212 |A1\u2229A3| \u2212 |A2\u2229A3| + |A1\u2229A2\u2229A3|.",
+    "question": "If |A1| = 8, |A2| = 12, |A3| = 10, |A1 \u2229 A2| = 4, |A1 \u2229 A3| = 3, |A2 \u2229 A3| = 5, and |A1 \u2229 A2 \u2229 A3| = 2, what is the total number of elements in the union of sets A1, A2, and A3?",
+    "solution": "Using the principle of inclusion and exclusion for three sets, we calculate the union as follows:\n\n|A1 \u222a A2 \u222a A3| = |A1| + |A2| + |A3| \u2212 |A1 \u2229 A2| \u2212 |A1 \u2229 A3| \u2212 |A2 \u2229 A3| + |A1 \u2229 A2 \u2229 A3|.\n\nSubstituting the values:\n\n|A1 \u222a A2 \u222a A3| = 8 + 12 + 10 \u2212 4 \u2212 3 \u2212 5 + 2 = 20.\n\nThus, the total number of elements in the union of sets A1, A2, and A3 is boxed{20}.",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_092949",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

@@ -1,0 +1,11 @@
+{
+    "source": "For how many positive integers n less than or equal to 24 is n! evenly divisible by 1 + 2 + \u00b7\u00b7\u00b7 + n?",
+    "question": "Calculate how many positive integers \\( n \\) less than or equal to 24 satisfy the condition that \\( n! \\) is evenly divisible by the sum \\( 1 + 2 + \\cdots + n \\).",
+    "solution": "The sum \\( 1 + 2 + \\cdots + n \\) can be expressed as \\( \\frac{n(n+1)}{2} \\). We need to determine when \\( n! \\) is divisible by \\( \\frac{n(n+1)}{2} \\).\n\nFor \\( n! \\) to be divisible by \\( \\frac{n(n+1)}{2} \\), both \\( n \\) and \\( n+1 \\) must be factors of \\( n! \\). Since \\( n! \\) contains all integers from 1 to \\( n \\), \\( n \\) is always included. The critical part is ensuring that \\( n! \\) has enough factors of 2 to cover the division by 2.\n\nWe check each \\( n \\) from 1 to 24:\n- For odd \\( n \\), \\( n+1 \\) is even, and \\( n! \\) has at least one factor of 2.\n- For even \\( n \\), \\( n+1 \\) is odd, and \\( n! \\) still contains \\( n \\) and \\( n+1 \\).\n\nThus, \\( n! \\) is divisible by \\( \\frac{n(n+1)}{2} \\) for all \\( n \\) from 1 to 24. Therefore, the total count of such integers \\( n \\) is \\( \\boxed{24} \\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_092351",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

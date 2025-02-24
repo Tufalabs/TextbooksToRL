@@ -1,0 +1,11 @@
+{
+    "source": "For how many integers n is n^2 - 20 - n the square of an integer?",
+    "question": "Determine how many integers \\( n \\) satisfy the equation \\( n^2 - n - 20 = k^2 \\) for some integer \\( k \\).",
+    "solution": "Rearranging the equation gives:\n\\[\nn^2 - n - k^2 - 20 = 0\n\\]\nThis is a quadratic equation in \\( n \\). The discriminant must be a perfect square for \\( n \\) to be an integer:\n\\[\nD = (-1)^2 - 4(1)(-k^2 - 20) = 1 + 4k^2 + 80 = 4k^2 + 81\n\\]\nLet \\( D = m^2 \\) for some integer \\( m \\):\n\\[\nm^2 - 4k^2 = 81\n\\]\nThis can be factored as:\n\\[\n(m - 2k)(m + 2k) = 81\n\\]\nThe factor pairs of 81 are \\( (1, 81), (3, 27), (9, 9) \\). Solving for \\( m \\) and \\( k \\) gives:\n1. \\( m - 2k = 1 \\) and \\( m + 2k = 81 \\) leads to \\( m = 41, k = 20 \\)\n2. \\( m - 2k = 3 \\) and \\( m + 2k = 27 \\) leads to \\( m = 15, k = 6 \\)\n3. \\( m - 2k = 9 \\) and \\( m + 2k = 9 \\) leads to \\( m = 9, k = 0 \\)\n\nCalculating \\( n \\) for each \\( k \\):\n- For \\( k = 20 \\): \\( n^2 - n - 420 = 0 \\) gives \\( n = 21 \\) or \\( n = -20 \\).\n- For \\( k = 6 \\): \\( n^2 - n - 16 = 0 \\) gives \\( n = 5 \\) or \\( n = -4 \\).\n- For \\( k = 0 \\): \\( n^2 - n - 20 = 0 \\) gives \\( n = 5 \\) or \\( n = -4 \\).\n\nThus, the integers \\( n \\) are \\( 21, -20, 5, -4 \\), leading to a total of \\( 4 \\) integers. Therefore, the answer is \\( \\boxed{4} \\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_092121",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

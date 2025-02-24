@@ -1,0 +1,11 @@
+{
+    "source": "Definition 3.4.8. Geometric probability is a way to calculate probability by measuring the number of outcomes geometrically, in terms of length, area, or volume.",
+    "question": "Define geometric probability and explain how it can be applied to a problem involving a circle and a square.",
+    "solution": "Geometric probability is a method of calculating probability by measuring the number of favorable outcomes in terms of geometric dimensions such as length, area, or volume. \n\nFor example, consider a square with a side length of 2 units and a circle inscribed within it. The area of the square is A_square = side^2 = 2^2 = 4 square units. The radius of the inscribed circle is 1 unit, so the area of the circle is A_circle = \u03c0\u00b7radius^2 = \u03c0\u00b71^2 = \u03c0 square units.\n\nThe probability that a randomly chosen point within the square also lies within the circle is given by the ratio of the area of the circle to the area of the square:\n\nP(point in circle) = A_circle / A_square = \u03c0 / 4.\n\nThus, the geometric probability of selecting a point that lies within the circle is boxed{\u03c0/4}.",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_104355",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

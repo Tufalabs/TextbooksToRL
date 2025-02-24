@@ -1,0 +1,11 @@
+{
+    "source": "Definition 3.4.12 (Intersection Symbol) .|A\u2229B| is the intersection of elements in both A and B (only those elements which are in both sets).",
+    "question": "What does the intersection symbol |A \u2229 B| represent, and how is it used in the context of set theory?",
+    "solution": "The intersection symbol |A \u2229 B| represents the number of elements that are common to both sets A and B. In the context of set theory, it is used to identify and quantify the elements that belong to both sets simultaneously. This concept is crucial for understanding relationships between sets, particularly when applying the principle of inclusion and exclusion to avoid double counting elements that appear in multiple sets.",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_092949",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

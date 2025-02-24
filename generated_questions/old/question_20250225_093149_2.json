@@ -1,0 +1,11 @@
+{
+    "source": "3.4.2 Principle of Inclusion Exclusion (PIE)\nTheorem 3.4.13 (Principle of Inclusion Exclusion for 2 Sets)\nGiven two sets, |A1| and |A2|,\n|A1 \u222a A2| = |A1| + |A2| \u2212 |A1 \u2229 A2|",
+    "question": "Given two sets A and B where |A| = 10, |B| = 15, and |A \u2229 B| = 5, use the Principle of Inclusion-Exclusion to find |A \u222a B|.",
+    "solution": "Using the Principle of Inclusion-Exclusion for two sets, we have:\n\n\\[ |A \u222a B| = |A| + |B| - |A \u2229 B|. \\]\n\nSubstituting the given values:\n\n\\[ |A \u222a B| = 10 + 15 - 5 = 20. \\]\n\nThus, the number of elements in the union of sets A and B is \\(\\boxed{20}\\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_093149",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o"
+}

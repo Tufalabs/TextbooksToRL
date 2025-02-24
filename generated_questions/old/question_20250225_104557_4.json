@@ -1,0 +1,11 @@
+{
+    "source": "Theorem 3.4.13 (Principle of Inclusion Exclusion for 2 Sets)\nGiven two sets,|A1|and|A2|\n|A1\u222aA2|=|A1|+|A2|\u2212|A1\u2229A2|",
+    "question": "If set \\( A_1 \\) has 5 elements, set \\( A_2 \\) has 7 elements, and the intersection \\( |A_1 \\cap A_2| \\) has 2 elements, how many elements are in the union \\( |A_1 \\cup A_2| \\)?",
+    "solution": "Using the principle of inclusion-exclusion for two sets:\n\n\\[\n|A_1 \\cup A_2| = |A_1| + |A_2| - |A_1 \\cap A_2|\n\\]\n\nSubstituting the values:\n\n\\[\n|A_1 \\cup A_2| = 5 + 7 - 2 = 10\n\\]\n\nThus, the number of elements in the union is \\( \\boxed{10} \\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_104557",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

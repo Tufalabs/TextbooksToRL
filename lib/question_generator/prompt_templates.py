@@ -7,45 +7,53 @@ class QuestionPromptTemplates:
     def question_generation(
         text_book_snippet: str, 
         num_questions: int,
-        difficulty: QuestionDifficulty = QuestionDifficulty.UNDERGRAD
+        difficulty: QuestionDifficulty = QuestionDifficulty.GRAD
     ) -> str:
         return f"""
-        You are going to be given a text book snippet.
-        Your job is to generate {num_questions} DIFFERENT questions and solutions at {difficulty.value} level.
-        
-        Difficulty Level: {difficulty.value}
-        Level Description: {difficulty.get_description()}
-        
-        Don't make up new numerical questions, use the ones in the text book snippet.
-        Adjust the complexity and depth of analysis based on the specified difficulty level.
-        
-        Here is the text book snippet:
-        {text_book_snippet}
+        You are given a textbook snippet. Your task is to generate questions and solutions based solely on the provided snippet. Follow these instructions precisely:
 
-        You MUST generate exactly {num_questions} UNIQUE and DIFFERENT questions and solutions.
-        Each question should focus on a different aspect or concept from the text.
-        
-        Format your response EXACTLY as follows, repeating for EACH of the {num_questions} questions:
+1. **Source Dependency:**  
+   - Only use information directly from the snippet. Do not infer or include any external information.
+   - Every question must be verifiable and solvable using only the information contained in the snippet.
 
-        <source>
-        [Paste only the relevant part of the source text that relates to this specific question]
-        </source>
-        <question>
-        [Write your unique question here at {difficulty.value} level]
-        </question>
-        <solution>
-        [Write your detailed solution here matching {difficulty.value} level expectations]
-        </solution>
+2. **Question and Quantity Requirements:**  
+   - Generate between {num_questions} and {num_questions * 3} UNIQUE and DIFFERENT questions.
+   - If the snippet does not support {num_questions} distinct questions, generate only as many as can be fully supported by the text.
 
-        You Should:
-        -Focus on generating analytical quantitative questions where possible
-        -include all information needed to solve the question from the source text. E.g constants, context etc
-        -If final numerical verifiable answer teturn in boxed
-        -Match the complexity to {difficulty.value} level
-        -Include appropriate mathematical rigor for the level
-        -Keep solutions brief and to the point
-        
-        
+3. **Difficulty Level Specification:**  
+   - Match the complexity and depth of analysis to {difficulty.value} level.
+   - Include appropriate mathematical rigor and analytical reasoning expected at this level.
+
+4. **Question Self-Containment:**  
+   - Ensure each question is fully self-contained. Include all numerical values, constants, and context from the snippet necessary to solve the question.
+   - If the question involves a derivation or an expression, show the initial expression and the steps leading to the final answer.
+
+5. **Answer Presentation:**  
+   - If the solution yields a final numerical answer, enclose that result in a box (using LaTeX or a similar method).
+   - Keep solutions brief and to the point while ensuring all necessary details are included.
+
+6. **Response Format:**  
+   For each question, repeat the following format EXACTLY:
+
+   <source>
+   [Paste only the relevant part of the textbook snippet that directly supports and contains the solution for this question]
+   </source>
+   <question>
+   [Write your unique question here at {difficulty.value} level]
+   </question>
+   <solution>
+   [Write your detailed solution here matching {difficulty.value} level expectations]
+   </solution>
+
+7. **No Extraneous Information:**  
+   - Do not include any commentary, introductions, or additional text outside the prescribed format.
+   - Every piece of output must strictly adhere to the structure above.
+
+Textbook Snippet:
+{text_book_snippet}
+
+Begin generating the questions and solutions now.
+
         """
 
     @staticmethod

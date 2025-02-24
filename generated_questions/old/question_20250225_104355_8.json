@@ -1,0 +1,11 @@
+{
+    "source": "Concept 3.4.16 A bijection is a one to one mapping between two sets.",
+    "question": "What is a bijection, and how does it differ from other types of mappings between sets?",
+    "solution": "A bijection is a specific type of mapping between two sets where each element of the first set is paired with exactly one unique element of the second set, and vice versa. This means that a bijection is both injective (one-to-one) and surjective (onto).\n\nIn contrast, other types of mappings include:\n- **Injective (one-to-one)**: Each element of the first set maps to a unique element in the second set, but some elements in the second set may not be mapped to.\n- **Surjective (onto)**: Every element in the second set is mapped to by at least one element in the first set, but some elements in the first set may map to the same element in the second set.\n\nThus, a bijection ensures a perfect pairing between the two sets, with no elements left unmapped in either set, making it a stronger condition than either injective or surjective mappings alone.",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_104355",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

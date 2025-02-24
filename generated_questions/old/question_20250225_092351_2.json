@@ -1,0 +1,11 @@
+{
+    "source": "For how many integers n is n^2 - 96 the square of an integer?",
+    "question": "Determine how many ordered pairs of positive integers \\( (m, n) \\) exist such that \\( m^2 - n^2 = 96 \\) and \\( m \\geq n \\).",
+    "solution": "The equation \\( m^2 - n^2 = 96 \\) can be factored as \\( (m-n)(m+n) = 96 \\). Let \\( a = m - n \\) and \\( b = m + n \\). Then, we have \\( ab = 96 \\) and \\( m = \\frac{a+b}{2} \\), \\( n = \\frac{b-a}{2} \\).\n\nBoth \\( a \\) and \\( b \\) must be even for \\( m \\) and \\( n \\) to be integers. Thus, we can set \\( a = 2k \\) and \\( b = 2j \\), leading to:\n\\[\n(2k)(2j) = 96 \\implies 4kj = 96 \\implies kj = 24\n\\]\n\nNow, we find the pairs \\( (k, j) \\) such that \\( kj = 24 \\). The factor pairs of 24 are:\n- \\( (1, 24) \\)\n- \\( (2, 12) \\)\n- \\( (3, 8) \\)\n- \\( (4, 6) \\)\n\nEach pair gives us a corresponding \\( (m, n) \\):\n1. \\( (1, 24) \\) gives \\( (13, 11) \\)\n2. \\( (2, 12) \\) gives \\( (7, 5) \\)\n3. \\( (3, 8) \\) gives \\( (5.5, 4.5) \\) (not valid)\n4. \\( (4, 6) \\) gives \\( (5, 1) \\)\n\nThus, valid pairs are \\( (13, 11) \\), \\( (7, 5) \\), and \\( (5, 1) \\). Therefore, the total number of ordered pairs \\( (m, n) \\) is \\( \\boxed{3} \\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_092351",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

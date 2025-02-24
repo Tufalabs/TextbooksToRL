@@ -1,0 +1,11 @@
+{
+    "source": "3.4.2 Principle of Inclusion Exclusion (PIE)\nTheorem 3.4.15 (Principle of Inclusion Exclusion Generalized)\nIf (Ai)1\u2264i\u2264n are finite sets, then:\n|A1 \u222a A2 \u222a ... \u222a An| = \u03a3|Ai| \u2212 \u03a3|Ai \u2229 Aj| + \u03a3|Ai \u2229 Aj \u2229 Ak| \u2212 ... + (\u22121)^(n\u22121)|A1 \u2229 ... \u2229 An|",
+    "question": "Given four sets A, B, C, and D with |A| = 5, |B| = 7, |C| = 6, |D| = 8, |A \u2229 B| = 2, |A \u2229 C| = 1, |A \u2229 D| = 3, |B \u2229 C| = 2, |B \u2229 D| = 1, |C \u2229 D| = 2, |A \u2229 B \u2229 C| = 1, |A \u2229 B \u2229 D| = 0, |A \u2229 C \u2229 D| = 1, |B \u2229 C \u2229 D| = 1, and |A \u2229 B \u2229 C \u2229 D| = 0, find |A \u222a B \u222a C \u222a D| using the generalized Principle of Inclusion-Exclusion.",
+    "solution": "Using the generalized Principle of Inclusion-Exclusion for four sets, we have:\n\n\\[ |A \u222a B \u222a C \u222a D| = |A| + |B| + |C| + |D| - (|A \u2229 B| + |A \u2229 C| + |A \u2229 D| + |B \u2229 C| + |B \u2229 D| + |C \u2229 D|) + (|A \u2229 B \u2229 C| + |A \u2229 B \u2229 D| + |A \u2229 C \u2229 D| + |B \u2229 C \u2229 D|) - |A \u2229 B \u2229 C \u2229 D|. \\]\n\nSubstituting the given values:\n\n\\[ |A \u222a B \u222a C \u222a D| = 5 + 7 + 6 + 8 - (2 + 1 + 3 + 2 + 1 + 2) + (1 + 0 + 1 + 1) - 0 = 26 - 11 + 3 = 18. \\]\n\nThus, the number of elements in the union of sets A, B, C, and D is \\(\\boxed{18}\\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_093149",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o"
+}

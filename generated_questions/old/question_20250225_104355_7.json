@@ -1,0 +1,11 @@
+{
+    "source": "Definition 3.4.15 (Principle of Inclusion Exclusion Generalized) If (Ai)1\u2264i\u2264n are finite sets, then: |\u222ai=1^n Ai| = \u03a3i=1^n |Ai| - \u03a3i<j |Ai \u2229 Aj| + \u03a3i<j<k |Ai \u2229 Aj \u2229 Ak| - ... + (-1)^(n-1)|A1 \u2229 ... \u2229 An|.",
+    "question": "What is the generalized form of the Principle of Inclusion-Exclusion for n sets, and how does it account for overlaps?",
+    "solution": "The generalized form of the Principle of Inclusion-Exclusion for n finite sets is expressed as:\n\n|\u222ai=1^n Ai| = \u03a3i=1^n |Ai| - \u03a3i<j |Ai \u2229 Aj| + \u03a3i<j<k |Ai \u2229 Aj \u2229 Ak| - ... + (-1)^(n-1)|A1 \u2229 ... \u2229 An|.\n\nThis formula accounts for overlaps by first summing the sizes of all individual sets, then subtracting the sizes of all pairwise intersections to remove double counting, adding back the sizes of triple intersections to correct for triple counting, and continuing this pattern of alternating addition and subtraction for higher-order intersections.\n\nThis ensures that every element is counted exactly once in the total count of the union of all n sets, regardless of how many sets overlap.",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_104355",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

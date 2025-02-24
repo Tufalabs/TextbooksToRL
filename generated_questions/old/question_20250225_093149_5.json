@@ -1,0 +1,11 @@
+{
+    "source": "3.4.3 Bijections\nConcept 3.4.16\nA bijection is a one-to-one mapping between two sets.",
+    "question": "Explain the concept of a bijection and provide an example of a bijection between the set of natural numbers and the set of even natural numbers.",
+    "solution": "A bijection is a one-to-one and onto mapping between two sets, meaning each element of one set is paired with exactly one element of the other set, and vice versa.\n\nAn example of a bijection between the set of natural numbers \\( \\mathbb{N} = \\{1, 2, 3, \\ldots\\} \\) and the set of even natural numbers \\( \\mathbb{E} = \\{2, 4, 6, \\ldots\\} \\) is the function \\( f: \\mathbb{N} \\to \\mathbb{E} \\) defined by:\n\n\\[ f(n) = 2n. \\]\n\nThis function is a bijection because:\n- It is one-to-one: If \\( f(n_1) = f(n_2) \\), then \\( 2n_1 = 2n_2 \\) implies \\( n_1 = n_2 \\).\n- It is onto: For every even number \\( m \\in \\mathbb{E} \\), there exists a natural number \\( n = \\frac{m}{2} \\) such that \\( f(n) = m \\).\n\nThus, \\( f(n) = 2n \\) is a bijection between \\( \\mathbb{N} \\) and \\( \\mathbb{E} \\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_093149",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o"
+}
