@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "For the same binomial distribution with n = 10 and p = 1/5, calculate the variance (\u03c3\u00b2) of the distribution.",
+    "solution": "The variance of a binomial distribution is given by the formula:\n\n\\[\n\\sigma^2 = npq\n\\]\n\nwhere \\( q = 1 - p \\). First, we calculate \\( q \\):\n\n\\[\nq = 1 - \\frac{1}{5} = \\frac{4}{5}\n\\]\n\nNow substituting the values into the variance formula:\n\n\\[\n\\sigma^2 = 10 \\times \\frac{1}{5} \\times \\frac{4}{5} = 10 \\times \\frac{4}{25} = \\frac{40}{25} = 1.6\n\\]\n\nThus, the variance of the distribution is \n\n\\[\n\\boxed{1.6}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111711",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

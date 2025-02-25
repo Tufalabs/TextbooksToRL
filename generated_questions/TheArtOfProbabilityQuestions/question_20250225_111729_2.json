@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "Using the quadratic equation derived from the birthday problem, \\( k^2 - k - 2n \\ln 2 = 0 \\), if we set \\( n = 365 \\), what is the value of \\( k \\) when the probability of at least one duplicate is 1/2?",
+    "solution": "We start with the quadratic equation:\n\n\\[\nk^2 - k - 2n \\ln 2 = 0\n\\]\n\nSubstituting \\( n = 365 \\):\n\n\\[\nk^2 - k - 2 \\times 365 \\ln 2 = 0\n\\]\n\nCalculating \\( 2 \\times 365 \\ln 2 \\):\n\n\\[\n\\ln 2 \\approx 0.693\n\\]\n\\[\n2 \\times 365 \\ln 2 \\approx 2 \\times 365 \\times 0.693 \\approx 507.78\n\\]\n\nNow, we have:\n\n\\[\nk^2 - k - 507.78 = 0\n\\]\n\nUsing the quadratic formula \\( k = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\):\n\n\\[\nk = \\frac{-(-1) \\pm \\sqrt{(-1)^2 - 4 \\times 1 \\times (-507.78)}}{2 \\times 1}\n\\]\n\\[\nk = \\frac{1 \\pm \\sqrt{1 + 2031.12}}{2}\n\\]\n\\[\nk = \\frac{1 \\pm \\sqrt{2032.12}}{2}\n\\]\n\\[\n\\sqrt{2032.12} \\approx 45.06\n\\]\n\\[\nk = \\frac{1 \\pm 45.06}{2}\n\\]\n\nTaking the positive root:\n\n\\[\nk \\approx \\frac{46.06}{2} \\approx 23.03\n\\]\n\nThus, the value of \\( k \\) is approximately:\n\n\\[\n\\boxed{23}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111729",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

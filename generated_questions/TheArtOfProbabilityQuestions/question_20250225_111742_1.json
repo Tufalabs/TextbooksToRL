@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a standard roulette wheel, there are 38 equally sized holes. If a ball is launched onto the wheel and it takes an average of 5 seconds to come to rest in one of the holes, how many holes does the ball pass by if it travels at an average speed of 1.5 meters per second and the distance between each hole is 0.5 meters?",
+    "solution": "To find the number of holes the ball passes by, we first calculate the total distance traveled by the ball in 5 seconds at an average speed of 1.5 meters per second.\n\nTotal distance = speed \u00d7 time = 1.5 m/s \u00d7 5 s = 7.5 meters.\n\nNext, we determine how many holes this distance corresponds to. Since the distance between each hole is 0.5 meters, we can find the number of holes passed by dividing the total distance by the distance between holes.\n\nNumber of holes = total distance / distance between holes = 7.5 m / 0.5 m = 15 holes.\n\nThus, the ball passes by a total of 15 holes.\n\nThe final answer is:\n\\[\n\\boxed{15}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111742",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

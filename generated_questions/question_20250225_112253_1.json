@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a game show scenario, you have three curtains: A, B, and C. You choose curtain A, which has a probability of 1/3 of hiding the prize. The host, who knows where the prize is, opens one of the other curtains (either B or C) that does not have the prize behind it. If the host opens curtain B, what is the probability that the prize is behind curtain C?",
+    "solution": "Since you initially chose curtain A, the probability that the prize is behind A is 1/3. The probability that the prize is behind either B or C is 2/3. Since the host opens curtain B, which does not have the prize, the probability that the prize is behind curtain C becomes:\n\nP(C) = P(B or C) - P(B) = 2/3 - 0 = 2/3.\n\nThus, the probability that the prize is behind curtain C is:\n\n\\[\n\\boxed{\\frac{2}{3}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_112253",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

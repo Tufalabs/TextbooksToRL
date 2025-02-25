@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If the variance \\( V(X) \\) of a random variable \\( X \\) is calculated using the formula \\( V(X) = E(X^2) - [E(X)]^2 \\), and if \\( E(X) = 3 \\) and \\( E(X^2) = 15 \\), what is the variance \\( V(X) \\)?",
+    "solution": "To find the variance \\( V(X) \\), we will use the formula provided:\n\n\\[\nV(X) = E(X^2) - [E(X)]^2\n\\]\n\nSubstituting the given values:\n\n\\[\nV(X) = 15 - (3)^2 = 15 - 9 = 6\n\\]\n\nThus, the variance \\( V(X) \\) is \n\n\\[\n\\boxed{6}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111720",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

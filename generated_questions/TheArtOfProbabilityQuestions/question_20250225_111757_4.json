@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In the Two Coin Game, what is the probability of getting at least one head when tossing two fair coins? Calculate this probability based on the outcomes provided in the table.",
+    "solution": "To find the probability of getting at least one head when tossing two fair coins, we can use the complementary probability of getting no heads (which is the outcome TT).\n\nThe probability of getting no heads (TT) is:\n\n\\[\nP(TT) = \\frac{1}{4}\n\\]\n\nNow, the probability of getting at least one head is:\n\n\\[\nP(\\text{at least one head}) = 1 - P(TT) = 1 - \\frac{1}{4} = \\frac{3}{4}\n\\]\n\nThus, the probability of getting at least one head when tossing two fair coins is:\n\n\\[\n\\boxed{\\frac{3}{4}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111757",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

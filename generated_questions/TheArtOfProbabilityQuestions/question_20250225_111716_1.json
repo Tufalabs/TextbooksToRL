@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "Consider the integral \\( I(N) = \\int_{-N}^{N} e^{-x^2/2} \\, dz \\). If you evaluate this integral as \\( N \\) approaches infinity, what is the limit of \\( I(N) \\) as \\( N \\to \\infty \\)?",
+    "solution": "To evaluate the limit of the integral \\( I(N) \\) as \\( N \\) approaches infinity, we recognize that the integral represents the area under the curve of the function \\( e^{-x^2/2} \\) from \\( -N \\) to \\( N \\). \n\nAs \\( N \\to \\infty \\), the integral converges to the total area under the curve, which is known to be \\( \\sqrt{2\\pi} \\). Therefore, we have:\n\n\\[\n\\lim_{N \\to \\infty} I(N) = \\sqrt{2\\pi}\n\\]\n\nThus, the final answer is:\n\n\\[\n\\boxed{\\sqrt{2\\pi}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111716",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

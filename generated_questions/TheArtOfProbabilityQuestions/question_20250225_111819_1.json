@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "Find the probability of the sum of three dice being less than or equal to 8. Given that there are a total of 216 possible outcomes when rolling three dice, how many outcomes result in a sum of 8 or less?",
+    "solution": "To find the probability of the sum of three dice being less than or equal to 8, we first need to determine how many combinations of the three dice yield a sum of 8 or less. \n\nFrom the text, we know that the total number of outcomes when rolling three dice is 216. The canonical representations provided in the text suggest that there are 35 outcomes that yield a sum of 7 or less. \n\nTo find the total number of outcomes for sums less than or equal to 8, we can add the outcomes for a sum of 8 to the 35 outcomes for sums less than or equal to 7. \n\nAfter checking the combinations, we find that there are 6 additional outcomes that yield a sum of 8. Therefore, the total number of outcomes for sums less than or equal to 8 is:\n\n35 (for sums \u2264 7) + 6 (for sum = 8) = 41.\n\nNow, we can calculate the probability:\n\n\\[\nP(\\text{sum} \\leq 8) = \\frac{\\text{Number of favorable outcomes}}{\\text{Total outcomes}} = \\frac{41}{216}.\n\\]\n\nThus, the probability is:\n\n\\[\n\\boxed{\\frac{41}{216}}.\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111819",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

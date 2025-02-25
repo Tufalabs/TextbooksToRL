@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In the context of the error-correcting code described, if the probability of an error occurring in a single position is \\( p \\), what is the probability of no error occurring in a message with \\( n = 1/p \\) positions?",
+    "solution": "The probability of no error occurring in a message is given by the formula:\n\n\\[\nP(\\text{no error}) = (1 - p)^n\n\\]\n\nSubstituting \\( n = 1/p \\):\n\n\\[\nP(\\text{no error}) = (1 - p)^{1/p}\n\\]\n\nAs \\( p \\) approaches 0, this expression approaches \\( e^{-1} \\), which is equal to \\( 1/e \\).\n\nThus, the probability of no error occurring is \n\n\\[\n\\boxed{\\frac{1}{e}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111732",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

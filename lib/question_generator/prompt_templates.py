@@ -10,51 +10,78 @@ class QuestionPromptTemplates:
         difficulty: QuestionDifficulty = QuestionDifficulty.GRAD
     ) -> str:
         return f"""
-        You are given a textbook snippet. Your task is to generate questions and solutions based solely on the provided snippet. Follow these instructions precisely:
+  I'm trying to quiz myself on this text to help me learn
 
-1. **Source Dependency:**  
-   - Only use information directly from the snippet. Do not infer or include any external information.
-   - Every question must be verifiable and solvable using only the information contained in the snippet.
+  
+  can you generate between {num_questions} and {num_questions * 3} questions and solutions for me?
 
-2. **Question and Quantity Requirements:**  
-   - Generate between {num_questions} and {num_questions * 3} UNIQUE and DIFFERENT questions.
-   - If the snippet does not support {num_questions} distinct questions, generate only as many as can be fully supported by the text.
+  Can you focus on problems that have numerical answers and can you output the answer in a box?
 
-3. **Difficulty Level Specification:**  
-   - Match the complexity and depth of analysis to {difficulty.value} level.
-   - Include appropriate mathematical rigor and analytical reasoning expected at this level.
+  Leave final answer as fraction no need to express as decimal.
 
-4. **Question Self-Containment:**  
-   - Ensure each question is fully self-contained. Include all numerical values, constants, and context from the snippet necessary to solve the question.
-   - If the question involves a derivation or an expression, show the initial expression and the steps leading to the final answer.
+  Make sure each problem has the full context of the problem in the question.
 
-5. **Answer Presentation:**  
-   - If the solution yields a final numerical answer, enclose that result in a box (using LaTeX or a similar method).
-   - Keep solutions brief and to the point while ensuring all necessary details are included.
+   For each problem, follow the exact format below:
 
-6. **Response Format:**  
-   For each question, repeat the following format EXACTLY:
 
-   <source>
-   [Paste only the relevant part of the textbook snippet that directly supports and contains the solution for this question]
-   </source>
    <question>
-   [Write your unique question here at {difficulty.value} level]
+   [Write your unique math problem here at {difficulty.value} level. Ensure that the problem statement includes all necessary details and context from the snippet so it is fully self-contained.]
    </question>
    <solution>
-   [Write your detailed solution here matching {difficulty.value} level expectations]
+   [Write your detailed solution here matching {difficulty.value} level expectations. Ensure that if a final numerical answer is provided, it is enclosed in a box.]
    </solution>
 
-7. **No Extraneous Information:**  
-   - Do not include any commentary, introductions, or additional text outside the prescribed format.
-   - Every piece of output must strictly adhere to the structure above.
 
 Textbook Snippet:
 {text_book_snippet}
+        
+"""
+#         return f"""
+#         You are given a textbook snippet. Your task is to generate questions and solutions based solely on the provided snippet. Follow these instructions precisely:
 
-Begin generating the questions and solutions now.
+# 1. **Source Dependency:**  
+#    - Only use information directly from the snippet. Do not infer or include any external information.
+#    - Every question must be verifiable and solvable using only the information contained in the snippet.
 
-        """
+# 2. **Question and Quantity Requirements:**  
+#    - Generate between {num_questions} and {num_questions * 3} UNIQUE and DIFFERENT questions.
+#    - If the snippet does not support {num_questions} distinct questions, generate only as many as can be fully supported by the text.
+
+# 3. **Difficulty Level Specification:**  
+#    - Match the complexity and depth of analysis to {difficulty.value} level.
+#    - Include appropriate mathematical rigor and analytical reasoning expected at this level.
+
+# 4. **Question Self-Containment:**  
+#    - Ensure each question is fully self-contained. Include all numerical values, constants, and context from the snippet necessary to solve the question.
+#    - If the question involves a derivation or an expression, show the initial expression and the steps leading to the final answer.
+
+# 5. **Answer Presentation:**  
+#    - If the solution yields a final numerical answer, enclose that result in a box (using LaTeX or a similar method).
+#    - Keep solutions brief and to the point while ensuring all necessary details are included.
+
+# 6. **Response Format:**  
+#    For each question, repeat the following format EXACTLY:
+
+#    <source>
+#    [Paste only the relevant part of the textbook snippet that directly supports and contains the solution for this question]
+#    </source>
+#    <question>
+#    [Write your unique question here at {difficulty.value} level]
+#    </question>
+#    <solution>
+#    [Write your detailed solution here matching {difficulty.value} level expectations]
+#    </solution>
+
+# 7. **No Extraneous Information:**  
+#    - Do not include any commentary, introductions, or additional text outside the prescribed format.
+#    - Every piece of output must strictly adhere to the structure above.
+
+# Textbook Snippet:
+# {text_book_snippet}
+
+# Begin generating the questions and solutions now.
+
+#         """
 
     @staticmethod
     def hint_generation(

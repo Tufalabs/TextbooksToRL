@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "The book has an ISBN for the paperback edition listed as 978-0-201-40686-3. If the first three digits of the ISBN are removed, how many digits remain in the ISBN?",
+    "solution": "The original ISBN has 13 digits. If we remove the first three digits, we are left with:\n\n13 - 3 = 10 digits\n\nThus, there are 10 digits remaining in the ISBN after removing the first three digits.\n\n\\[\n\\boxed{10}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111741",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

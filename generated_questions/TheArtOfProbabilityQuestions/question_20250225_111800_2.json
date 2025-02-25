@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "Consider a situation where the knife edge is moved slightly to the left of the center of the chute. If the probability of the ball falling to the left side increases to 0.6, what is the probability of the ball falling to the right side?",
+    "solution": "If the probability of the ball falling to the left side is 0.6, then the probability of the ball falling to the right side can be calculated as follows:\n\n\\[\nP(\\text{right}) = 1 - P(\\text{left}) = 1 - 0.6 = 0.4\n\\]\n\nThus, the probability that the ball will fall to the right side is:\n\n\\[\n\\boxed{0.4}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111800",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

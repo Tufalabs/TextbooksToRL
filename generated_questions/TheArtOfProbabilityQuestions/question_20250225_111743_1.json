@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In the context of selecting a random point in the z-y plane from a normal distribution centered at the origin, if the expected distance from the origin is given by the integral \\( D = \\int_0^\\infty t^2 e^{-t^2/2} dt \\), what is the expected distance \\( D \\) when evaluated using the known result \\( D = \\sqrt{2/\\pi} \\)?",
+    "solution": "To find the expected distance \\( D \\), we can use the known result from the normal distribution. The expected distance from the origin in the z-y plane is given by:\n\n\\[\nD = \\sqrt{\\frac{2}{\\pi}}\n\\]\n\nCalculating this value:\n\n\\[\nD \\approx \\sqrt{\\frac{2}{3.14159}} \\approx \\sqrt{0.63662} \\approx 0.79788\n\\]\n\nThus, the expected distance \\( D \\) is approximately:\n\n\\[\n\\boxed{0.7979}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111743",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

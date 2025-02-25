@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In the St. Petersburg paradox, you toss a fair coin until you get a head. If the first head appears on the kth toss, you are paid \\(2^k\\) units of money. What is the expected value of the game, and how much should you be willing to pay to play this game if you are willing to play a \"fair game\"?",
+    "solution": "To find the expected value \\(E\\) of the game, we calculate the expected payout based on the probability of getting the first head on the kth toss. The probability of getting the first head on the kth toss is \\(\\frac{1}{2^k}\\), and the payout for that toss is \\(2^k\\).\n\nThe expected value is given by:\n\n\\[\nE = \\sum_{k=1}^{\\infty} \\left( \\frac{1}{2^k} \\cdot 2^k \\right) = \\sum_{k=1}^{\\infty} 1 = \\infty\n\\]\n\nThus, the expected value of the game is infinite. Therefore, you should be willing to pay an infinite amount, or at least an arbitrarily large amount, to play this game.\n\n\\[\n\\text{Expected Value} = \\boxed{\\infty}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111903",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "Assuming that the variance of the simulations is large, if the variance is represented as V and is calculated to be 5.76, what is the standard deviation of the simulations?",
+    "solution": "The standard deviation (SD) is the square root of the variance (V).\n\nSD = \u221aV = \u221a5.76 \u2248 2.4\n\nThus, the standard deviation of the simulations is \n\n\\[\n\\boxed{2.4}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111713",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

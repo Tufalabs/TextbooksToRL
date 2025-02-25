@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If a simulation is run 15 times and the results are: 4.8, 5.1, 5.0, 4.9, 5.2, 5.3, 4.7, 5.0, 5.1, 4.8, 5.2, 5.3, 4.9, 5.0, and 5.1. What is the standard deviation of these results?",
+    "solution": "To calculate the standard deviation, first find the mean:\n\nMean = (4.8 + 5.1 + 5.0 + 4.9 + 5.2 + 5.3 + 4.7 + 5.0 + 5.1 + 4.8 + 5.2 + 5.3 + 4.9 + 5.0 + 5.1) / 15 = 5.0\n\nNext, calculate the variance:\n\nVariance = [(4.8-5.0)\u00b2 + (5.1-5.0)\u00b2 + ... + (5.1-5.0)\u00b2] / 15\n\nCalculating each squared difference:\n\n= [(-0.2)\u00b2 + (0.1)\u00b2 + (0)\u00b2 + (-0.1)\u00b2 + (0.2)\u00b2 + (0.3)\u00b2 + (-0.3)\u00b2 + (0)\u00b2 + (0.1)\u00b2 + (-0.2)\u00b2 + (0.2)\u00b2 + (0.3)\u00b2 + (-0.1)\u00b2 + (0)\u00b2 + (0.1)\u00b2] / 15\n\n= [0.04 + 0.01 + 0 + 0.01 + 0.04 + 0.09 + 0.09 + 0 + 0.01 + 0.04 + 0.04 + 0.09 + 0.01 + 0 + 0.01] / 15\n\n= 0.36 / 15 = 0.024\n\nStandard Deviation = \u221aVariance = \u221a0.024 \u2248 0.155\n\nThus, the standard deviation of the results is approximately \n\n\\[\n\\boxed{0.155}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111752",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

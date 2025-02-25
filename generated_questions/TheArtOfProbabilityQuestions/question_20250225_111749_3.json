@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If the variance of drawing one ace from a deck of cards is calculated, what is the variance for drawing two aces in a row with replacement?",
+    "solution": "The variance (Var) for a single draw can be calculated using the formula for variance in a Bernoulli distribution:\n\n\\[\nVar(X) = p(1 - p)\n\\]\n\nWhere \\(p\\) is the probability of drawing an ace. We already know:\n\n\\[\np = P(\\text{Ace}) = \\frac{4}{52} = \\frac{1}{13}\n\\]\n\nThus, the variance for one draw is:\n\n\\[\nVar(X) = \\frac{1}{13} \\left(1 - \\frac{1}{13}\\right) = \\frac{1}{13} \\times \\frac{12}{13} = \\frac{12}{169}\n\\]\n\nSince the draws are independent (due to replacement), the variance for two draws is the sum of the variances of each draw:\n\n\\[\nVar(\\text{two draws}) = Var(X) + Var(X) = 2 \\times \\frac{12}{169} = \\frac{24}{169}\n\\]\n\nThus, the final answer is:\n\n\\[\n\\boxed{\\frac{24}{169}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111749",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

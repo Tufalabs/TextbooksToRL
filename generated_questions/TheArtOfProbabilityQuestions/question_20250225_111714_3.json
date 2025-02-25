@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "Using the transformation \\( Z = \\frac{X - \\mu}{\\sigma} \\), where \\( \\mu = 0 \\) and \\( \\sigma = 1 \\), what is the value of \\( Z \\) when \\( X = 2 \\)?",
+    "solution": "Substituting the values into the transformation formula:\n\n\\[\nZ = \\frac{X - \\mu}{\\sigma} = \\frac{2 - 0}{1} = \\frac{2}{1} = 2.\n\\]\n\nThus, the value of \\( Z \\) when \\( X = 2 \\) is \n\n\\[\n\\boxed{2}.\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111714",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

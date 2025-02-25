@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If a simulation is expected to yield a theoretical result of 100, but after running the simulation, you find the result to be 95. What is the percentage difference between the theoretical result and the simulation result?",
+    "solution": "To find the percentage difference, use the formula:\n\nPercentage difference = |Theoretical result - Simulation result| / Theoretical result \u00d7 100%\n\nPercentage difference = |100 - 95| / 100 \u00d7 100% = 5 / 100 \u00d7 100% = 5%\n\nThus, the percentage difference between the theoretical result and the simulation result is \n\n\\[\n\\boxed{5\\%}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111717",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

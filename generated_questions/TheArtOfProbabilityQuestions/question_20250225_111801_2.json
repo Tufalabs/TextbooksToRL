@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a binomial distribution, the mean is given as 80 and the variance is 20. If the number of trials \\( n \\) is known to be 100, what is the probability of success \\( p \\)?",
+    "solution": "The mean \\( \\mu \\) and variance \\( \\sigma^2 \\) of a binomial distribution are given by the formulas:\n\n\\[\n\\mu = n \\cdot p\n\\]\n\\[\n\\sigma^2 = n \\cdot p \\cdot (1 - p)\n\\]\n\nGiven \\( \\mu = 80 \\), \\( \\sigma^2 = 20 \\), and \\( n = 100 \\), we can set up the equations:\n\n1. \\( 100p = 80 \\)\n2. \\( 100p(1 - p) = 20 \\)\n\nFrom the first equation, we can solve for \\( p \\):\n\n\\[\np = \\frac{80}{100} = 0.8\n\\]\n\nNow, substituting \\( p \\) into the second equation to verify:\n\n\\[\n100 \\cdot 0.8 \\cdot (1 - 0.8) = 20\n\\]\n\\[\n100 \\cdot 0.8 \\cdot 0.2 = 20\n\\]\n\\[\n16 = 20 \\quad \\text{(This is incorrect, so we need to solve for p using the variance equation.)}\n\\]\n\nUsing the variance equation:\n\n\\[\n100p(1 - p) = 20\n\\]\n\\[\np(1 - p) = 0.2\n\\]\n\nLet \\( p = x \\):\n\n\\[\n100x(1 - x) = 20\n\\]\n\\[\n100x - 100x^2 = 20\n\\]\n\\[\n100x^2 - 100x + 20 = 0\n\\]\n\nUsing the quadratic formula \\( x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\):\n\n\\[\nx = \\frac{100 \\pm \\sqrt{(-100)^2 - 4 \\cdot 100 \\cdot 20}}{2 \\cdot 100}\n\\]\n\\[\nx = \\frac{100 \\pm \\sqrt{10000 - 8000}}{200}\n\\]\n\\[\nx = \\frac{100 \\pm \\sqrt{2000}}{200}\n\\]\n\\[\nx = \\frac{100 \\pm 44.72}{200}\n\\]\n\nCalculating the two possible values for \\( p \\):\n\n1. \\( p = \\frac{144.72}{200} = 0.7236 \\)\n2. \\( p = \\frac{55.28}{200} = 0.2764 \\)\n\nThus, the probability of success \\( p \\) can be either \n\n\\[\n\\boxed{0.7236} \\quad \\text{or} \\quad \\boxed{0.2764}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111801",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If the generating function \\( G(t) \\) is defined as \\( G(t) = \\frac{tN(t)}{D(t)} \\) and \\( D(t) \\) is given by \\( D(t) = p^3 \\) with \\( p = 0.6 \\), calculate \\( D(1) \\).",
+    "solution": "Substituting \\( p = 0.6 \\) into the expression for \\( D \\):\n\n\\[\nD(1) = p^3 = (0.6)^3 = 0.216\n\\]\n\nThus, the value of \\( D(1) \\) is \n\n\\[\n\\boxed{0.216}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111750",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "How many different arrangements can be made for 10 people to be seated on a platform?",
+    "solution": "To find the number of arrangements of 10 people, we can use the formula for permutations of \\( n \\) distinct objects, which is given by \\( n! \\). \n\nFor 10 people, the calculation is:\n\\[\n10! = 10 \\times 9 \\times 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 3,628,800\n\\]\n\nThus, the number of arrangements is \\(\\boxed{3628800}\\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111718",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

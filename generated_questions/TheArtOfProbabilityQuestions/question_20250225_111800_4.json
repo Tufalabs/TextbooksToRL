@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If the knife edge is moved to a position where the probability of falling to the left side is 0.7, how many trials would be needed to expect at least 100 falls to the left side?",
+    "solution": "To find the number of trials needed to expect at least 100 falls to the left side, we can rearrange the expected value formula:\n\n\\[\nE = n \\cdot P(\\text{left}) \\implies n = \\frac{E}{P(\\text{left})}\n\\]\n\nGiven \\( E = 100 \\) and \\( P(\\text{left}) = 0.7 \\):\n\n\\[\nn = \\frac{100}{0.7} \\approx 142.86\n\\]\n\nSince the number of trials must be a whole number, we round up to the nearest whole number:\n\n\\[\nn = 143\n\\]\n\nThus, the number of trials needed to expect at least 100 falls to the left side is:\n\n\\[\n\\boxed{143}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111800",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

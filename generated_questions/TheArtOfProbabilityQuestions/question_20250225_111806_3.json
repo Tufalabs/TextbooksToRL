@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If you have 5 biased coins with probabilities \\( e_1 = 0.1 \\), \\( e_2 = 0.2 \\), \\( e_3 = 0.3 \\), \\( e_4 = 0.4 \\), and \\( e_5 = 0.5 \\), what is the probability \\( P_5 \\) of getting exactly 5 heads using the recurrence relation provided in the text?",
+    "solution": "To find \\( P_5 \\), we will use the recurrence relation given in the text:\n\n\\[\nP_N = P_{N-1} \\left( \\frac{1}{2} + e_N \\right) + \\left( 1 - P_{N-1} \\right) \\left( \\frac{1}{2} - e_N \\right)\n\\]\n\n1. For \\( N = 1 \\):\n   \\[\n   P_1 = \\frac{1}{2} + e_1 = \\frac{1}{2} + 0.1 = 0.6\n   \\]\n\n2. For \\( N = 2 \\):\n   \\[\n   P_2 = P_1 \\left( \\frac{1}{2} + e_2 \\right) + \\left( 1 - P_1 \\right) \\left( \\frac{1}{2} - e_2 \\right)\n   \\]\n   \\[\n   P_2 = 0.6 \\left( \\frac{1}{2} + 0.2 \\right) + (1 - 0.6) \\left( \\frac{1}{2} - 0.2 \\right)\n   \\]\n   \\[\n   P_2 = 0.6 \\times 0.7 + 0.4 \\times 0.3 = 0.42 + 0.12 = 0.54\n   \\]\n\n3. For \\( N = 3 \\):\n   \\[\n   P_3 = P_2 \\left( \\frac{1}{2} + e_3 \\right) + \\left( 1 - P_2 \\right) \\left( \\frac{1}{2} - e_3 \\right)\n   \\]\n   \\[\n   P_3 = 0.54 \\left( \\frac{1}{2} + 0.3 \\right) + (1 - 0.54) \\left( \\frac{1}{2} - 0.3 \\right)\n   \\]\n   \\[\n   P_3 = 0.54 \\times 0.8 + 0.46 \\times 0.2 = 0.432 + 0.092 = 0.524\n   \\]\n\n4. For \\( N = 4 \\):\n   \\[\n   P_4 = P_3 \\left( \\frac{1}{2} + e_4 \\right) + \\left( 1 - P_3 \\right) \\left( \\frac{1}{2} - e_4 \\right)\n   \\]\n   \\[\n   P_4 = 0.524 \\left( \\frac{1}{2} + 0.4 \\right) + (1 - 0.524) \\left( \\frac{1}{2} - 0.4 \\right)\n   \\]\n   \\[\n   P_4 = 0.524 \\times 0.9 + 0.476 \\times 0.1 = 0.4716 + 0.0476 = 0.5192\n   \\]\n\n5. Finally, for \\( N = 5 \\):\n   \\[\n   P_5 = P_4 \\left( \\frac{1}{2} + e_5 \\right) + \\left( 1 - P_4 \\right) \\left( \\frac{1}{2} - e_5 \\right)\n   \\]\n   \\[\n   P_5 = 0.5192 \\left( \\frac{1}{2} + 0.5 \\right) + (1 - 0.5192) \\left( \\frac{1}{2} - 0.5 \\right)\n   \\]\n   \\[\n   P_5 = 0.5192 \\times 1 + 0.4808 \\times (-0.5) = 0.5192 - 0.2404 = 0.2788\n   \\]\n\nThus, the probability \\( P_5 \\) of getting exactly 5 heads is:\n\n\\[\n\\boxed{0.2788}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111806",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

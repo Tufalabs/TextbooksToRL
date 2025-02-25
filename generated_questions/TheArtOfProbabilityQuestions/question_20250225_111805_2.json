@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In the context of the state diagram for the coin toss problem, if the transition probability from state S1 (T, tail) to itself is 0.5, what is the probability of transitioning from S1 to S3 (HH, two heads in a row) in exactly 4 tosses?",
+    "solution": "To find the probability of transitioning from S1 to S3 in exactly 4 tosses, we need to consider the sequences of tosses that lead to two heads in a row at the 4th toss. The valid sequences that end with HH at the 4th toss are:\n\n1. TTHH\n2. HTHH\n3. HHTH\n4. HHHT\n\nWe can calculate the probability for each sequence:\n\n1. **TTHH**: \n   - Probability = \\(0.5 \\times 0.5 \\times 0.5 \\times 0.5 = 0.0625\\)\n\n2. **HTHH**: \n   - Probability = \\(0.5 \\times 0.5 \\times 0.5 \\times 0.5 = 0.0625\\)\n\n3. **HHTH**: \n   - Probability = \\(0.5 \\times 0.5 \\times 0.5 \\times 0.5 = 0.0625\\)\n\n4. **HHHT**: \n   - Probability = \\(0.5 \\times 0.5 \\times 0.5 \\times 0.5 = 0.0625\\)\n\nNow, we sum the probabilities of all valid sequences:\n\\[\nP(S1 \\to S3 \\text{ in 4 tosses}) = 0.0625 + 0.0625 + 0.0625 + 0.0625 = 0.25\n\\]\n\nThus, the probability of transitioning from S1 to S3 in exactly 4 tosses is \n\\[\n\\boxed{0.25}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111805",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

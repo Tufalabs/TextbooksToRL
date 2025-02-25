@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In the context of the Banach-Tarski paradox, if a sphere of radius \\( r \\) is decomposed into a finite number of congruent parts and reassembled into a sphere of radius \\( R \\), what is the relationship between \\( r \\) and \\( R \\) if the number of parts is \\( n = 4 \\)? Assume that the volume of a sphere is given by the formula \\( V = \\frac{4}{3} \\pi r^3 \\).",
+    "solution": "The volume of the original sphere with radius \\( r \\) is given by:\n\n\\[\nV = \\frac{4}{3} \\pi r^3\n\\]\n\nIf the sphere is reassembled into a new sphere of radius \\( R \\), its volume will be:\n\n\\[\nV' = \\frac{4}{3} \\pi R^3\n\\]\n\nAccording to the Banach-Tarski paradox, the volume of the new sphere can be made arbitrarily large, regardless of the original volume. Therefore, we can express the relationship as:\n\n\\[\nR^3 = n \\cdot r^3\n\\]\n\nFor \\( n = 4 \\):\n\n\\[\nR^3 = 4r^3\n\\]\n\nTaking the cube root gives:\n\n\\[\nR = r \\cdot \\sqrt[3]{4}\n\\]\n\nThus, the relationship between \\( r \\) and \\( R \\) is:\n\n\\[\nR = r \\cdot 1.5874 \\quad (\\text{approximately})\n\\]\n\nThe answer is:\n\\[\nR = r \\cdot \\sqrt[3]{4}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111726",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

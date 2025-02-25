@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "A random sequence of numbers is generated, and it is observed that the first 50 numbers have an average (mean) of 25. If the next 50 numbers in the sequence have an average of 30, what is the overall average of all 100 numbers in the sequence?",
+    "solution": "To find the overall average of all 100 numbers, we first calculate the total sum of the first 50 numbers and the total sum of the next 50 numbers.\n\nThe total sum of the first 50 numbers is:\n\\[\n\\text{Sum}_1 = \\text{Average}_1 \\times \\text{Count}_1 = 25 \\times 50 = 1250\n\\]\n\nThe total sum of the next 50 numbers is:\n\\[\n\\text{Sum}_2 = \\text{Average}_2 \\times \\text{Count}_2 = 30 \\times 50 = 1500\n\\]\n\nNow, we can find the total sum of all 100 numbers:\n\\[\n\\text{Total Sum} = \\text{Sum}_1 + \\text{Sum}_2 = 1250 + 1500 = 2750\n\\]\n\nFinally, the overall average of all 100 numbers is:\n\\[\n\\text{Overall Average} = \\frac{\\text{Total Sum}}{\\text{Total Count}} = \\frac{2750}{100} = 27.5\n\\]\n\nThus, the overall average of all 100 numbers is:\n\\[\n\\boxed{27.5}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111731",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

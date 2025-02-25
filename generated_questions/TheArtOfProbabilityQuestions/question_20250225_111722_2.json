@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a game involving two coin tosses, the payoffs are as follows: H H gives a payoff of 2A, HT gives a payoff of A, TH gives a payoff of -A, and TT gives a payoff of -2A. If the probability of each outcome is equal, what is the expected value of the game in terms of A?",
+    "solution": "To find the expected value (EV) of the game, we calculate it based on the probabilities and payoffs of each outcome. The probabilities for each outcome (H H, HT, TH, TT) are all \\( \\frac{1}{4} \\).\n\nThe expected value is calculated as follows:\n\n\\[\nEV = (P(HH) \\times \\text{payoff}_{HH}) + (P(HT) \\times \\text{payoff}_{HT}) + (P(TH) \\times \\text{payoff}_{TH}) + (P(TT) \\times \\text{payoff}_{TT})\n\\]\n\nSubstituting the values:\n\n\\[\nEV = \\left(\\frac{1}{4} \\times 2A\\right) + \\left(\\frac{1}{4} \\times A\\right) + \\left(\\frac{1}{4} \\times -A\\right) + \\left(\\frac{1}{4} \\times -2A\\right)\n\\]\n\nCalculating each term:\n\n\\[\nEV = \\frac{2A}{4} + \\frac{A}{4} - \\frac{A}{4} - \\frac{2A}{4} = \\frac{2A + A - A - 2A}{4} = \\frac{0}{4} = 0\n\\]\n\nThus, the expected value of the game is:\n\n\\[\n\\text{Expected Value} = \\boxed{0}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111722",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

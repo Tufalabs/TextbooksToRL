@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If you draw three cards from a standard deck of 52 cards, what is the probability that all three cards are in the same suit?",
+    "solution": "To find the probability that all three drawn cards are in the same suit, we can use the following reasoning:\n\n1. The first card can be any card, so there are 52 options.\n2. The second card must be from the same suit as the first card. There are 12 remaining cards in that suit.\n3. The third card must also be from the same suit, leaving 11 cards.\n\nThe total number of ways to choose any 3 cards from 52 is given by \\( \\binom{52}{3} \\).\n\nCalculating the probability:\n\\[\nP(\\text{same suit}) = \\frac{12}{51} \\times \\frac{11}{50} = \\frac{132}{2550} = \\frac{22}{425}\n\\]\n\nThus, the probability that all three cards are in the same suit is \\(\\boxed{\\frac{22}{425}}\\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111718",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

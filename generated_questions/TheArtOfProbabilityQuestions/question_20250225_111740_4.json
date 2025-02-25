@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "For the sum \\( k = 15 \\) when rolling three six-sided dice, how many equivalent ways can the canonical partition (5, 5, 5) be arranged in the sample space?",
+    "solution": "The canonical partition (5, 5, 5) consists of three identical integers. The number of equivalent arrangements of three identical integers is given by 1.\n\nThus, the number of equivalent ways to arrange the partition (5, 5, 5) is \\(\\boxed{1}\\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111740",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

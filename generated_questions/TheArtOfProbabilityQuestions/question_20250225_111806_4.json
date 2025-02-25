@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If a player has 50 units of money and plays a fair game, what is the expected change in their value (AVB) after one toss?",
+    "solution": "Using the formula for AVB:\n\n\\[\nAVB = \\frac{1}{2} \\left[ \\ln(50 + 1) + \\ln(50 - 1) - 2\\ln(50) \\right]\n\\]\n\nCalculating each term:\n\n1. \\( \\ln(51) \\)\n2. \\( \\ln(49) \\)\n3. \\( 2\\ln(50) \\)\n\nSubstituting these into the equation:\n\n\\[\nAVB = \\frac{1}{2} \\left[ \\ln(51) + \\ln(49) - 2\\ln(50) \\right]\n\\]\n\nUsing the property of logarithms:\n\n\\[\nAVB = \\frac{1}{2} \\left[ \\ln(51 \\times 49) - \\ln(50^2) \\right]\n\\]\n\nThis simplifies to:\n\n\\[\nAVB = \\frac{1}{2} \\ln\\left(\\frac{2499}{2500}\\right)\n\\]\n\nUsing the approximation \\( \\ln(1 - x) \\approx -x \\):\n\n\\[\nAVB \\approx \\frac{1}{2} \\left(-\\frac{1}{2500}\\right) = -\\frac{1}{5000}\n\\]\n\nThus, the expected change in value is approximately:\n\n\\[\n\\boxed{-0.0002}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111806",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

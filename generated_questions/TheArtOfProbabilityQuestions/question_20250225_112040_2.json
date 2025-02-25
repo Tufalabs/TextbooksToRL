@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If a complex event consists of selecting a day that is either a weekend (Saturday or Sunday) or a holiday, and there are 52 weekends and 10 holidays in a year, what is the probability of selecting a day that is either a weekend or a holiday?",
+    "solution": "To find the probability of selecting a day that is either a weekend or a holiday, we first need to determine the total number of favorable outcomes. There are 52 weekends (2 days each) and 10 holidays. However, if any holidays fall on weekends, we need to adjust for double counting.\n\nAssuming no holidays fall on weekends, the total number of favorable outcomes is:\n\n\\[\n\\text{Total favorable outcomes} = 52 \\times 2 + 10 = 104 + 10 = 114\n\\]\n\nThe total number of possible outcomes (days in a year) is 365. Thus, the probability \\( P \\) of selecting a day that is either a weekend or a holiday is:\n\n\\[\nP = \\frac{114}{365}\n\\]\n\nTherefore, the probability is \n\n\\[\n\\boxed{\\frac{114}{365}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_112040",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

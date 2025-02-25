@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If you were to randomly select a drawer and then a coin from that drawer, what is the probability of drawing a gold coin from the entire sample space before any observations are made?",
+    "solution": "To find the probability of drawing a gold coin from the entire sample space, we first need to consider the possible outcomes from each drawer:\n\n1. Drawer 1 (GG): Contains two gold coins (G1, G2).\n2. Drawer 2 (GS): Contains one gold coin (G) and one silver coin (S).\n3. Drawer 3 (SS): Contains two silver coins (S1, S2).\n\nThe total number of outcomes when selecting a drawer and then a coin is:\n\n- From Drawer 1: 2 outcomes (G1, G2)\n- From Drawer 2: 1 outcome (G)\n- From Drawer 3: 0 outcomes (no gold coins)\n\nThus, the total number of outcomes that yield a gold coin is:\n\n\\[\n\\text{Total gold outcomes} = 2 \\text{ (from Drawer 1)} + 1 \\text{ (from Drawer 2)} = 3\n\\]\n\nThe total number of outcomes from all drawers is:\n\n\\[\n\\text{Total outcomes} = 2 \\text{ (from Drawer 1)} + 2 \\text{ (from Drawer 2)} + 2 \\text{ (from Drawer 3)} = 6\n\\]\n\nNow, the probability of drawing a gold coin from the entire sample space is:\n\n\\[\nP(\\text{Gold coin}) = \\frac{\\text{Total gold outcomes}}{\\text{Total outcomes}} = \\frac{3}{6} = \\frac{1}{2}\n\\]\n\nThus, the probability of drawing a gold coin from the entire sample space is:\n\n\\[\n\\boxed{\\frac{1}{2}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111755",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

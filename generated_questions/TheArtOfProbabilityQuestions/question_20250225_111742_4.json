@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If the ball is launched at a height of 1.5 meters above the ground, and it takes 3 seconds to reach the ground, what is the average speed of the ball during its fall?",
+    "solution": "To find the average speed of the ball during its fall, we can use the formula for average speed:\n\nAverage speed = total distance / total time.\n\nThe total distance the ball falls is 1.5 meters, and the total time taken is 3 seconds.\n\nAverage speed = 1.5 meters / 3 seconds = 0.5 meters/second.\n\nThe final answer is:\n\\[\n\\boxed{0.5}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111742",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

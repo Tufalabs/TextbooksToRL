@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If the host must reveal the prize if possible (i.e., \\( p = 0 \\)), what is the probability \\( P \\) of winning?",
+    "solution": "Using the formula provided in the text:\n\\[\nP = \\frac{1}{1 + 2p}\n\\]\nSubstituting \\( p = 0 \\):\n\\[\nP = \\frac{1}{1 + 2(0)} = \\frac{1}{1} = 1\n\\]\nThus, the probability of winning when \\( p = 0 \\) is:\n\\[\n\\boxed{1}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111738",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

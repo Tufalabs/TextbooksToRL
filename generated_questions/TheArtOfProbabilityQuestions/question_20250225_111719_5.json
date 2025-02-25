@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a probability model, if the estimated probabilities of three mutually exclusive events are 0.2, 0.5, and x respectively, what is the value of x if the total probability must equal 1?",
+    "solution": "To find the value of \\( x \\), we use the fact that the total probability of all mutually exclusive events must equal 1:\n\n\\[\n0.2 + 0.5 + x = 1\n\\]\n\nCombining the known probabilities gives:\n\n\\[\n0.7 + x = 1\n\\]\n\nNow, we solve for \\( x \\):\n\n\\[\nx = 1 - 0.7 = 0.3\n\\]\n\nThus, the value of \\( x \\) is \n\n\\[\n\\boxed{0.30}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111719",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

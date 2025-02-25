@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In the second example, after walking one kilometer in a random direction, you choose a new random direction and walk another kilometer. What is the probability that you will reach the river bank before completing the second kilometer? Calculate this probability based on the integration provided in the example.",
+    "solution": "To find the probability of reaching the river bank before completing the second kilometer, we need to integrate over all angles \\( z \\) from \\( 0 \\) to \\( 2\\pi \\). The successful angles are those within an arc of size \\( 2z \\).\n\nThe probability of success for angle \\( z \\) is given by \\( \\frac{z}{\\pi} \\). Therefore, we need to calculate the following integral:\n\n\\[\nP = \\int_0^{\\frac{\\pi}{2}} \\left( \\frac{2}{\\pi^2} z \\right) dz\n\\]\n\nCalculating the integral:\n\n\\[\nP = \\frac{2}{\\pi^2} \\left[ \\frac{z^2}{2} \\right]_0^{\\frac{\\pi}{2}} = \\frac{2}{\\pi^2} \\left( \\frac{(\\frac{\\pi}{2})^2}{2} \\right) = \\frac{2}{\\pi^2} \\cdot \\frac{\\pi^2}{8} = \\frac{1}{4}\n\\]\n\nThus, the probability that you will reach the river bank before completing the second kilometer is:\n\n\\[\n\\boxed{\\frac{1}{4}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111744",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "When rolling three six-sided dice, what is the total number of canonical partitions for the sum \\( k = 6 \\)?",
+    "solution": "From the table, the canonical partitions for \\( k = 6 \\) are:\n- (1, 1, 4)\n- (1, 2, 3)\n- (2, 2, 2)\n\nCounting these, we find there are 3 canonical partitions.\n\nThus, the total number of canonical partitions for \\( k = 6 \\) is \\(\\boxed{3}\\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111740",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "For the 1400 trials, the number of heads was recorded as 709. Calculate the percentage deviation from the expected number of heads, where the expected number is 700.",
+    "solution": "To calculate the percentage deviation from the expected number of heads, we first find the actual deviation:\n\n\\[\n\\text{Deviation} = \\text{Actual Heads} - \\text{Expected Heads} = 709 - 700 = 9\n\\]\n\nNext, we calculate the percentage deviation using the formula:\n\n\\[\n\\text{Percentage Deviation} = \\left( \\frac{\\text{Deviation}}{\\text{Expected Heads}} \\right) \\times 100\n\\]\n\nSubstituting the values:\n\n\\[\n\\text{Percentage Deviation} = \\left( \\frac{9}{700} \\right) \\times 100 \\approx 1.29\n\\]\n\nThus, the percentage deviation from the expected number of heads is \n\n\\[\n\\boxed{1.29}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111723",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

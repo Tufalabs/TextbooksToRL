@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a standard deck of 52 playing cards, what is the probability of drawing a card that is a spade? Additionally, what is the probability of drawing a card that is not a spade?",
+    "solution": "In a standard deck of 52 cards, there are 13 spades. The probability of drawing a spade is calculated as follows:\n\n\\[\n\\text{Prob}(\\text{spade}) = \\frac{13}{52} = \\frac{1}{4}\n\\]\n\nTo find the probability of drawing a card that is not a spade, we can subtract the probability of drawing a spade from 1:\n\n\\[\n\\text{Prob}(\\text{not a spade}) = 1 - \\text{Prob}(\\text{spade}) = 1 - \\frac{1}{4} = \\frac{3}{4}\n\\]\n\nFinal answers:\n- Probability of drawing a spade: \\(\\boxed{\\frac{1}{4}}\\)\n- Probability of drawing a card that is not a spade: \\(\\boxed{\\frac{3}{4}}\\)",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111746",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a random game involving a biased coin, the probability of getting heads is 0.6. If the coin is tossed 10 times, what is the expected number of heads that will be obtained?",
+    "solution": "To find the expected number of heads when tossing a biased coin, we can use the formula for expected value in a binomial distribution:\n\n\\[\nE(X) = n \\cdot p\n\\]\n\nwhere \\( n \\) is the number of trials (tosses) and \\( p \\) is the probability of success (getting heads).\n\nHere, \\( n = 10 \\) and \\( p = 0.6 \\).\n\nCalculating the expected value:\n\n\\[\nE(X) = 10 \\cdot 0.6 = 6\n\\]\n\nThus, the expected number of heads is \n\n\\[\n\\boxed{6}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111801",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

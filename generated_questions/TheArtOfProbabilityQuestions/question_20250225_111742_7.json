@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "Given the second moment of a distribution is 20 and the mean is 4, calculate the variance of the distribution.",
+    "solution": "The variance is calculated using the formula:\n\n\\[\n\\text{Variance} = \\text{Second Moment} - (\\text{Mean})^2 = 20 - 4^2 = 20 - 16 = 4.\n\\]\n\nThus, the variance is \\(\\boxed{4}\\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111742",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

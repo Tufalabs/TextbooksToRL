@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In the Two Gold Coins Problem, there are three drawers: one containing two gold coins, one containing a gold coin and a silver coin, and one containing two silver coins. If a drawer is chosen at random and then a coin is drawn from that drawer, and the observed coin is gold, what is the probability that the other coin in the same drawer is also gold?",
+    "solution": "To solve this problem, we first identify the possible outcomes based on the drawers:\n\n1. Drawer 1 (GG): Two gold coins (G1, G2)\n2. Drawer 2 (GS): One gold and one silver coin (G, S)\n3. Drawer 3 (SS): Two silver coins (S1, S2)\n\nWhen a gold coin is drawn, we can eliminate Drawer 3 (SS) from consideration since it contains no gold coins. We are left with the following possibilities:\n\n- From Drawer 1 (GG): The outcomes are G1 or G2.\n- From Drawer 2 (GS): The outcomes are G or S.\n\nThus, the remaining sample space consists of the following outcomes:\n1. G1 (from Drawer 1)\n2. G2 (from Drawer 1)\n3. G (from Drawer 2)\n\nNow, we need to calculate the conditional probability that the other coin is gold given that we have drawn a gold coin. The relevant outcomes are:\n\n- From Drawer 1 (GG): Both coins are gold (2 outcomes).\n- From Drawer 2 (GS): The other coin is silver (1 outcome).\n\nThe total number of favorable outcomes (where the other coin is gold) is 2 (from Drawer 1), and the total number of possible outcomes after observing a gold coin is 3 (2 from Drawer 1 and 1 from Drawer 2).\n\nThus, the probability that the other coin is also gold is given by:\n\n\\[\nP(\\text{Other coin is gold} | \\text{Observed coin is gold}) = \\frac{\\text{Number of favorable outcomes}}{\\text{Total outcomes}} = \\frac{2}{3}\n\\]\n\nTherefore, the final answer is:\n\n\\[\n\\boxed{\\frac{2}{3}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111755",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

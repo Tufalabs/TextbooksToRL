@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "Consider a betting scenario where you are asked to provide your betting odds for an event. If you initially state the odds as 3 to 1 in favor of the event occurring, and then you revise your odds to 2 to 1 after receiving new information, what is the implied probability of the event occurring after the revision?",
+    "solution": "To convert betting odds to probability, we use the formula:\n\n\\[\n\\text{Probability} = \\frac{\\text{Odds against}}{\\text{Odds against} + \\text{Odds for}}\n\\]\n\nFor the revised odds of 2 to 1, the odds against the event occurring are 1, and the odds for are 2. Thus, the probability is calculated as follows:\n\n\\[\n\\text{Probability} = \\frac{1}{1 + 2} = \\frac{1}{3}\n\\]\n\nTherefore, the implied probability of the event occurring after the revision is:\n\n\\[\n\\boxed{\\frac{1}{3}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111721",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

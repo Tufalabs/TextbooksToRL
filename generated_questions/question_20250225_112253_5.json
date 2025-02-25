@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If the host has a probability \\( p \\) of revealing a non-prize curtain and you initially choose curtain A, what is the probability that the prize is behind curtain C after the host reveals a non-prize curtain?",
+    "solution": "Using the previously derived formula, the probability that the prize is behind curtain C after the host reveals a non-prize curtain is:\n\n\\[\nP(C) = \\frac{p/3}{1/3 + 2p/3} = \\frac{p}{1 + 2p}.\n\\]\n\nThus, the probability that the prize is behind curtain C is:\n\n\\[\n\\boxed{\\frac{p}{1 + 2p}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_112253",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

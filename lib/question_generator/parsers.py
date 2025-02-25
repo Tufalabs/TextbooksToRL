@@ -8,8 +8,8 @@ class ResponseParser:
     @staticmethod
     def extract_qa_pairs(text: str) -> List[QuestionAnswer]:
         """Extract question-answer pairs from text that contains XML-like tags."""
-        # Pattern to match source, question and solution groups
-        pattern = r'<source>(.*?)</source>\s*<question>(.*?)</question>\s*<solution>(.*?)</solution>'
+        # Pattern to match question and solution groups, with optional source
+        pattern = r'(?:<source>(.*?)</source>\s*)?<question>(.*?)</question>\s*<solution>(.*?)</solution>'
         matches = re.findall(pattern, text, re.DOTALL)
         
         print(f"Found {len(matches)} question-answer pairs in text")  # Debug print
@@ -18,8 +18,9 @@ class ResponseParser:
         seen_questions = set()
         qa_pairs = []
         
-        for source, question, solution in matches:
-            # Clean up the texts
+        for match in matches:
+            # If source is present, it's in match[0], otherwise it's an empty string
+            source, question, solution = match
             question_clean = question.strip()
             
             # Skip if we've seen this question before
@@ -31,7 +32,7 @@ class ResponseParser:
             qa = QuestionAnswer(
                 question=question_clean,
                 solution=solution.strip(),
-                source=source.strip()
+                source=source.strip() or None  # Convert empty string to None
             )
             qa_pairs.append(qa)
         

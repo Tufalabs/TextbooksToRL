@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If a player starts with 20 units of money in a fair game and the Bernoulli evaluation indicates a change in value of AVB, what is the value of AVB after one toss of the coin?",
+    "solution": "Using the formula for AVB:\n\n\\[\nAVB = \\frac{1}{2} \\left[ \\ln(N + 1) + \\ln(N - 1) - 2\\ln(N) \\right]\n\\]\n\nSubstituting N = 20:\n\n\\[\nAVB = \\frac{1}{2} \\left[ \\ln(20 + 1) + \\ln(20 - 1) - 2\\ln(20) \\right]\n\\]\n\nCalculating each term:\n\n\\[\n\\ln(21) \\approx 3.0445, \\quad \\ln(19) \\approx 2.9444, \\quad \\ln(20) \\approx 2.9957\n\\]\n\nNow substituting these values into the equation:\n\n\\[\nAVB = \\frac{1}{2} \\left[ 3.0445 + 2.9444 - 2 \\times 2.9957 \\right]\n\\]\n\\[\n= \\frac{1}{2} \\left[ 3.0445 + 2.9444 - 5.9914 \\right]\n\\]\n\\[\n= \\frac{1}{2} \\left[ 0.9975 \\right] \\approx 0.49875\n\\]\n\nThus, the change in value is approximately:\n\n\\[\nAVB \\approx -0.49875\n\\]\n\nSo, the final answer is:\n\n\\[\n\\boxed{-0.49875}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111737",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

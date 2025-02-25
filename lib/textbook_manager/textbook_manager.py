@@ -128,4 +128,18 @@ class TextbookManager:
                 
         except Exception as e:
             logger.error(f"Error processing PDF {pdf_path}: {str(e)}")
-            raise 
+            raise
+
+    def get_num_pages(self, textbook_name: str) -> Optional[int]:
+        """Get the total number of pages in a textbook.
+        
+        Args:
+            textbook_name: Name of the textbook
+            
+        Returns:
+            Total number of pages if textbook exists, None otherwise
+        """
+        textbook = self.get_textbook(textbook_name)
+        if not textbook:
+            return None
+        return textbook.total_pages 

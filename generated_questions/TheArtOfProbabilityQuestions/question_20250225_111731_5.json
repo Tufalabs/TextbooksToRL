@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "A random sequence of numbers is generated, and it is found that the first 20 numbers have a standard deviation of 5. If the next 30 numbers have a standard deviation of 10, what is the combined standard deviation of all 50 numbers, assuming the two groups are independent?",
+    "solution": "To find the combined standard deviation of two independent groups, we can use the formula for the combined standard deviation \\( \\sigma_c \\):\n\\[\n\\sigma_c = \\sqrt{\\frac{(n_1 - 1) \\sigma_1^2 + (n_2 - 1) \\sigma_2^2}{n_1 + n_2 - 1}}\n\\]\nwhere \\( n_1 \\) and \\( n_2 \\) are the sizes of the two groups, and \\( \\sigma_1 \\) and \\( \\sigma_2 \\) are their respective standard deviations.\n\nIn this case:\n- \\( n_1 = 20 \\), \\( \\sigma_1 = 5 \\)\n- \\( n_2 = 30 \\), \\( \\sigma_2 = 10 \\)\n\nCalculating the combined standard deviation:\n\\[\n\\sigma_c = \\sqrt{\\frac{(20 - 1)(5^2) + (30 - 1)(10^2)}{20 + 30 - 1}}\n\\]\n\\[\n= \\sqrt{\\frac{19 \\times 25 + 29 \\times 100}{49}}\n\\]\n\\[\n= \\sqrt{\\frac{475 + 2900}{49}} = \\sqrt{\\frac{3375}{49}} \\approx \\sqrt{68.3673} \\approx 8.26\n\\]\n\nThus, the combined standard deviation of all 50 numbers is approximately:\n\\[\n\\boxed{8.26}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111731",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

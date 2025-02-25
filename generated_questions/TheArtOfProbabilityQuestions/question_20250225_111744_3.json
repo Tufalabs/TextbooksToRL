@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "Consider the problem of breaking a stick at random in two places. If the stick is of length 1, what is the probability that the three pieces formed can create a triangle? Use the conditions for forming a triangle to derive this probability.",
+    "solution": "To form a triangle with three pieces of lengths \\( x \\), \\( y \\), and \\( z \\), the following conditions must be satisfied:\n\n1. \\( x + y > z \\)\n2. \\( x + z > y \\)\n3. \\( y + z > x \\)\n\nAssuming the stick is broken at two points \\( a \\) and \\( b \\) (where \\( 0 < a < b < 1 \\)), the lengths of the pieces are \\( a \\), \\( b - a \\), and \\( 1 - b \\).\n\nThe triangle inequalities can be rewritten as:\n\n1. \\( a + (b - a) > (1 - b) \\) simplifies to \\( b > \\frac{1}{2} \\)\n2. \\( a + (1 - b) > (b - a) \\) simplifies to \\( a < \\frac{1}{2} \\)\n3. \\( (b - a) + (1 - b) > a \\) simplifies to \\( 1 - a > a \\) or \\( a < \\frac{1}{2} \\)\n\nThe valid region for \\( a \\) and \\( b \\) is a triangle in the unit square defined by \\( 0 < a < b < 1 \\). The area of this triangle is \\( \\frac{1}{2} \\).\n\nThe area satisfying the triangle inequalities is a smaller triangle with vertices at \\( (0, \\frac{1}{2}) \\), \\( (\\frac{1}{2}, \\frac{1}{2}) \\), and \\( (\\frac{1}{2}, 1) \\). The area of this triangle is \\( \\frac{1}{8} \\).\n\nThus, the probability that the three pieces can form a triangle is:\n\n\\[\nP = \\frac{\\text{Area of valid region}}{\\text{Area of total region}} = \\frac{\\frac{1}{8}}{\\frac{1}{2}} = \\frac{1}{4}\n\\]\n\nTherefore, the probability that the three pieces can form a triangle is:\n\n\\[\n\\boxed{\\frac{1}{4}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111744",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

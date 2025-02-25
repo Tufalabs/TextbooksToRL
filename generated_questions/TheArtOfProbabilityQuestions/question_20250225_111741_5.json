@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If you are generating random numbers from a flat distribution and you want to simulate floating point numbers from the reciprocal distribution, what is the expected value of the product of two independent random numbers from the flat distribution, given that each has a mean of 1/2?",
+    "solution": "The expected value of the product of two independent random variables is the product of their expected values. If each random number has a mean of 1/2, then the expected value of the product of two independent random numbers is:\n\n\\[\nE[X_1 \\cdot X_2] = E[X_1] \\cdot E[X_2] = \\frac{1}{2} \\cdot \\frac{1}{2} = \\frac{1}{4}\n\\]\n\nThus, the expected value of the product of two independent random numbers from the flat distribution is \n\n\\[\n\\boxed{\\frac{1}{4}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111741",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

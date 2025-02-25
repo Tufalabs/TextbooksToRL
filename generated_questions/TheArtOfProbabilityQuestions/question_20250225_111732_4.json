@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In the error-correcting code with \\( k = 10 \\), it is stated that all odd numbers of errors will be detected. If the probability of an error occurring in a single position is \\( p \\), what is the probability of an undetected error occurring?",
+    "solution": "In the error-correcting code with \\( k = 10 \\), only even numbers of errors can go undetected. The probability of an undetected error occurring can be calculated as follows:\n\nThe probability of an undetected error (which occurs with 2, 4, 6, 8, or 10 errors) is given by the sum of the probabilities of these events:\n\n\\[\nP(\\text{undetected error}) = P(2 \\text{ errors}) + P(4 \\text{ errors}) + P(6 \\text{ errors}) + P(8 \\text{ errors}) + P(10 \\text{ errors})\n\\]\n\nUsing the binomial probability formula, we can express this as:\n\n\\[\nP(k \\text{ errors}) = C(n, k) p^k (1 - p)^{n-k}\n\\]\n\nFor \\( n = 10 \\):\n\n\\[\nP(\\text{undetected error}) = C(10, 2) p^2 (1 - p)^8 + C(10, 4) p^4 (1 - p)^6 + C(10, 6) p^6 (1 - p)^4 + C(10, 8) p^8 (1 - p)^2 + C(10, 10) p^{10}\n\\]\n\nCalculating each term:\n\n\\[\n= 45 p^2 (1 - p)^8 + 210 p^4 (1 - p)^6 + 210 p^6 (1 - p)^4 + 45 p^8 (1 - p)^2 + p^{10}\n\\]\n\nThus, the probability of an undetected error is \n\n\\[\n\\boxed{45 p^2 (1 - p)^8 + 210 p^4 (1 - p)^6 + 210 p^6 (1 - p)^4 + 45 p^8 (1 - p)^2 + p^{10}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111732",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

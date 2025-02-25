@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a probability experiment, you are estimating the probability of an event occurring based on historical data. If you have observed that the event occurred 30 times out of 150 trials, what is the estimated probability of the event occurring? Express your answer as a decimal rounded to two decimal places.",
+    "solution": "To find the estimated probability of the event occurring, we use the formula:\n\n\\[\nP(E) = \\frac{\\text{Number of successful outcomes}}{\\text{Total number of trials}}\n\\]\n\nIn this case, the number of successful outcomes is 30, and the total number of trials is 150. Thus, we calculate:\n\n\\[\nP(E) = \\frac{30}{150} = 0.2\n\\]\n\nTherefore, the estimated probability of the event occurring is \n\n\\[\n\\boxed{0.20}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111719",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

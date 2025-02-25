@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a study, it was found that the probability of a certain event occurring is estimated to be 0.15. If you conduct 200 independent trials, how many times would you expect the event to occur? Round your answer to the nearest whole number.",
+    "solution": "To find the expected number of occurrences of the event, we use the formula:\n\n\\[\n\\text{Expected occurrences} = P(E) \\times \\text{Total trials}\n\\]\n\nGiven that \\( P(E) = 0.15 \\) and the total trials is 200, we calculate:\n\n\\[\n\\text{Expected occurrences} = 0.15 \\times 200 = 30\n\\]\n\nThus, you would expect the event to occur \n\n\\[\n\\boxed{30}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111719",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

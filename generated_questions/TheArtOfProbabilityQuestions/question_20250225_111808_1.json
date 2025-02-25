@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a probability experiment involving coin tosses, let the probability of getting heads (H) be \\( p \\) and the probability of getting tails (T) be \\( q \\). If \\( p = 0.6 \\) and \\( q = 0.4 \\), calculate the probability of being in state \\( S_3 \\) (two heads in a row) after 3 tosses, given the initial conditions \\( S_1(1) = q \\), \\( S_2(1) = p \\), and \\( S_3(1) = 0 \\).",
+    "solution": "To find \\( S_3(3) \\), we first need to use the difference equations provided:\n\n1. \\( S_1(n) = q S_1(n-1) + q S_2(n-1) \\)\n2. \\( S_2(n) = p S_1(n-1) \\)\n3. \\( S_3(n) = p S_2(n-1) \\)\n\nStarting with the initial conditions:\n- \\( S_1(1) = q = 0.4 \\)\n- \\( S_2(1) = p = 0.6 \\)\n- \\( S_3(1) = 0 \\)\n\nNow we calculate \\( S_1(2) \\), \\( S_2(2) \\), and \\( S_3(2) \\):\n\n1. \\( S_1(2) = q S_1(1) + q S_2(1) = 0.4 \\cdot 0.4 + 0.4 \\cdot 0.6 = 0.16 + 0.24 = 0.4 \\)\n2. \\( S_2(2) = p S_1(1) = 0.6 \\cdot 0.4 = 0.24 \\)\n3. \\( S_3(2) = p S_2(1) = 0.6 \\cdot 0.6 = 0.36 \\)\n\nNext, we calculate \\( S_1(3) \\), \\( S_2(3) \\), and \\( S_3(3) \\):\n\n1. \\( S_1(3) = q S_1(2) + q S_2(2) = 0.4 \\cdot 0.4 + 0.4 \\cdot 0.24 = 0.16 + 0.096 = 0.256 \\)\n2. \\( S_2(3) = p S_1(2) = 0.6 \\cdot 0.4 = 0.24 \\)\n3. \\( S_3(3) = p S_2(2) = 0.6 \\cdot 0.24 = 0.144 \\)\n\nThus, the probability of being in state \\( S_3 \\) after 3 tosses is:\n\n\\[\n\\boxed{0.144}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111808",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

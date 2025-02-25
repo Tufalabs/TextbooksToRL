@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If a model is evaluated based on its assumptions and it has 4 assumptions, and each assumption can lead to 2 different scenarios, how many total scenarios can be derived from this model?",
+    "solution": "To find the total number of scenarios derived from the model, we calculate the total outcomes based on the number of assumptions and their respective scenarios. If each of the 4 assumptions can lead to 2 scenarios, the total number of scenarios is given by:\n\n\\[\n2^{4} = 16\n\\]\n\nThus, the total number of scenarios that can be derived from this model is \\( \\boxed{16} \\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111727",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

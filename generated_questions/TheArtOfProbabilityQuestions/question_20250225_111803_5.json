@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "Calculate the probability of observing exactly 0 successes in 10 independent Bernoulli trials with \\( p = \\frac{2}{3} \\).",
+    "solution": "To find the probability of observing exactly 0 successes in 10 trials, we will use the binomial probability formula \\( b(k; n, p) = C(n, k) p^k q^{n-k} \\).\n\n1. Calculate \\( C(10, 0) \\):\n   \\[\n   C(10, 0) = 1\n   \\]\n\n2. Calculate \\( p^0 \\):\n   \\[\n   p^0 = 1\n   \\]\n\n3. Calculate \\( q^{10} \\):\n   \\[\n   q^{10} = \\left(\\frac{1}{3}\\right)^{10} = \\frac{1}{59049}\n   \\]\n\n4. Substitute these values into the binomial probability formula:\n   \\[\n   b(0; 10, \\frac{2}{3}) = C(10, 0) \\cdot p^0 \\cdot q^{10} = 1 \\cdot 1 \\cdot \\frac{1}{59049}\n   \\]\n\n5. Calculate the final probability:\n   \\[\n   b(0; 10, \\frac{2}{3}) = \\frac{1}{59049} \\approx 0.00002\n   \\]\n\nThus, the probability of observing exactly 0 successes is approximately:\n\\[\n\\boxed{0.00002}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111803",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

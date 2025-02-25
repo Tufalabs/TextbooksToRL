@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "Assuming a fuzzy set where the probability of being in a subset is uncertain, if the probability of being in the subset is estimated to be 0.6 with a fuzziness factor of 0.1, what is the range of probabilities for being in that subset?",
+    "solution": "The fuzziness factor indicates the uncertainty around the estimated probability. Therefore, we can calculate the range as follows:\n\nLower Bound = Estimated Probability - Fuzziness Factor = 0.6 - 0.1 = 0.5  \nUpper Bound = Estimated Probability + Fuzziness Factor = 0.6 + 0.1 = 0.7  \n\nThus, the range of probabilities for being in that subset is \n\n\\[\n\\boxed{[0.5, 0.7]}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111715",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In the simulation, the results for 600 trials showed that the number of heads was 327. Calculate the percentage of heads obtained in this trial and round your answer to two decimal places.",
+    "solution": "To calculate the percentage of heads obtained, we use the formula:\n\n\\[\n\\text{Percentage of Heads} = \\left( \\frac{\\text{Number of Heads}}{\\text{Total Trials}} \\right) \\times 100\n\\]\n\nSubstituting the values:\n\n\\[\n\\text{Percentage of Heads} = \\left( \\frac{327}{600} \\right) \\times 100 \\approx 54.5\n\\]\n\nThus, the percentage of heads obtained in this trial is \n\n\\[\n\\boxed{54.50}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111723",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

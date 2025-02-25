@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In the Two Coin Game, what is the expected payoff when tossing two fair coins? Calculate the expected value based on the probabilities and payoffs provided in the table.",
+    "solution": "To calculate the expected payoff in the Two Coin Game, we use the formula for expected value:\n\n\\[\nE(X) = \\sum (P(x) \\cdot \\text{Payoff}(x))\n\\]\n\nFrom the table, we have the following outcomes, probabilities, and payoffs:\n\n- TT: Probability = \\( \\frac{1}{4} \\), Payoff = 0\n- TH: Probability = \\( \\frac{1}{4} \\), Payoff = 1\n- HT: Probability = \\( \\frac{1}{4} \\), Payoff = 1\n- HH: Probability = \\( \\frac{1}{4} \\), Payoff = \\( \\frac{3}{2} \\)\n\nNow, we calculate the expected value:\n\n\\[\nE(X) = \\left( \\frac{1}{4} \\cdot 0 \\right) + \\left( \\frac{1}{4} \\cdot 1 \\right) + \\left( \\frac{1}{4} \\cdot 1 \\right) + \\left( \\frac{1}{4} \\cdot \\frac{3}{2} \\right)\n\\]\n\nCalculating each term:\n\n1. \\( \\frac{1}{4} \\cdot 0 = 0 \\)\n2. \\( \\frac{1}{4} \\cdot 1 = \\frac{1}{4} \\)\n3. \\( \\frac{1}{4} \\cdot 1 = \\frac{1}{4} \\)\n4. \\( \\frac{1}{4} \\cdot \\frac{3}{2} = \\frac{3}{8} \\)\n\nNow, summing these values:\n\n\\[\nE(X) = 0 + \\frac{1}{4} + \\frac{1}{4} + \\frac{3}{8}\n\\]\n\nConverting \\( \\frac{1}{4} \\) to eighths:\n\n\\[\nE(X) = \\frac{2}{8} + \\frac{2}{8} + \\frac{3}{8} = \\frac{7}{8}\n\\]\n\nThus, the expected payoff when tossing two fair coins is:\n\n\\[\n\\boxed{\\frac{7}{8}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111757",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

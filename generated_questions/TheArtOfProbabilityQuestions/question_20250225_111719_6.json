@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If a certain probability model indicates that the chance of success is 0.4, what is the probability of failure? Express your answer as a decimal.",
+    "solution": "The probability of failure can be calculated using the formula:\n\n\\[\nP(\\text{Failure}) = 1 - P(\\text{Success})\n\\]\n\nGiven that \\( P(\\text{Success}) = 0.4 \\), we calculate:\n\n\\[\nP(\\text{Failure}) = 1 - 0.4 = 0.6\n\\]\n\nThus, the probability of failure is \n\n\\[\n\\boxed{0.60}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111719",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

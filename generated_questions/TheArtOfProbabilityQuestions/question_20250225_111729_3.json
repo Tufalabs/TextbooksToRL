@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In the context of the steepest rise in the function \\( y(k) = \\frac{(n)_k}{n^k} \\), if \\( n = 365 \\), what is the approximate value of \\( k \\) where the steepest rise occurs, given by the formula \\( k \\approx \\sqrt{n} + \\frac{1}{2} \\)?",
+    "solution": "To find the approximate value of \\( k \\) where the steepest rise occurs, we use the formula:\n\n\\[\nk \\approx \\sqrt{n} + \\frac{1}{2}\n\\]\n\nSubstituting \\( n = 365 \\):\n\n\\[\nk \\approx \\sqrt{365} + \\frac{1}{2}\n\\]\n\nCalculating \\( \\sqrt{365} \\):\n\n\\[\n\\sqrt{365} \\approx 19.1\n\\]\n\nNow, adding \\( \\frac{1}{2} \\):\n\n\\[\nk \\approx 19.1 + 0.5 \\approx 19.6\n\\]\n\nThus, the approximate value of \\( k \\) where the steepest rise occurs is:\n\n\\[\n\\boxed{19.6}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111729",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

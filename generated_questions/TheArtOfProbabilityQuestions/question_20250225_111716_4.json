@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If the distance \\( r \\) from the origin to the point where the dart falls is defined in polar coordinates as \\( r = \\sqrt{x^2 + y^2} \\), what is the expression for \\( r^2 \\) in terms of \\( x \\) and \\( y \\)?",
+    "solution": "In polar coordinates, the distance \\( r \\) from the origin to the point where the dart falls is given by the formula:\n\n\\[\nr = \\sqrt{x^2 + y^2}\n\\]\n\nTo find \\( r^2 \\), we simply square both sides of the equation:\n\n\\[\nr^2 = x^2 + y^2\n\\]\n\nThus, the final expression for \\( r^2 \\) in terms of \\( x \\) and \\( y \\) is:\n\n\\[\n\\boxed{x^2 + y^2}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111716",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

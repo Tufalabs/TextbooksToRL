@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a country where married couples have children until they have a boy, the probability of having a boy is denoted as \\( p \\). If \\( p = \\frac{1}{2} \\), what is the average fraction of boys in a family according to the formula derived in the text?",
+    "solution": "To find the average fraction of boys in a family when \\( p = \\frac{1}{2} \\), we use the formula given in the text:\n\n\\[\n\\text{Average fraction of boys} = -\\frac{\\ln(p)}{q}\n\\]\n\nwhere \\( q = 1 - p \\). \n\nFirst, we calculate \\( q \\):\n\n\\[\nq = 1 - \\frac{1}{2} = \\frac{1}{2}\n\\]\n\nNow, substituting \\( p \\) and \\( q \\) into the formula:\n\n\\[\n\\text{Average fraction of boys} = -\\frac{\\ln\\left(\\frac{1}{2}\\right)}{\\frac{1}{2}} = -\\ln\\left(\\frac{1}{2}\\right) \\cdot 2\n\\]\n\nUsing the property of logarithms, we know that \\( \\ln\\left(\\frac{1}{2}\\right) = -\\ln(2) \\):\n\n\\[\n\\text{Average fraction of boys} = -(-\\ln(2)) \\cdot 2 = 2\\ln(2)\n\\]\n\nCalculating \\( 2\\ln(2) \\):\n\n\\[\n2\\ln(2) \\approx 2 \\cdot 0.693 = 1.386\n\\]\n\nThus, the average fraction of boys in a family is approximately:\n\n\\[\n\\boxed{1.386}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111724",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

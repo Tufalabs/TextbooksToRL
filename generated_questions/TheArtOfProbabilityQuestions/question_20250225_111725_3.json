@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a random selection of 10 socks from a drawer containing 6 black socks and 4 white socks, what is the probability of selecting exactly 4 black socks?",
+    "solution": "To find the probability of selecting exactly 4 black socks from a total of 10 socks (6 black and 4 white), we can use the hypergeometric distribution.\n\nThe probability can be calculated using the formula:\n\\[\nP(X = k) = \\frac{{\\binom{K}{k} \\binom{N-K}{n-k}}}{\\binom{N}{n}}\n\\]\nwhere:\n- \\( N \\) = total number of socks = 10\n- \\( K \\) = total number of black socks = 6\n- \\( n \\) = number of socks drawn = 10\n- \\( k \\) = number of black socks drawn = 4\n\nCalculating the combinations:\n- \\( \\binom{K}{k} = \\binom{6}{4} = 15 \\)\n- \\( \\binom{N-K}{n-k} = \\binom{4}{6} = 0 \\) (since we cannot choose 6 white socks from 4 available)\n\nThus, the probability is:\n\\[\nP(X = 4) = \\frac{{15 \\cdot 0}}{{\\binom{10}{10}}} = 0\n\\]\n\nTherefore, the probability of selecting exactly 4 black socks is:\n\\[\n\\boxed{0}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111725",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

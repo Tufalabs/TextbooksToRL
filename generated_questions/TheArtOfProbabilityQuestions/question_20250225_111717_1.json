@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "Suppose you are conducting a simulation to check the results of a theoretical model. You run the simulation 10 times and obtain the following results: 5.1, 5.3, 5.2, 5.4, 5.0, 5.5, 5.1, 5.3, 5.2, and 5.4. What is the mean value of the simulation results?",
+    "solution": "To find the mean value, sum all the simulation results and divide by the number of results.\n\nSum = 5.1 + 5.3 + 5.2 + 5.4 + 5.0 + 5.5 + 5.1 + 5.3 + 5.2 + 5.4 = 52.2\n\nNumber of results = 10\n\nMean = Sum / Number of results = 52.2 / 10 = 5.22\n\nThus, the mean value of the simulation results is \n\n\\[\n\\boxed{5.22}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111717",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

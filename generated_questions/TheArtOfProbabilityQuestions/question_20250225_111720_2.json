@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "Using the method of total sample space, if a die is rolled twice, what is the probability of rolling a sum of 7?",
+    "solution": "To find the probability of rolling a sum of 7 with two dice, we first determine the total number of outcomes when rolling two dice. Each die has 6 faces, so the total sample space is:\n\n\\[\n6 \\times 6 = 36\n\\]\n\nNext, we enumerate the successful outcomes that yield a sum of 7:\n\n- (1, 6)\n- (2, 5)\n- (3, 4)\n- (4, 3)\n- (5, 2)\n- (6, 1)\n\nThere are 6 successful outcomes. Therefore, the probability \\( P \\) of rolling a sum of 7 is given by:\n\n\\[\nP = \\frac{\\text{Number of successful outcomes}}{\\text{Total outcomes}} = \\frac{6}{36} = \\frac{1}{6}\n\\]\n\nThus, the probability of rolling a sum of 7 is \n\n\\[\n\\boxed{\\frac{1}{6}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111720",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

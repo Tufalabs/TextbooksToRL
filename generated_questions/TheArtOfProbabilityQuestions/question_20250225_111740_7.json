@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "For the sum \\( k = 14 \\) when rolling three six-sided dice, how many equivalent ways can the canonical partition (4, 5, 5) be arranged in the sample space?",
+    "solution": "The canonical partition (4, 5, 5) consists of two identical integers and one distinct integer. The number of equivalent arrangements is given by \\( \\frac{3!}{2!} \\).\n\nCalculating this gives:\n\\[\n\\frac{3!}{2!} = \\frac{6}{2} = 3\n\\]\n\nThus, the number of equivalent ways to arrange the partition (4, 5, 5) is \\(\\boxed{3}\\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111740",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

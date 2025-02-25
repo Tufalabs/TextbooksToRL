@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If the expected number of rolls to see the sixth face is E{X6} = 6/(7-6), what is the expected number of rolls to see the sixth face?",
+    "solution": "Using the formula for the expected number of rolls to see the i-th face, we calculate:\n\nE{X6} = 6/(7-6) = 6/1 = 6\n\nThus, the expected number of rolls to see the sixth face is \n\n\\[\n\\boxed{6}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111749",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

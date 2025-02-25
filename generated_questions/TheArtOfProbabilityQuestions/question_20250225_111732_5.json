@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If an additional parity check is added to the error-correcting code, which allows for the detection of double errors but not correction, what is the implication for the probability of an undetected error if the probability of an error in a single position is small (\\( p \\) is small)?",
+    "solution": "When an additional parity check is added, the probability of an undetected error decreases because the system can now detect double errors. If \\( p \\) is small, we can approximate the probability of an undetected error as follows:\n\nThe probability of having exactly 2 errors (which would be undetected) is given by:\n\n\\[\nP(2 \\text{ errors}) = C(n, 2) p^2 (1 - p)^{n-2}\n\\]\n\nFor \\( n = 11 \\) (10 original positions + 1 parity check):\n\n\\[\nP(2 \\text{ errors}) = C(11, 2) p^2 (1 - p)^{9}\n\\]\n\nCalculating \\( C(11, 2) \\):\n\n\\[\nC(11, 2) = \\frac{11 \\times 10}{2} = 55\n\\]\n\nThus, the probability of an undetected error when \\( p \\) is small is approximately:\n\n\\[\nP(2 \\text{ errors}) \\approx 55 p^2 (1 - p)^{9} \\approx 55 p^2\n\\]\n\nTherefore, the probability of an undetected error is \n\n\\[\n\\boxed{55 p^2}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111732",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

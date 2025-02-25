@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "Given that the expected distance between two points chosen from a normal distribution with unit variance is \\( \\frac{2}{\\sqrt{\\pi}} \\), calculate the expected distance when this expression is evaluated numerically.",
+    "solution": "To find the expected distance between two points, we use the formula:\n\n\\[\nD = \\frac{2}{\\sqrt{\\pi}}\n\\]\n\nCalculating this value:\n\n\\[\nD \\approx \\frac{2}{\\sqrt{3.14159}} \\approx \\frac{2}{1.77245} \\approx 1.12838\n\\]\n\nThus, the expected distance \\( D \\) is approximately:\n\n\\[\n\\boxed{1.1284}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111743",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

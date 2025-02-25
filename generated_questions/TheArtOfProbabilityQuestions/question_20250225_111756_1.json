@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a series of 100 independent coin tosses, what is the expected number of heads if the coin is unbiased?",
+    "solution": "The expected value \\( E \\) of heads in a single toss of an unbiased coin is \\( 0.5 \\). Therefore, for 100 independent tosses, the expected number of heads is calculated as follows:\n\n\\[\nE = n \\cdot p = 100 \\cdot 0.5 = 50\n\\]\n\nThus, the expected number of heads in 100 tosses is \n\n\\[\n\\boxed{50}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111756",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

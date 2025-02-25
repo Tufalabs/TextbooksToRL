@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "From the derivation, if \\( p(x) \\) is expressed as \\( p(x) = A e^{-\\lambda x^2/2} \\) where \\( \\lambda < 0 \\), what is the value of \\( \\lambda \\) if the probability density function must integrate to 1 over the entire real line?",
+    "solution": "To ensure that the probability density function integrates to 1, we need to evaluate the integral:\n\n\\[\n\\int_{-\\infty}^{\\infty} p(x) \\, dx = \\int_{-\\infty}^{\\infty} A e^{-\\lambda x^2/2} \\, dx\n\\]\n\nThe integral of \\( e^{-\\lambda x^2/2} \\) over the entire real line is known to be:\n\n\\[\n\\sqrt{\\frac{2\\pi}{-\\lambda}} \\quad \\text{(since } \\lambda < 0\\text{)}\n\\]\n\nSetting this equal to 1 for normalization gives:\n\n\\[\nA \\sqrt{\\frac{2\\pi}{-\\lambda}} = 1\n\\]\n\nSolving for \\( A \\):\n\n\\[\nA = \\sqrt{\\frac{-\\lambda}{2\\pi}}\n\\]\n\nThus, the value of \\( \\lambda \\) must be negative to ensure the function is a valid probability density function. Therefore, the final answer is:\n\n\\[\n\\boxed{\\lambda < 0}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111716",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

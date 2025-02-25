@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "Given a random variable X with the probability distribution p(1) = 1/2, p(2) = 1/4, p(3) = 1/8, and p(4) = 1/8, calculate the entropy H(X) of the distribution using the formula H(X) = -\u03a3 p(i) log2(p(i)) for i = 1 to 4.",
+    "solution": "To calculate the entropy H(X), we will use the given probabilities and the formula:\n\n\\[\nH(X) = -\\left( p(1) \\log_2 p(1) + p(2) \\log_2 p(2) + p(3) \\log_2 p(3) + p(4) \\log_2 p(4) \\right)\n\\]\n\nSubstituting the values:\n\n\\[\nH(X) = -\\left( \\frac{1}{2} \\log_2 \\frac{1}{2} + \\frac{1}{4} \\log_2 \\frac{1}{4} + \\frac{1}{8} \\log_2 \\frac{1}{8} + \\frac{1}{8} \\log_2 \\frac{1}{8} \\right)\n\\]\n\nCalculating each term:\n\n1. \\( \\frac{1}{2} \\log_2 \\frac{1}{2} = \\frac{1}{2} \\cdot (-1) = -\\frac{1}{2} \\)\n2. \\( \\frac{1}{4} \\log_2 \\frac{1}{4} = \\frac{1}{4} \\cdot (-2) = -\\frac{1}{2} \\)\n3. \\( \\frac{1}{8} \\log_2 \\frac{1}{8} = \\frac{1}{8} \\cdot (-3) = -\\frac{3}{8} \\)\n4. \\( \\frac{1}{8} \\log_2 \\frac{1}{8} = \\frac{1}{8} \\cdot (-3) = -\\frac{3}{8} \\)\n\nNow summing these values:\n\n\\[\nH(X) = -\\left( -\\frac{1}{2} - \\frac{1}{2} - \\frac{3}{8} - \\frac{3}{8} \\right) = -\\left( -1 - \\frac{6}{8} \\right) = -\\left( -1 - \\frac{3}{4} \\right) = 1 + \\frac{3}{4} = \\frac{7}{4}\n\\]\n\nThus, the entropy H(X) is:\n\n\\[\n\\boxed{\\frac{7}{4}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111827",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

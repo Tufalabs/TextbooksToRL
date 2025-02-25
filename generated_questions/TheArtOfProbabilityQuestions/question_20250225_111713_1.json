@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a set of simulations, the following values were recorded: 20.97, 21.14, 23.16, 22.48, 22.20, 23.59, 20.07, 21.79, 23.21, 20.63, 22.32, and 22.33. Calculate the average of these simulations.",
+    "solution": "To find the average of the simulations, we sum all the recorded values and then divide by the number of values.\n\nSum = 20.97 + 21.14 + 23.16 + 22.48 + 22.20 + 23.59 + 20.07 + 21.79 + 23.21 + 20.63 + 22.32 + 22.33 =  264.88\n\nNumber of values = 12\n\nAverage = Sum / Number of values = 264.88 / 12 = 22.07\n\nThus, the average of the simulations is \n\n\\[\n\\boxed{22.07}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111713",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

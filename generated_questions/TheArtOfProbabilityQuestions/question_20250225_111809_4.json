@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If \\( n = 3 \\) letters are randomly placed in envelopes, what is the expected number of letters that will be in their correct envelopes? Use the formula provided in the text to calculate this expected value.",
+    "solution": "To find the expected number of letters in their correct envelopes for \\( n = 3 \\), we can use the formula:\n\n\\[\nE(X) = 1 - \\frac{1}{1!} + \\frac{1}{2!} - \\frac{1}{3!}\n\\]\n\nCalculating each term:\n\n- \\( 1 = 1 \\)\n- \\( \\frac{1}{2!} = 0.5 \\)\n- \\( \\frac{1}{3!} \\approx 0.1667 \\)\n\nNow substituting these values into the equation:\n\n\\[\nE(X) = 1 - 1 + 0.5 - 0.1667\n\\]\n\nCalculating step by step:\n\n\\[\nE(X) = 0 + 0.5 - 0.1667\n\\]\n\\[\nE(X) = 0.5 - 0.1667 = 0.3333\n\\]\n\nThus, the expected number of letters that will be in their correct envelopes is approximately:\n\n\\[\n\\boxed{0.3333}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111809",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

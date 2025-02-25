@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "A fair coin is tossed 10 times. What is the probability of getting exactly 5 heads? Use the binomial probability formula \\( P(X = k) = \\binom{n}{k} p^k (1-p)^{n-k} \\), where \\( n \\) is the number of trials, \\( k \\) is the number of successful outcomes, and \\( p \\) is the probability of success on a single trial.",
+    "solution": "In this problem, we have:\n- \\( n = 10 \\) (the number of tosses),\n- \\( k = 5 \\) (the number of heads we want),\n- \\( p = \\frac{1}{2} \\) (the probability of getting heads in a single toss).\n\nUsing the binomial probability formula:\n\n\\[\nP(X = 5) = \\binom{10}{5} \\left(\\frac{1}{2}\\right)^5 \\left(1 - \\frac{1}{2}\\right)^{10-5}\n\\]\n\nCalculating \\( \\binom{10}{5} \\):\n\n\\[\n\\binom{10}{5} = \\frac{10!}{5!(10-5)!} = \\frac{10 \\times 9 \\times 8 \\times 7 \\times 6}{5 \\times 4 \\times 3 \\times 2 \\times 1} = 252\n\\]\n\nNow substituting back into the formula:\n\n\\[\nP(X = 5) = 252 \\left(\\frac{1}{2}\\right)^5 \\left(\\frac{1}{2}\\right)^5 = 252 \\left(\\frac{1}{2}\\right)^{10} = 252 \\times \\frac{1}{1024} = \\frac{252}{1024} = \\frac{63}{256}\n\\]\n\nThus, the probability of getting exactly 5 heads in 10 tosses of a fair coin is \n\n\\[\n\\boxed{\\frac{63}{256}}.\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111747",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

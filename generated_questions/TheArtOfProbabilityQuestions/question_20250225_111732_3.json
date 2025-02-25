@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a 2-out-of-5 code, if the probability of an error occurring in a single position is \\( p \\) and the probability of no error is \\( q = 1 - p \\), calculate the probability of exactly one error occurring in the code.",
+    "solution": "The probability of exactly one error occurring in a 2-out-of-5 code can be calculated using the binomial coefficient:\n\n\\[\nP(\\text{1 error}) = C(5, 1) p q^4\n\\]\n\nCalculating \\( C(5, 1) \\):\n\n\\[\nC(5, 1) = 5\n\\]\n\nThus, the probability becomes:\n\n\\[\nP(\\text{1 error}) = 5 p (1 - p)^4\n\\]\n\nTherefore, the probability of exactly one error occurring is \n\n\\[\n\\boxed{5p(1 - p)^4}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111732",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

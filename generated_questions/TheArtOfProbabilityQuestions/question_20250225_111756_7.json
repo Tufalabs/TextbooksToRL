@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a scenario where the average score of a student in 10 tests is 75, what is the total score of the student across all tests?",
+    "solution": "The total score \\( S \\) can be calculated using the formula:\n\n\\[\nS = n \\cdot \\text{average}\n\\]\n\nwhere \\( n = 10 \\) and the average score is 75. Thus,\n\n\\[\nS = 10 \\cdot 75 = 750\n\\]\n\nTherefore, the total score of the student across all tests is \n\n\\[\n\\boxed{750}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111756",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

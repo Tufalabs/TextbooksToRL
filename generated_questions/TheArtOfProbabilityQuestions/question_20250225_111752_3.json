@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "Assume two independent random variables \\(X\\) and \\(Y\\) with the following probabilities: \\(P_X(1) = 0.4\\), \\(P_X(2) = 0.6\\) and \\(P_Y(1) = 0.3\\), \\(P_Y(2) = 0.7\\). Calculate the expected value \\(E{XY}\\).",
+    "solution": "To find \\(E{XY}\\), we first calculate \\(E{X}\\) and \\(E{Y}\\).\n\n1. Calculate \\(E{X}\\):\n\\[\nE{X} = \\sum_{i} x_i P_X(x_i) = 1 \\cdot 0.4 + 2 \\cdot 0.6\n\\]\n\\[\nE{X} = 0.4 + 1.2 = 1.6\n\\]\n\n2. Calculate \\(E{Y}\\):\n\\[\nE{Y} = \\sum_{j} y_j P_Y(y_j) = 1 \\cdot 0.3 + 2 \\cdot 0.7\n\\]\n\\[\nE{Y} = 0.3 + 1.4 = 1.7\n\\]\n\n3. Now, calculate \\(E{XY}\\):\n\\[\nE{XY} = E{X}E{Y} = 1.6 \\cdot 1.7 = 2.72\n\\]\n\nThus, the expected value \\(E{XY}\\) is \\(\\boxed{2.72}\\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111752",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

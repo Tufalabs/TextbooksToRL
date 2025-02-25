@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In the context of the random game, if the second player plays the game with a fixed \\( x = 0.1 \\), what is the expected gain for the second player?",
+    "solution": "The expected gain for the second player is given by the formula:\n\n\\[\n\\text{Expected Gain} = \\frac{x}{1 - x}\n\\]\n\nSubstituting \\( x = 0.1 \\):\n\n\\[\n\\text{Expected Gain} = \\frac{0.1}{1 - 0.1} = \\frac{0.1}{0.9} \\approx 0.1111\n\\]\n\nThus, the expected gain when \\( x = 0.1 \\) is:\n\n\\[\n\\boxed{0.1111}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111748",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

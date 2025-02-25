@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If the expected distance \\( D \\) from the origin in the z-y plane is given by \\( D = \\sqrt{2/\\pi} \\), what is the square of the expected distance \\( D^2 \\)?",
+    "solution": "To find the square of the expected distance \\( D \\):\n\n\\[\nD^2 = \\left(\\sqrt{\\frac{2}{\\pi}}\\right)^2 = \\frac{2}{\\pi}\n\\]\n\nCalculating this value:\n\n\\[\nD^2 \\approx \\frac{2}{3.14159} \\approx 0.63662\n\\]\n\nThus, the square of the expected distance \\( D^2 \\) is approximately:\n\n\\[\n\\boxed{0.6366}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111743",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

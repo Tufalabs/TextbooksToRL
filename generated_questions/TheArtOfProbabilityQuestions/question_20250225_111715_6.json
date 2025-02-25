@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If a fuzzy set is defined such that the probability of an event occurring is 0.5 with a fuzziness of 0.2, what is the maximum probability that can be assigned to this event?",
+    "solution": "To find the maximum probability that can be assigned to the event, we add the fuzziness to the estimated probability:\n\nMaximum Probability = Estimated Probability + Fuzziness = 0.5 + 0.2 = 0.7\n\nThus, the maximum probability that can be assigned to this event is \n\n\\[\n\\boxed{0.7}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111715",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If you draw one card from a spade and one card from a heart, what is the expected value of the sum of the face values of the cards drawn, where the face values are 1 through 13?",
+    "solution": "The expected value \\(E\\) of a single card drawn from either a spade or a heart can be calculated as follows:\n\n\\[\nE(X) = \\frac{1 + 2 + 3 + \\ldots + 13}{13} = \\frac{\\frac{13 \\cdot 14}{2}}{13} = 7\n\\]\n\nSince the draws are independent, the expected value of the sum of the face values of the two cards drawn is:\n\n\\[\nE(X_1 + X_2) = E(X_1) + E(X_2) = 7 + 7 = 14\n\\]\n\nThus, the expected value of the sum of the face values of the cards drawn is \n\n\\[\n\\boxed{14}.\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111727",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

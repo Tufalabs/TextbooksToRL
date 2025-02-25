@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "You are conducting a simulation to evaluate a probability problem. If your simulation runs for 1,000 iterations and you find that the event of interest occurs 250 times, what is the empirical probability of the event based on your simulation? Provide your answer as a fraction in simplest form.",
+    "solution": "To find the empirical probability based on the simulation, we use the formula:\n\n\\[\nP(E) = \\frac{\\text{Number of occurrences}}{\\text{Total iterations}}\n\\]\n\nHere, the number of occurrences is 250, and the total iterations is 1,000. Thus, we calculate:\n\n\\[\nP(E) = \\frac{250}{1000} = \\frac{1}{4}\n\\]\n\nThe empirical probability of the event based on your simulation is \n\n\\[\n\\boxed{\\frac{1}{4}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111719",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

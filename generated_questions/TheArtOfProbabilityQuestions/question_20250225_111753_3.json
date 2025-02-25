@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "A roulette wheel has 38 slots: 18 red, 18 black, and 2 green (0 and 00). If a player bets on red, what is the probability of winning the bet?",
+    "solution": "To find the probability of winning a bet on red, we need to consider the number of favorable outcomes (landing on red) and the total number of outcomes (total slots on the wheel).\n\nThe number of favorable outcomes for red is 18, and the total number of outcomes is 38. Therefore, the probability \\(P\\) of winning the bet on red is:\n\n\\[\nP = \\frac{\\text{Number of red slots}}{\\text{Total slots}} = \\frac{18}{38} = \\frac{9}{19}\n\\]\n\nThus, the probability of winning the bet on red is \n\n\\[\n\\boxed{\\frac{9}{19}}.\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111753",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

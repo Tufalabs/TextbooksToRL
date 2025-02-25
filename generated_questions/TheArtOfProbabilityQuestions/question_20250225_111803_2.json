@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "Using the same parameters as before (10 trials and \\( p = \\frac{2}{3} \\)), what is the probability of observing exactly 7 successes?",
+    "solution": "To find the probability of observing exactly 7 successes in 10 trials, we will use the binomial probability formula \\( b(k; n, p) = C(n, k) p^k q^{n-k} \\).\n\n1. Calculate \\( C(10, 7) \\):\n   \\[\n   C(10, 7) = C(10, 3) = \\frac{10!}{3!7!} = \\frac{10 \\times 9 \\times 8}{3 \\times 2 \\times 1} = 120\n   \\]\n\n2. Calculate \\( p^7 \\):\n   \\[\n   p^7 = \\left(\\frac{2}{3}\\right)^7 = \\frac{128}{2187}\n   \\]\n\n3. Calculate \\( q^{3} \\):\n   \\[\n   q^{3} = \\left(\\frac{1}{3}\\right)^3 = \\frac{1}{27}\n   \\]\n\n4. Substitute these values into the binomial probability formula:\n   \\[\n   b(7; 10, \\frac{2}{3}) = C(10, 7) \\cdot p^7 \\cdot q^{3} = 120 \\cdot \\frac{128}{2187} \\cdot \\frac{1}{27}\n   \\]\n\n5. Calculate the final probability:\n   \\[\n   b(7; 10, \\frac{2}{3}) = 120 \\cdot \\frac{128}{59049} = \\frac{15360}{59049} \\approx 0.26012\n   \\]\n\nThus, the probability of observing exactly 7 successes is approximately:\n\\[\n\\boxed{0.26012}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111803",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

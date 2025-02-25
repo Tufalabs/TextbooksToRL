@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "Two random numbers are selected from the interval \\( 0 < x < 1 \\). What is the probability that the sum of these two numbers is less than 1?",
+    "solution": "To find the probability that the sum of two random numbers \\( x_1 \\) and \\( x_2 \\) (where \\( 0 < x_1, x_2 < 1 \\)) is less than 1, we can visualize this in a unit square where the area under the line \\( x_1 + x_2 = 1 \\) represents the successful outcomes.\n\nThe area of the triangle formed by the line \\( x_1 + x_2 = 1 \\) and the axes is:\n\\[\n\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 1 \\times 1 = \\frac{1}{2}\n\\]\n\nThe total area of the unit square is \\( 1 \\). Therefore, the probability \\( P \\) that the sum is less than 1 is:\n\\[\nP = \\frac{\\text{Area of triangle}}{\\text{Area of square}} = \\frac{1/2}{1} = \\frac{1}{2}\n\\]\n\nThus, the final answer is:\n\\[\n\\boxed{\\frac{1}{2}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111802",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

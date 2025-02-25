@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If we use Stirling's approximation for the factorial in the context of the elevator problem, what is the approximate value of P(6) when n = 6?",
+    "solution": "Using Stirling's approximation, we have:\n\n\\[\nP(n) \\approx \\frac{n!}{n^n}\n\\]\n\nFor \\(n = 6\\):\n\n\\[\nP(6) \\approx \\frac{6!}{6^6}\n\\]\n\nCalculating \\(6!\\):\n\n\\[\n6! = 720\n\\]\n\nCalculating \\(6^6\\):\n\n\\[\n6^6 = 46656\n\\]\n\nNow substituting these values into the equation for P(6):\n\n\\[\nP(6) \\approx \\frac{720}{46656}\n\\]\n\nNow simplifying this fraction:\n\n\\[\nP(6) \\approx \\frac{720 \\div 720}{46656 \\div 720} = \\frac{1}{64.8} \\approx 0.0154\n\\]\n\nThus, the approximate value of P(6) is:\n\n\\[\n\\boxed{0.0154}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111733",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

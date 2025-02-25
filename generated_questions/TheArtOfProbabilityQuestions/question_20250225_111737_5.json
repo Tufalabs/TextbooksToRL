@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "A player with 30 units of money plays a fair coin toss game. What is the expected change in the player's value (AVB) after one toss?",
+    "solution": "Using the formula for AVB:\n\n\\[\nAVB = \\frac{1}{2} \\left[ \\ln(N + 1) + \\ln(N - 1) - 2\\ln(N) \\right]\n\\]\n\nSubstituting N = 30:\n\n\\[\nAVB = \\frac{1}{2} \\left[ \\ln(30 + 1) + \\ln(30 - 1) - 2\\ln(30) \\right]\n\\]\n\nCalculating each term:\n\n\\[\n\\ln(31) \\approx 3.43399, \\quad \\ln(29) \\approx 3.3673, \\quad \\ln(30) \\approx 3.4012\n\\]\n\nNow substituting these values into the equation:\n\n\\[\nAVB = \\frac{1}{2} \\left[ 3.43399 + 3.3673 - 2 \\times 3.4012 \\right]\n\\]\n\\[\n= \\frac{1}{2} \\left[ 3.43399 + 3.3673 - 6.8024 \\right]\n\\]\n\\[\n= \\frac{1}{2} \\left[ 0.00089 \\right] \\approx 0.000445\n\\]\n\nThus, the change in value is approximately:\n\n\\[\nAVB \\approx -0.000445\n\\]\n\nSo, the final answer is:\n\n\\[\n\\boxed{-0.000445}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111737",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

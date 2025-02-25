@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a horse race scenario, if a subjective probability estimate for a horse winning is given as 40%, what is the implied odds of that horse winning in a betting context?",
+    "solution": "To convert a probability to odds, we use the formula:\n\n\\[\n\\text{Odds} = \\frac{\\text{Probability of losing}}{\\text{Probability of winning}}\n\\]\n\nGiven that the probability of winning is 40% (or 0.4), the probability of losing is 60% (or 0.6). Thus, the odds are calculated as follows:\n\n\\[\n\\text{Odds} = \\frac{0.6}{0.4} = 1.5\n\\]\n\nThis can be expressed as 3 to 2. Therefore, the implied odds of the horse winning are:\n\n\\[\n\\boxed{3:2}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111721",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In the context of rolling three six-sided dice, we want to find the total number of canonical partitions for the sum \\( k = 10 \\). According to the table provided, how many canonical partitions exist for this value of \\( k \\)?",
+    "solution": "From the table, the canonical partitions for \\( k = 10 \\) are:\n- (1, 3, 6)\n- (1, 4, 5)\n- (2, 2, 6)\n- (2, 3, 5)\n- (2, 4, 4)\n- (3, 3, 4)\n\nCounting these, we find there are 6 canonical partitions. \n\nThus, the total number of canonical partitions for \\( k = 10 \\) is \\(\\boxed{6}\\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111740",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

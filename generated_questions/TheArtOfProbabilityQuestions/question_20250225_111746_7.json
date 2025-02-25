@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "The leading digit '9' has an observed frequency of 3 and a theoretical frequency of 2. What is the difference between these two frequencies?",
+    "solution": "To calculate the difference between the observed and theoretical frequencies for the leading digit '9', we perform the following calculation:\n\nObserved frequency for leading digit '9' = 3  \nTheoretical frequency for leading digit '9' = 2  \n\nDifference = Observed - Theoretical = 3 - 2 = 1\n\nThus, the difference is \n\n\\[\n\\boxed{1}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111746",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

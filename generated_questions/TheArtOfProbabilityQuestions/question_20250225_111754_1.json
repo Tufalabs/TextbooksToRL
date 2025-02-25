@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "Cannon balls are piled as a pyramid with a square base. If the side of the square base is \\( n \\), how many balls are in the pile? Use the formula for the number of balls in a pyramid with a square base, which is given by \\( \\frac{n(n + 1)(2n + 1)}{6} \\). Calculate the total number of balls when \\( n = 5 \\).",
+    "solution": "To find the total number of balls in the pyramid when \\( n = 5 \\), we use the formula:\n\n\\[\n\\text{Total balls} = \\frac{n(n + 1)(2n + 1)}{6}\n\\]\n\nSubstituting \\( n = 5 \\):\n\n\\[\n\\text{Total balls} = \\frac{5(5 + 1)(2 \\cdot 5 + 1)}{6} = \\frac{5 \\cdot 6 \\cdot 11}{6}\n\\]\n\nCalculating the numerator:\n\n\\[\n5 \\cdot 6 = 30\n\\]\n\\[\n30 \\cdot 11 = 330\n\\]\n\nNow, divide by 6:\n\n\\[\n\\text{Total balls} = \\frac{330}{6} = 55\n\\]\n\nThus, the total number of balls in the pile is \n\n\\[\n\\boxed{55}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111754",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "For the distribution \\( p(k) = \\frac{k}{10} \\) where \\( k = 0, 1, 2, 3, 4 \\), calculate the mean of this distribution.",
+    "solution": "To find the mean of the distribution, we use the formula:\n\n\\[\nE(X) = \\sum_{k=0}^{4} k \\cdot p(k)\n\\]\n\nSubstituting \\( p(k) = \\frac{k}{10} \\):\n\n\\[\nE(X) = 0 \\cdot \\frac{0}{10} + 1 \\cdot \\frac{1}{10} + 2 \\cdot \\frac{2}{10} + 3 \\cdot \\frac{3}{10} + 4 \\cdot \\frac{4}{10}\n\\]\n\\[\n= 0 + \\frac{1}{10} + \\frac{4}{10} + \\frac{9}{10} + \\frac{16}{10}\n\\]\n\\[\n= \\frac{0 + 1 + 4 + 9 + 16}{10} = \\frac{30}{10} = 3\n\\]\n\nThus, the mean of the distribution is \n\n\\[\n\\boxed{3}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111751",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

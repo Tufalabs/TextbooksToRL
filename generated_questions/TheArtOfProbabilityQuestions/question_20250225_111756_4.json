@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If a random variable has an expected value of 20 and is observed over 200 trials, what is the total expected sum of the observations?",
+    "solution": "The expected value \\( E \\) of the random variable is 20. Therefore, the total expected sum of the observations over 200 trials is calculated as follows:\n\n\\[\n\\text{Total Expected Sum} = n \\cdot E = 200 \\cdot 20 = 4000\n\\]\n\nThus, the total expected sum of the observations is \n\n\\[\n\\boxed{4000}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111756",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

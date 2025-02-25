@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If the distance for 4 factors from a flat distribution is given as 0.0289, what is the percentage of the original distance?",
+    "solution": "The distance for 4 factors from a flat distribution is given as 0.0289, and the original distance for 1 factor is 1.558. To find the percentage of the original distance, we use the formula:\n\n\\[\n\\text{Percentage} = \\left( \\frac{\\text{Distance for 4 factors}}{\\text{Original distance}} \\right) \\times 100\n\\]\n\nSubstituting the values:\n\n\\[\n\\text{Percentage} = \\left( \\frac{0.0289}{1.558} \\right) \\times 100 \\approx 1.85\n\\]\n\nThus, the percentage of the original distance for 4 factors is:\n\n\\[\n\\boxed{1.85}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111734",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a scenario where a coin is tossed, the probability of landing on \"heads\" is initially stated as 1/2. If it is revealed that the coin is a two-headed coin while it is still in mid-air, what is the new probability of landing on \"heads\"?",
+    "solution": "Initially, the probability of landing on \"heads\" is given as 1/2. However, once it is revealed that the coin is a two-headed coin, the probability of landing on \"heads\" changes to 1, since there are no other possible outcomes. Therefore, the new probability is:\n\n\\[\n\\text{New Probability} = 1\n\\]\n\nThus, the final answer is:\n\n\\[\n\\boxed{1}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111721",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

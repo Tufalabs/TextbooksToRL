@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "Consider two independent random variables A and B, where A has outcomes with probabilities p(1) = 1/4, p(2) = 3/4, and B has outcomes with probabilities q(1) = 1/2, q(2) = 1/2. Calculate the total entropy H(A, B) using the formula H(A, B) = H(A) + H(B).",
+    "solution": "First, we need to calculate the entropy H(A) and H(B) separately.\n\nFor random variable A:\n\n\\[\nH(A) = -\\left( p(1) \\log_2 p(1) + p(2) \\log_2 p(2) \\right)\n\\]\n\nSubstituting the values:\n\n\\[\nH(A) = -\\left( \\frac{1}{4} \\log_2 \\frac{1}{4} + \\frac{3}{4} \\log_2 \\frac{3}{4} \\right)\n\\]\n\nCalculating each term:\n\n1. \\( \\frac{1}{4} \\log_2 \\frac{1}{4} = \\frac{1}{4} \\cdot (-2) = -\\frac{1}{2} \\)\n2. \\( \\frac{3}{4} \\log_2 \\frac{3}{4} = \\frac{3}{4} \\cdot (-\\frac{2}{4}) = -\\frac{3}{4} \\cdot \\frac{1}{2} = -\\frac{3}{8} \\)\n\nNow summing these values:\n\n\\[\nH(A) = -\\left( -\\frac{1}{2} - \\frac{3}{8} \\right) = \\frac{1}{2} + \\frac{3}{8} = \\frac{4}{8} + \\frac{3}{8} = \\frac{7}{8}\n\\]\n\nNow for random variable B:\n\n\\[\nH(B) = -\\left( q(1) \\log_2 q(1) + q(2) \\log_2 q(2) \\right)\n\\]\n\nSubstituting the values:\n\n\\[\nH(B) = -\\left( \\frac{1}{2} \\log_2 \\frac{1}{2} + \\frac{1}{2} \\log_2 \\frac{1}{2} \\right) = -\\left( \\frac{1}{2} \\cdot (-1) + \\frac{1}{2} \\cdot (-1) \\right) = 1\n\\]\n\nNow, we can find the total entropy H(A, B):\n\n\\[\nH(A, B) = H(A) + H(B) = \\frac{7}{8} + 1 = \\frac{7}{8} + \\frac{8}{8} = \\frac{15}{8}\n\\]\n\nThus, the total entropy H(A, B) is:\n\n\\[\n\\boxed{\\frac{15}{8}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111758",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

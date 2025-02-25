@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a group of 28 people, what is the average number of pairs of people that can be expected to have the same birthday, assuming each birthday is equally likely and there are 365 days in a year? Use the formula for combinations to calculate the number of pairs.",
+    "solution": "To find the average number of pairs of people with the same birthday, we can use the formula for combinations to determine the number of ways to choose 2 people from 28. The formula for combinations is given by:\n\n\\[\nC(n, 2) = \\frac{n(n-1)}{2}\n\\]\n\nSubstituting \\(n = 28\\):\n\n\\[\nC(28, 2) = \\frac{28 \\times 27}{2} = \\frac{756}{2} = 378\n\\]\n\nNext, we calculate the expected number of pairs that share a birthday. Since the probability of any two people sharing a birthday is approximately \\( \\frac{1}{365} \\), we multiply the number of pairs by this probability:\n\n\\[\n\\text{Expected number of pairs} = 378 \\times \\frac{1}{365} \\approx 1.0356\n\\]\n\nThus, the average number of pairs of people that can be expected to have the same birthday is approximately:\n\n\\[\n\\boxed{1.0356}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111739",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

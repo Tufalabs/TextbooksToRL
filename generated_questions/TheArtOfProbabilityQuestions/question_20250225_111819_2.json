@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "What is the probability of rolling a total of 7 on the roll of four dice? Given that the total number of outcomes when rolling four dice is 1296, how many outcomes yield a total of 7?",
+    "solution": "To find the probability of rolling a total of 7 with four dice, we first need to determine how many combinations of the four dice yield a sum of 7. \n\nThe total number of outcomes when rolling four dice is \\(6^4 = 1296\\). \n\nUsing combinatorial methods or generating functions, we can find that there are 15 combinations that yield a total of 7. \n\nNow, we can calculate the probability:\n\n\\[\nP(\\text{total} = 7) = \\frac{\\text{Number of favorable outcomes}}{\\text{Total outcomes}} = \\frac{15}{1296}.\n\\]\n\nThus, the probability is:\n\n\\[\n\\boxed{\\frac{15}{1296}}.\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111819",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

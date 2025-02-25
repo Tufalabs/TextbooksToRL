@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a scenario where a marksman has an 80% chance of hitting a target and a second marksman has a 75% chance, what is the probability that at least one of them hits the target when both shoot?",
+    "solution": "To find the probability that at least one hits the target, we first calculate the probability that neither hits the target:\n\n\\[\nP(\\text{first misses}) = 1 - 0.80 = 0.20\n\\]\n\\[\nP(\\text{second misses}) = 1 - 0.75 = 0.25\n\\]\n\nThe probability that both miss is:\n\n\\[\nP(\\text{both miss}) = P(\\text{first misses}) \\times P(\\text{second misses}) = 0.20 \\times 0.25 = 0.05\n\\]\n\nNow, the probability that at least one hits is:\n\n\\[\nP(\\text{at least one hits}) = 1 - P(\\text{both miss}) = 1 - 0.05 = 0.95\n\\]\n\nThus, the probability that at least one hits the target is:\n\n\\[\n\\boxed{0.95}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111759",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If you select 3 items from a set of 207, how many different arrangements can you make?",
+    "solution": "The number of arrangements of \\( k \\) items selected from \\( n \\) items is given by the formula \\( P(n, k) = \\frac{n!}{(n-k)!} \\).\n\nFor this problem, \\( n = 207 \\) and \\( k = 3 \\):\n\\[\nP(207, 3) = \\frac{207!}{(207-3)!} = \\frac{207!}{204!} = 207 \\times 206 \\times 205\n\\]\n\nCalculating this gives:\n\\[\n207 \\times 206 = 42642\n\\]\n\\[\n42642 \\times 205 = 8751210\n\\]\n\nThus, the number of arrangements is \\(\\boxed{8751210}\\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111718",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

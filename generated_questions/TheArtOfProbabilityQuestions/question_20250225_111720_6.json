@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "Given the generating function \\( G(t) = \\frac{tN(t)}{D(t)} \\) and the denominator \\( D(t) = 1 - \\frac{1}{2}t - \\frac{1}{4}t^2 - \\frac{1}{8}t^3 \\), calculate the coefficient of \\( t^2 \\) in \\( D(t) \\).",
+    "solution": "The polynomial \\( D(t) = 1 - \\frac{1}{2}t - \\frac{1}{4}t^2 - \\frac{1}{8}t^3 \\) has the following coefficients:\n- The coefficient of \\( t^0 \\) is 1.\n- The coefficient of \\( t^1 \\) is \\( -\\frac{1}{2} \\).\n- The coefficient of \\( t^2 \\) is \\( -\\frac{1}{4} \\).\n- The coefficient of \\( t^3 \\) is \\( -\\frac{1}{8} \\).\n\nThus, the coefficient of \\( t^2 \\) in \\( D(t) \\) is:\n\\[\n-\\frac{1}{4}\n\\]\n\nThe final answer is:\n\\[\n\\boxed{-\\frac{1}{4}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111720",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

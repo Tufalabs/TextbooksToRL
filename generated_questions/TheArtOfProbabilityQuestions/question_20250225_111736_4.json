@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If you toss n coins, what is the size of the product space for this scenario? Express your answer in terms of n.",
+    "solution": "The size of the product space when tossing n coins can be calculated using the formula for the number of outcomes for each coin. Since each coin has 2 outcomes, the total number of outcomes when tossing n coins is:\n\nTotal outcomes = \\(2^n\\).\n\nTherefore, the size of the product space for tossing n coins is \\(\\boxed{2^n}\\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111736",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

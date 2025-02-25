@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "A random number generator produces numbers with a mean of 1/2. If you generate 12 independent numbers from this generator and then subtract 6 from their sum, what will be the mean of the resulting numbers?",
+    "solution": "To find the mean of the resulting numbers after generating 12 independent numbers from the random number generator, we first calculate the mean of the sum of these numbers. The mean of one number is 1/2, so for 12 numbers, the mean of their sum is:\n\n\\[\n\\text{Mean of sum} = 12 \\times \\frac{1}{2} = 6\n\\]\n\nAfter subtracting 6 from the sum, the new mean becomes:\n\n\\[\n\\text{New mean} = 6 - 6 = 0\n\\]\n\nThus, the mean of the resulting numbers is \n\n\\[\n\\boxed{0}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111741",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

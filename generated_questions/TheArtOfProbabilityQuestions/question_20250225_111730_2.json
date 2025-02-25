@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If you randomly select a day from a month that has 30 days, what is the probability that the selected day is a weekend (Saturday or Sunday)? Assume there are 4 weekends in that month.",
+    "solution": "In a month with 30 days, if there are 4 weekends, that means there are 4 Saturdays and 4 Sundays, giving us a total of:\n\n\\[\n4 + 4 = 8 \\text{ weekend days}\n\\]\n\nThe probability of selecting a weekend day is given by the ratio of successful outcomes (weekend days) to the total outcomes (days in the month):\n\n\\[\nP(\\text{weekend}) = \\frac{\\text{Number of weekend days}}{\\text{Total days}} = \\frac{8}{30}\n\\]\n\nSimplifying this fraction:\n\n\\[\nP(\\text{weekend}) = \\frac{4}{15}\n\\]\n\nThus, the probability of selecting a weekend day is \n\n\\[\n\\boxed{\\frac{4}{15}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111730",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

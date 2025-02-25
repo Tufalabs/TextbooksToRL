@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If two readers independently examine a table of numbers and find n1 = 15 errors and n2 = 10 errors, with n3 = 5 errors in common, how many errors are probably left unreported?",
+    "solution": "To find the number of errors probably left unreported, we can use the inclusion-exclusion principle:\n\nTotal errors = n1 + n2 - n3 = 15 + 10 - 5 = 20\n\nThus, the number of errors probably left unreported is \n\n\\[\n\\boxed{20}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111713",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

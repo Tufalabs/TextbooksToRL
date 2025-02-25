@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If the Bernoulli value of a game is defined as zero, what would the payoff have to be in a single coin toss game where the outcomes are Heads (H) with a payoff of X and Tails (T) with a payoff of -Y? Assume the probabilities of H and T are equal. What is the relationship between X and Y for the Bernoulli value to be zero?",
+    "solution": "For the Bernoulli value to be zero, the expected value (EV) of the game must equal zero. In a single coin toss, the probabilities of Heads and Tails are both \\( \\frac{1}{2} \\).\n\nThe expected value is calculated as follows:\n\n\\[\nEV = (P(H) \\times \\text{payoff}_{H}) + (P(T) \\times \\text{payoff}_{T})\n\\]\n\nSubstituting the values:\n\n\\[\nEV = \\left(\\frac{1}{2} \\times X\\right) + \\left(\\frac{1}{2} \\times -Y\\right)\n\\]\n\nSetting the expected value to zero for the Bernoulli value:\n\n\\[\n0 = \\frac{1}{2}X - \\frac{1}{2}Y\n\\]\n\nMultiplying through by 2 to eliminate the fraction:\n\n\\[\n0 = X - Y\n\\]\n\nThus, for the Bernoulli value to be zero, the relationship between X and Y is:\n\n\\[\nX = Y\n\\]\n\nTherefore, the payoff must satisfy:\n\n\\[\n\\text{Payoff relationship} = \\boxed{X = Y}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111722",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

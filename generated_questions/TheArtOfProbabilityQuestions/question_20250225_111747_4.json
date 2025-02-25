@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a Monte Carlo simulation, you randomly select points in a unit square (1x1). If you find that 78 out of 200 points fall within a quarter circle inscribed in that square, what is the estimated value of \u03c0 based on your simulation?",
+    "solution": "The area of the quarter circle is \\( \\frac{\\pi r^2}{4} \\). For a unit circle, \\( r = 1 \\), so the area of the quarter circle is \\( \\frac{\\pi}{4} \\).\n\nThe estimated value of \u03c0 can be calculated using the ratio of points inside the quarter circle to the total points sampled:\n\n\\[\n\\text{Estimated } \\pi = 4 \\cdot \\frac{\\text{Number of points in quarter circle}}{\\text{Total number of points}} = 4 \\cdot \\frac{78}{200}\n\\]\n\nCalculating this gives:\n\n\\[\n\\text{Estimated } \\pi = 4 \\cdot 0.39 = 1.56\n\\]\n\nThus, the estimated value of \u03c0 based on your simulation is \n\n\\[\n\\boxed{1.56}.\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111747",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

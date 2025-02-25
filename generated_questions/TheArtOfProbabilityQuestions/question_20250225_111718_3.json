@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a standard deck of 52 cards, what is the probability of drawing two cards that have the same number (but not the same suit)?",
+    "solution": "To find the probability of drawing two cards with the same number, we first note that there are 13 different numbers (Ace through King) in a deck. For each number, there are 4 cards (one of each suit).\n\nThe probability can be calculated as follows:\n1. The first card can be any card, so there are 52 options.\n2. The second card must match the number of the first card but cannot be the same suit, leaving 3 options.\n\nThus, the probability is:\n\\[\nP(\\text{same number}) = \\frac{3}{51}\n\\]\n\nTherefore, the probability of drawing two cards with the same number is \\(\\boxed{\\frac{3}{51}}\\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111718",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

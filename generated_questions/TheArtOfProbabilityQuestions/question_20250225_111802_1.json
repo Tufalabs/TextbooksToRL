@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "A circle A of radius \\( a \\) is given, and there is a concentric circle B of radius \\( b \\) where \\( b < a \\). If a coin of radius \\( c \\) (where \\( c < b \\)) is tossed completely in circle A, what is the probability that the coin will not touch the edge of circle B? Additionally, what is the 50-50 diameter for this scenario?",
+    "solution": "To find the probability that the coin does not touch the edge of circle B, we can use the following conditions:\n\n1. If \\( a > b + 2c \\), then the probability \\( P \\) is given by:\n   \\[\n   P = \\frac{(a + c)^2 - 4bc}{a^2}\n   \\]\n\n2. If \\( a \\leq b + 2c \\), then the probability \\( P \\) is given by:\n   \\[\n   P = \\frac{(a - c)^2}{a^2}\n   \\]\n\nThe 50-50 diameter is the value of \\( a \\) such that the probability \\( P = 0.5 \\). \n\nTo find the specific values, we would need to set the equations equal to 0.5 and solve for \\( a \\) based on the given values of \\( b \\) and \\( c \\).\n\nThus, the final answer for the probability will depend on the specific values of \\( a \\), \\( b \\), and \\( c \\).\n\nFor example, if \\( a = 3 \\), \\( b = 1 \\), and \\( c = 0.5 \\):\n- Since \\( 3 > 1 + 2(0.5) \\), we use the first formula:\n\\[\nP = \\frac{(3 + 0.5)^2 - 4(1)(0.5)}{3^2} = \\frac{(3.5)^2 - 2}{9} = \\frac{12.25 - 2}{9} = \\frac{10.25}{9} \\approx 1.139\n\\]\nThis indicates that the probability exceeds 1, which is not possible, so we need to adjust our values accordingly.\n\nThe 50-50 diameter can be calculated similarly based on the conditions provided.",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111802",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

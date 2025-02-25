@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If the probability of getting either a 7 or an 11 in the roll of two dice is given as \\( \\frac{2}{9} \\), how many total outcomes correspond to rolling a 7 or an 11?",
+    "solution": "The total number of outcomes when rolling two dice is \\(6 \\times 6 = 36\\). \n\nGiven that the probability of rolling either a 7 or an 11 is \\( \\frac{2}{9} \\), we can find the number of favorable outcomes by multiplying the total outcomes by the probability:\n\n\\[\n\\text{Number of favorable outcomes} = P(\\text{7 or 11}) \\times \\text{Total outcomes} = \\frac{2}{9} \\times 36 = 8.\n\\]\n\nThus, the number of outcomes corresponding to rolling a 7 or an 11 is:\n\n\\[\n\\boxed{8}.\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111819",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

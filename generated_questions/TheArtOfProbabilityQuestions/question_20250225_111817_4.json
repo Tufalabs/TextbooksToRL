@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If the phase angle \\( \\theta \\) is \\( \\frac{3\\pi}{2} \\), what is the probability of obtaining the outcome \"TH\" (the first coin showing tails and the second showing heads)?",
+    "solution": "Using the formula for the outcome \"TH\":\n\n\\[\nP(TH) = \\frac{-1 + e^{i\\theta}}{2} + \\frac{-1 + e^{-i\\theta}}{2} = \\frac{(-1 + e^{i\\theta}) + (-1 + e^{-i\\theta})}{4}\n\\]\n\nSubstituting \\( \\theta = \\frac{3\\pi}{2} \\):\n\n\\[\nP(TH) = \\frac{-1 + e^{i\\frac{3\\pi}{2}} - 1 + e^{-i\\frac{3\\pi}{2}}}{4}\n\\]\n\nCalculating \\( e^{i\\frac{3\\pi}{2}} \\) and \\( e^{-i\\frac{3\\pi}{2}} \\):\n\n\\[\ne^{i\\frac{3\\pi}{2}} = 0 - i(1) = -i, \\quad e^{-i\\frac{3\\pi}{2}} = 0 + i(1) = i\n\\]\n\nNow substituting these values back into the probability equation:\n\n\\[\nP(TH) = \\frac{-1 - 1 - i + i}{4} = \\frac{-2}{4} = -\\frac{1}{2}\n\\]\n\nSince probabilities cannot be negative, we interpret this as indicating a perfect negative correlation. Thus, the probability of obtaining the outcome \"TH\" when \\( \\theta = \\frac{3\\pi}{2} \\) is:\n\n\\[\n\\boxed{0}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111817",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

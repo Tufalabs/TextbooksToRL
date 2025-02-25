@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If the probability of drawing an ace is \\(\\frac{1}{13}\\), what is the probability of not drawing an ace in two successive draws with replacement?",
+    "solution": "The probability of not drawing an ace in one draw is:\n\n\\[\nP(\\text{Not Ace}) = 1 - P(\\text{Ace}) = 1 - \\frac{1}{13} = \\frac{12}{13}\n\\]\n\nSince the draws are independent (due to replacement), the probability of not drawing an ace in two successive draws is:\n\n\\[\nP(\\text{Not Ace in two draws}) = P(\\text{Not Ace}) \\times P(\\text{Not Ace}) = \\frac{12}{13} \\times \\frac{12}{13} = \\left(\\frac{12}{13}\\right)^2 = \\frac{144}{169}\n\\]\n\nThus, the final answer is:\n\n\\[\n\\boxed{\\frac{144}{169}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111749",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

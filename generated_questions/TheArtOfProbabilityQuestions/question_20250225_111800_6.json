@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If a certain process has a uniform probability distribution over an interval of length 10, what is the probability of selecting a number less than 3 from this interval?",
+    "solution": "In a uniform distribution over an interval of length 10, the probability of selecting a number less than a certain value can be calculated as the ratio of the length of the desired interval to the total length of the distribution.\n\nThe length of the interval from 0 to 3 is 3, and the total length of the distribution is 10:\n\n\\[\nP(X < 3) = \\frac{\\text{Length of interval}}{\\text{Total length}} = \\frac{3}{10} = 0.3\n\\]\n\nThus, the probability of selecting a number less than 3 from this interval is:\n\n\\[\n\\boxed{0.3}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111800",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If the host reveals a curtain that does not have the prize with a probability \\( p \\) and you initially choose curtain A, what is the probability that the prize is behind curtain B if \\( p = 1/3 \\)?",
+    "solution": "Using the formula for the probability of winning:\n\\[\nP = \\frac{1}{1 + 2p}\n\\]\nSubstituting \\( p = 1/3 \\):\n\\[\nP = \\frac{1}{1 + 2(1/3)} = \\frac{1}{1 + \\frac{2}{3}} = \\frac{1}{\\frac{5}{3}} = \\frac{3}{5}\n\\]\nThus, the probability that the prize is behind curtain B when \\( p = 1/3 \\) is:\n\\[\n\\boxed{\\frac{3}{5}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111738",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

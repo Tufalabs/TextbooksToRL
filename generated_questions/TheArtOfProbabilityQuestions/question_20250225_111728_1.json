@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a simulation of call durations, the average length of a call is modeled using an exponential distribution with a mean of 5 minutes. If you simulate 10 calls, what is the expected total duration of these calls?",
+    "solution": "The expected duration of a single call is given by the mean of the exponential distribution, which is 5 minutes. Therefore, for 10 calls, the expected total duration can be calculated as follows:\n\n\\[\n\\text{Total Duration} = \\text{Number of Calls} \\times \\text{Mean Duration} = 10 \\times 5 = 50 \\text{ minutes}\n\\]\n\nThus, the expected total duration of the 10 calls is \n\n\\[\n\\boxed{50} \\text{ minutes}.\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111728",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

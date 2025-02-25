@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "Given the probability density function of the normal distribution \\( p(x) = \\frac{1}{\\sqrt{2\\pi}} e^{-x^2/2} \\), calculate the value of \\( p(0) \\).",
+    "solution": "To find \\( p(0) \\), we substitute \\( x = 0 \\) into the probability density function:\n\n\\[\np(0) = \\frac{1}{\\sqrt{2\\pi}} e^{-0^2/2} = \\frac{1}{\\sqrt{2\\pi}} e^{0} = \\frac{1}{\\sqrt{2\\pi}}.\n\\]\n\nUsing the approximate value of \\( \\pi \\approx 3.14159 \\):\n\n\\[\np(0) \\approx \\frac{1}{\\sqrt{2 \\times 3.14159}} \\approx \\frac{1}{\\sqrt{6.28318}} \\approx \\frac{1}{2.50663} \\approx 0.3989.\n\\]\n\nThus, the value of \\( p(0) \\) is approximately \n\n\\[\n\\boxed{0.3989}.\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111714",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "Using the table provided in the text, what is the estimated probability for n = 4 in the elevator problem?",
+    "solution": "From the table provided in the text, the estimated probability for \\(n = 4\\) is given as:\n\n\\[\nP(4) \\approx 0.0918\n\\]\n\nThus, the estimated probability for n = 4 in the elevator problem is:\n\n\\[\n\\boxed{0.0918}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111733",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

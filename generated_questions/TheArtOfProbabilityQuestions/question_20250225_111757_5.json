@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In the context of the Six Dice Game, if you roll six dice, what is the probability of rolling exactly one 6? Use the provided probability formula from the table to calculate your answer.",
+    "solution": "To find the probability of rolling exactly one 6 when rolling six dice, we can use the formula given in the table:\n\n\\[\nP(1 \\text{ six}) = 6 \\left( \\frac{5}{6} \\right)^5 \\left( \\frac{1}{6} \\right)^1\n\\]\n\nCalculating this step-by-step:\n\n1. Calculate \\( \\left( \\frac{5}{6} \\right)^5 \\):\n   \\[\n   \\left( \\frac{5}{6} \\right)^5 = \\frac{3125}{7776}\n   \\]\n\n2. Calculate \\( \\left( \\frac{1}{6} \\right)^1 \\):\n   \\[\n   \\left( \\frac{1}{6} \\right)^1 = \\frac{1}{6}\n   \\]\n\n3. Now, multiply these results by 6:\n   \\[\n   P(1 \\text{ six}) = 6 \\times \\frac{3125}{7776} \\times \\frac{1}{6}\n   \\]\n\n4. Simplifying:\n   \\[\n   P(1 \\text{ six}) = \\frac{3125}{7776}\n   \\]\n\nThus, the probability of rolling exactly one 6 is:\n\n\\[\n\\boxed{\\frac{3125}{7776}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111757",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

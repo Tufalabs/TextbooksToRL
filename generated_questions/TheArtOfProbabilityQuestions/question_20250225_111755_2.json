@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In the context of the Two Gold Coins Problem, if you were to conduct an experiment with 6000 cards representing the initial choices of drawer and coin distribution, how many cards would represent the scenario where a gold coin is drawn from Drawer 1 (which contains two gold coins)?",
+    "solution": "In the Two Gold Coins Problem, Drawer 1 contains two gold coins (G1 and G2). The total number of initial choices is represented by 6000 cards, with each drawer and coin combination being equally likely.\n\nSince there are three drawers, the probability of choosing any one drawer is \\( \\frac{1}{3} \\). Each drawer has two possible outcomes for drawing a coin (for Drawer 1, both outcomes are gold). Therefore, the total number of outcomes for Drawer 1 is:\n\n\\[\n\\text{Total outcomes for Drawer 1} = 2 \\text{ (G1, G2)}\n\\]\n\nThe total number of outcomes across all drawers is:\n\n\\[\n\\text{Total outcomes} = 3 \\text{ drawers} \\times 2 \\text{ outcomes per drawer} = 6\n\\]\n\nNow, the proportion of outcomes that correspond to Drawer 1 is:\n\n\\[\n\\text{Proportion for Drawer 1} = \\frac{2}{6} = \\frac{1}{3}\n\\]\n\nTo find the number of cards representing the scenario where a gold coin is drawn from Drawer 1, we multiply the total number of cards by this proportion:\n\n\\[\n\\text{Number of cards for Drawer 1} = 6000 \\times \\frac{1}{3} = 2000\n\\]\n\nThus, the number of cards representing the scenario where a gold coin is drawn from Drawer 1 is:\n\n\\[\n\\boxed{2000}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111755",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

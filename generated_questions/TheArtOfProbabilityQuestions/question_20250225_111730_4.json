@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If you randomly select a day from a year, what is the probability that the selected day falls in a month with 30 days?",
+    "solution": "In a year, there are 12 months, and 4 of those months have 30 days (April, June, September, and November). Therefore, the total number of days in those months is:\n\n\\[\n4 \\times 30 = 120 \\text{ days}\n\\]\n\nThe probability of selecting a day that falls in a month with 30 days is given by the ratio of successful outcomes (days in 30-day months) to the total outcomes (days in a year):\n\n\\[\nP(\\text{30-day month}) = \\frac{120}{365}\n\\]\n\nThis fraction cannot be simplified further, so the probability is \n\n\\[\n\\boxed{\\frac{120}{365}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111730",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "The error function \\( \\Phi(z) \\) is defined as \\( \\Phi(z) = \\frac{1}{\\sqrt{2\\pi}} \\int_{-\\infty}^{z} e^{-t^2/2} dt \\). Calculate \\( \\Phi(0) \\).",
+    "solution": "To calculate \\( \\Phi(0) \\):\n\n\\[\n\\Phi(0) = \\frac{1}{\\sqrt{2\\pi}} \\int_{-\\infty}^{0} e^{-t^2/2} dt.\n\\]\n\nBy symmetry of the normal distribution, we know that:\n\n\\[\n\\Phi(0) = \\frac{1}{2}.\n\\]\n\nThus, the value of \\( \\Phi(0) \\) is \n\n\\[\n\\boxed{0.5}.\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111714",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

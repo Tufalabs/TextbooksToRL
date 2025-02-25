@@ -74,7 +74,8 @@ class QuestionGenerator:
                     "domain": qa.domain.value if qa.domain else None,
                     "timestamp": timestamp,
                     "difficulty_description": difficulty.get_description(),
-                    "model": self.model_name
+                    "model": self.model_name,
+                    "boxed_solution": qa.boxed_solution if hasattr(qa, 'boxed_solution') else None
                 }
                 
                 filename = f"question_{timestamp}_{i+1}.json"
@@ -158,8 +159,19 @@ class QuestionGenerator:
             correct_solution
         )
         
+        # Extract the last boxed solution if it exists
+        boxed_solution = None
+        if "\\boxed{" in correct_solution:
+            try:
+                last_start = correct_solution.rindex("\\boxed{") + 7
+                last_end = correct_solution.index("}", last_start)
+                boxed_solution = correct_solution[last_start:last_end]
+            except ValueError:
+                pass
+        
         return ValidationResult(
             is_correct=eval_result[0] == 1,
             score=float(eval_result[0]),
-            feedback=None
+            feedback=None,
+            boxed_solution=boxed_solution
         ) 

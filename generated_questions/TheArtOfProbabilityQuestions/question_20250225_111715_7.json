@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If the expected value of the sum of three dice is 60, what is the expected value of a single die?",
+    "solution": "The expected value of the sum of three independent dice is given as 60. Since the expected value of the sum of three dice is three times the expected value of a single die, we can express this as:\n\n\\[\nE(X_1 + X_2 + X_3) = E(X_1) + E(X_2) + E(X_3) = 3E(X)\n\\]\n\nSetting this equal to 60 gives:\n\n\\[\n3E(X) = 60 \\implies E(X) = \\frac{60}{3} = 20\n\\]\n\nThus, the expected value of a single die is \\(\\boxed{20}\\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111715",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

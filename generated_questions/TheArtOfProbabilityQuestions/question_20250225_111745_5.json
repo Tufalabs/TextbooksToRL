@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a mathematical model examining robustness, if the second order derivative is \\( B = 10 \\) and the cross derivative is \\( C = 2 \\), what is the effect on the performance if the variance \\( VAR(e(k)) = 5 \\) and the number of variables \\( n = 6 \\)?",
+    "solution": "Using the formula:\n\n\\[\nQ(p(k)) = Q(1/n) + \\frac{1}{2}(B - C)nVAR(e(k))\n\\]\n\nSubstituting the given values:\n\n- \\( B = 10 \\)\n- \\( C = 2 \\)\n- \\( VAR(e(k)) = 5 \\)\n- \\( n = 6 \\)\n\nFirst, calculate \\( B - C \\):\n\n\\[\nB - C = 10 - 2 = 8\n\\]\n\nNow substituting into the formula:\n\n\\[\nQ(p(k)) = Q(1/n) + \\frac{1}{2}(8)(6)(5)\n\\]\n\nCalculating the product:\n\n\\[\nQ(p(k)) = Q(1/n) + \\frac{1}{2}(240) = Q(1/n) + 120\n\\]\n\nThus, the final expression for \\( Q(p(k)) \\) is:\n\n\\[\n\\boxed{Q(1/n) + 120}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111745",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

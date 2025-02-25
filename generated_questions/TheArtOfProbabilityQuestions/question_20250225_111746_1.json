@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "Suppose you have a set of 49 chips labeled with the numbers 1 through 49. What is the probability of drawing the chip labeled with the number 7 at random? Additionally, what is the probability of drawing a chip with a number greater than or equal to 7?",
+    "solution": "To find the probability of drawing the chip labeled with the number 7, we note that there is only one chip labeled 7 out of a total of 49 chips. Therefore, the probability is calculated as follows:\n\n\\[\n\\text{Prob}(\\text{drawing 7}) = \\frac{1}{49}\n\\]\n\nNext, to find the probability of drawing a chip with a number greater than or equal to 7, we count the total number of favorable outcomes. The numbers greater than or equal to 7 are 7, 8, 9, ..., 49. This gives us:\n\n\\[\n\\text{Total favorable outcomes} = 49 - 7 + 1 = 43\n\\]\n\nThus, the probability of drawing a chip with a number greater than or equal to 7 is:\n\n\\[\n\\text{Prob}(\\text{number} \\geq 7) = \\frac{43}{49}\n\\]\n\nFinal answers:\n- Probability of drawing the chip labeled 7: \\(\\boxed{\\frac{1}{49}}\\)\n- Probability of drawing a chip with a number greater than or equal to 7: \\(\\boxed{\\frac{43}{49}}\\)",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111746",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

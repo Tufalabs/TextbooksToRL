@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a scenario where a biased coin has a probability of landing heads of 0.7, what is the expected number of heads in 150 tosses?",
+    "solution": "The expected value \\( E \\) of heads in a single toss of this biased coin is \\( 0.7 \\). Therefore, for 150 independent tosses, the expected number of heads is calculated as follows:\n\n\\[\nE = n \\cdot p = 150 \\cdot 0.7 = 105\n\\]\n\nThus, the expected number of heads in 150 tosses is \n\n\\[\n\\boxed{105}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111756",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

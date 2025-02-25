@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If the characteristic roots of a linear differential equation are \\( 1 \\) and \\( \\frac{1}{2} \\), what is the general solution of the homogeneous equation?",
+    "solution": "Given the distinct characteristic roots \\( m_1 = 1 \\) and \\( m_2 = \\frac{1}{2} \\), the general solution of the homogeneous equation can be expressed as:\n\n\\[\ny(z) = C_1 e^{m_1 z} + C_2 e^{m_2 z}\n\\]\n\nSubstituting the values of the roots:\n\n\\[\ny(z) = C_1 e^{1 \\cdot z} + C_2 e^{\\frac{1}{2} \\cdot z}\n\\]\n\nThus, the general solution is:\n\n\\[\n\\boxed{y(z) = C_1 e^z + C_2 e^{\\frac{1}{2} z}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111744",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

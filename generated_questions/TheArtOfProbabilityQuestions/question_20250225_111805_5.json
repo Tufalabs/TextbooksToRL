@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If the transition probabilities in the state diagram for the coin toss problem are such that the probability of going from state S1 (T, tail) to S1 is 0.5, from S1 to S2 (H, head) is 0.5, and from S2 to S3 (HH, two heads in a row) is 0.5, what is the probability of reaching state S3 in exactly 3 tosses?",
+    "solution": "To find the probability of reaching state S3 in exactly 3 tosses, we need to consider the sequences of tosses that lead to two heads in a row at the 3rd toss. The valid sequences that end with HH at the 3rd toss are:\n\n1. THH\n2. HTH\n\nWe can calculate the probability for each sequence:\n\n1. **THH**: \n   - Probability = \\(0.5 \\times 0.5 \\times 0.5 = 0.125\\)\n\n2. **HTH**: \n   - Probability = \\(0.5 \\times 0.5 \\times 0.5 = 0.125\\)\n\nNow, we sum the probabilities of all valid sequences:\n\\[\nP(S1 \\to S3 \\text{ in 3 tosses}) = 0.125 + 0.125 = 0.25\n\\]\n\nThus, the probability of reaching state S3 in exactly 3 tosses is \n\\[\n\\boxed{0.25}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111805",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

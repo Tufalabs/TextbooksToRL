@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a simulation, you find that the theoretical expected value is 6.0, but your simulation results yield a median value of 5.5. If you want to determine the absolute difference between the theoretical expected value and the median value from the simulation, what is that difference?",
+    "solution": "To find the absolute difference, subtract the median value from the theoretical expected value.\n\nAbsolute difference = |Theoretical expected value - Median value| = |6.0 - 5.5| = 0.5\n\nThus, the absolute difference between the theoretical expected value and the median value is \n\n\\[\n\\boxed{0.5}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111717",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

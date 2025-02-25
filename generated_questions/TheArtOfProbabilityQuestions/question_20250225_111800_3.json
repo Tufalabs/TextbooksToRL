@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a series of trials where the ball is dropped 100 times with the knife edge at the center, how many times would you expect the ball to fall to the left side, given that the probability of falling to the left is 0.5?",
+    "solution": "To find the expected number of times the ball falls to the left side, we can use the formula for expected value:\n\n\\[\nE = n \\cdot P(\\text{left})\n\\]\n\nwhere \\( n \\) is the total number of trials (100) and \\( P(\\text{left}) \\) is the probability of falling to the left (0.5).\n\n\\[\nE = 100 \\cdot 0.5 = 50\n\\]\n\nThus, the expected number of times the ball will fall to the left side is:\n\n\\[\n\\boxed{50}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111800",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

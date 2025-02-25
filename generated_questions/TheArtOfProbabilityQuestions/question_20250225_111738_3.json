@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If the host has a probability \\( p \\) of revealing a curtain that does not have the prize, what is the probability \\( P \\) of winning if \\( p = 1/2 \\)?",
+    "solution": "Using the formula provided in the text, we have:\n\\[\nP = \\frac{1}{1 + 2p}\n\\]\nSubstituting \\( p = 1/2 \\):\n\\[\nP = \\frac{1}{1 + 2(1/2)} = \\frac{1}{1 + 1} = \\frac{1}{2}\n\\]\nThus, the probability of winning when \\( p = 1/2 \\) is:\n\\[\n\\boxed{\\frac{1}{2}}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111738",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

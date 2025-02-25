@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "If we want to find the probability of rolling a sum of \\( k = 9 \\) with three six-sided dice, how many total canonical partitions correspond to this sum?",
+    "solution": "From the table, the canonical partitions for \\( k = 9 \\) are:\n- (1, 2, 6)\n- (1, 3, 5)\n- (1, 4, 4)\n- (2, 2, 5)\n- (2, 3, 4)\n- (3, 3, 3)\n\nCounting these, we find there are 6 canonical partitions.\n\nThus, the total number of canonical partitions for \\( k = 9 \\) is \\(\\boxed{6}\\).",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111740",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}

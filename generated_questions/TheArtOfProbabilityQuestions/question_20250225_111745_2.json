@@ -1,0 +1,11 @@
+{
+    "source": null,
+    "question": "In a robust elevator problem, if the performance of the elevator system is affected by small deviations from a uniform distribution, and the second order derivative at the symmetric point is \\( B = 5 \\) while the cross derivative is \\( C = 1 \\), what is the effect on the performance if the variance \\( VAR(e(k)) = 4 \\) and the number of elevators \\( n = 10 \\)?",
+    "solution": "Using the formula for the effect on performance:\n\n\\[\nQ(p(k)) = Q(1/n) + \\frac{1}{2}(B - C)nVAR(e(k))\n\\]\n\nWe substitute the given values:\n\n- \\( B = 5 \\)\n- \\( C = 1 \\)\n- \\( VAR(e(k)) = 4 \\)\n- \\( n = 10 \\)\n\nFirst, calculate \\( B - C \\):\n\n\\[\nB - C = 5 - 1 = 4\n\\]\n\nNow substituting into the formula:\n\n\\[\nQ(p(k)) = Q(1/n) + \\frac{1}{2}(4)(10)(4)\n\\]\n\nCalculating the product:\n\n\\[\nQ(p(k)) = Q(1/n) + \\frac{1}{2}(160) = Q(1/n) + 80\n\\]\n\nThus, the final expression for \\( Q(p(k)) \\) is:\n\n\\[\n\\boxed{Q(1/n) + 80}\n\\]",
+    "hints": null,
+    "difficulty": "undergrad",
+    "domain": null,
+    "timestamp": "20250225_111745",
+    "difficulty_description": "College undergraduate level complexity",
+    "model": "gpt-4o-mini"
+}
