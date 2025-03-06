@@ -7,19 +7,40 @@ class ResponseParser:
     
     @staticmethod
     def extract_qa_pairs(text: str) -> List[QuestionAnswer]:
-        """Extract question-answer pairs from text that contains XML-like tags."""
-        # Pattern to match question and solution groups, with optional source
-        pattern = r'(?:<source>(.*?)</source>\s*)?<question>(.*?)</question>\s*<solution>(.*?)</solution>'
-        matches = re.findall(pattern, text, re.DOTALL)
+        """Extract question-answer pairs from text that contains XML-like tags or markdown-style formatting."""
+        print("MODEL OUTPUT: ", text)
         
-        print(f"Found {len(matches)} question-answer pairs in text")  # Debug print
+        # First try XML pattern
+        xml_pattern = r'(?:<source>(.*?)</source>\s*)?<question>(.*?)</question>\s*<solution>(.*?)</solution>'
+        xml_matches = re.findall(xml_pattern, text, re.DOTALL)
         
+        if xml_matches:
+            print(f"Found {len(xml_matches)} question-answer pairs using XML pattern")
+            return ResponseParser._process_matches(xml_matches)
+        
+        # If no XML matches, try markdown-style pattern
+        # Look for ### Question X followed by ### Solution X
+        md_pattern = r'### Question (?:\d+|[A-Za-z]+)(.*?)(?:---|### Solution (?:\d+|[A-Za-z]+))(.*?)(?:---|### Question|$)'
+        md_matches = re.findall(md_pattern, text, re.DOTALL)
+        
+        if md_matches:
+            # Convert to same format as XML matches (source, question, solution)
+            formatted_matches = [(None, q.strip(), s.strip()) for q, s in md_matches]
+            print(f"Found {len(formatted_matches)} question-answer pairs using markdown pattern")
+            return ResponseParser._process_matches(formatted_matches)
+            
+        print("No question-answer pairs found in text")
+        return []
+    
+    @staticmethod
+    def _process_matches(matches):
+        """Process matches to create QuestionAnswer objects, removing duplicates."""
         # Track used questions to avoid duplicates
         seen_questions = set()
         qa_pairs = []
         
         for match in matches:
-            # If source is present, it's in match[0], otherwise it's an empty string
+            # If source is present, it's in match[0], otherwise it's an empty string or None
             source, question, solution = match
             question_clean = question.strip()
             
@@ -32,7 +53,7 @@ class ResponseParser:
             qa = QuestionAnswer(
                 question=question_clean,
                 solution=solution.strip(),
-                source=source.strip() or None  # Convert empty string to None
+                source=source.strip() if source else None  # Convert empty string to None
             )
             qa_pairs.append(qa)
         

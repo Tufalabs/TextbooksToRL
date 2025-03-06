@@ -94,6 +94,17 @@ class TextbookManager:
         """Get list of all textbook names."""
         return list(self.textbooks.keys())
 
+    def get_all_textbooks(self) -> List[Textbook]:
+        """Get list of all textbook objects.
+        
+        Returns:
+            List of all Textbook objects managed by this TextbookManager
+        """
+        print(f"Textbooks dictionary contains {len(self.textbooks)} items")
+        textbooks_list = list(self.textbooks.values())
+        print(f"Returning {len(textbooks_list)} textbooks")
+        return textbooks_list
+
     def process_directory(self) -> None:
         """Process all PDFs in the pdf directory to text files."""
         if not self.pdf_dir:

@@ -3,7 +3,7 @@ import json
 
 def get_math_test_set():
     # Load the counting_and_probability subset from MATH-lighteval
-    dataset = load_dataset("digitallearninggmbh/MATH-lighteval")
+    dataset = load_dataset("xDAN2099/lighteval-MATH")
     
     # Convert the dataset to a list of dictionaries
     test_data = list(dataset['test'])

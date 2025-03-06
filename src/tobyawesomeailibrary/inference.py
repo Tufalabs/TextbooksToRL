@@ -47,8 +47,7 @@ async def generate_text(model: str, prompt: str, max_tokens: int = 8000, tempera
         response = await async_openai_client.chat.completions.create(
             model=model,
             messages=[{"role": "user", "content": prompt}],
-            max_tokens=max_tokens,
-            temperature=temperature
+          
         )
         return response.choices[0].message.content.strip()
     
@@ -96,13 +95,17 @@ async def generate_text(model: str, prompt: str, max_tokens: int = 8000, tempera
     
     # DeepSeek models
     elif model.startswith("deepseek-"):
-        response = await deepseek_client.chat.completions.create(
-            model=model,
-            messages=[{"role": "user", "content": prompt}],
-            max_tokens=max_tokens,
-            temperature=temperature
-        )
-        return response.choices[0].message.content.strip()
+        try:
+            response = await deepseek_client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": prompt}],
+                max_tokens=max_tokens,
+                temperature=temperature
+            )
+            return response.choices[0].message.content.strip()
+        except Exception as e:  
+            print(f"An error occurred while generating text with DeepSeek model: {e}")
+            raise
     
     else:
         raise ValueError(f"Unsupported model: {model}")
