@@ -28,7 +28,7 @@ textbooks/pdf/
 ### Step 2: Parse PDFs
 First, run the parsing script to convert PDFs to text format:
 ```bash
-python parse_pdfs.py
+python scripts/process_pdfs.py --textbooks-dir textbooks/pdfs --parsed-dir textbooks/txt
 ```
 This will:
 - Process all PDFs in `textbooks/pdf/`
