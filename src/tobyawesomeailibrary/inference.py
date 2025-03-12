@@ -9,10 +9,10 @@ import asyncio
 import requests
 
 # API Keys
-openai_api_key = "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"
-anthropic_api_key = "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"
-deepseek_api_key = "sk-001083745c96497dad47fbbda4114467"
-deepinfra_api_key = "1p4JUUNWSJ2sOwxFk7AKbT4eaIJ9VcVq"
+openai_api_key = os.getenv('OPENAI_API_KEY')
+anthropic_api_key = os.getenv('ANTHROPIC_API_KEY')
+deepseek_api_key = os.getenv('DEEPSEEK_API_KEY')
+deepinfra_api_key = os.getenv('DEEPINFRA_API_KEY')
 
 # Initialize clients
 async_openai_client = AsyncOpenAI(api_key=openai_api_key)
@@ -22,8 +22,6 @@ deepseek_client = AsyncOpenAI(
     base_url="https://api.deepseek.com"
 )
 
-# Add DeepInfra API key
-deepinfra_api_key = "1p4JUUNWSJ2sOwxFk7AKbT4eaIJ9VcVq"
 
 # Add DeepInfra client initialization
 deepinfra_client = AsyncOpenAI(
