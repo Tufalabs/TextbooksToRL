@@ -5,3 +5,4 @@ textbooks/txt/*
 venv/
 __pycache__/
 generated_questions/*
+venv/
