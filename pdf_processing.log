@@ -1,62 +1,12 @@
-2025-03-06 13:42:15,364 - INFO - Input directory (absolute): /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs
-2025-03-06 13:42:15,364 - INFO - Output directory (absolute): /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/txt
-2025-03-06 13:42:15,364 - INFO - Found 27 PDF files to process
-2025-03-06 13:42:15,364 - INFO - Testing with first PDF: TopNotes_Spring10.pdf
-2025-03-06 13:42:15,364 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/TopNotes_Spring10.pdf
-2025-03-06 13:42:15,594 - INFO - Successfully processed TopNotes_Spring10.pdf with PyMuPDF
-2025-03-06 13:42:15,595 - INFO - Test processing successful, continuing with batch processing
-2025-03-06 13:42:15,595 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/TopNotes_Spring10.pdf
-2025-03-06 13:42:15,595 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/gtnotes.pdf
-2025-03-06 13:42:15,602 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/geoghe.pdf
-2025-03-06 13:42:15,608 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/Condensed Matter Field Theory, Second Edition (Altland Alexander, Simons Ben D.) (Z-Library).pdf
-2025-03-06 13:42:16,580 - INFO - Successfully processed TopNotes_Spring10.pdf with PyMuPDF
-2025-03-06 13:42:16,681 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/Differential Geometry of Curves and Surfaces (Manfredo P. do Carmo) (Z-Library).pdf
-2025-03-06 13:42:16,714 - INFO - Successfully processed gtnotes.pdf with PyMuPDF
-2025-03-06 13:42:16,909 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/Nuclear and particle physics [an introduction] (Professor Brian Martin) (Z-Library).pdf
-2025-03-06 13:42:20,270 - INFO - Successfully processed Nuclear and particle physics [an introduction] (Professor Brian Martin) (Z-Library).pdf with PyMuPDF
-2025-03-06 13:42:20,318 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/Introduction to Elementary Particles, 2nd revised edition (David J. Griffiths) (Z-Library).pdf
-2025-03-06 13:42:20,361 - INFO - Successfully processed Differential Geometry of Curves and Surfaces (Manfredo P. do Carmo) (Z-Library).pdf with PyMuPDF
-2025-03-06 13:42:20,376 - INFO - Successfully processed geoghe.pdf with PyMuPDF
-2025-03-06 13:42:20,414 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/pde_notes.pdf
-2025-03-06 13:42:20,456 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/Classical Electrodynamics, 3rd edition (John David Jackson) (Z-Library).pdf
-2025-03-06 13:42:23,118 - INFO - Successfully processed pde_notes.pdf with PyMuPDF
-2025-03-06 13:42:23,182 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/Measure Theory (Paul R. Halmos) (Z-Library).pdf
-2025-03-06 13:42:24,960 - INFO - Successfully processed Condensed Matter Field Theory, Second Edition (Altland Alexander, Simons Ben D.) (Z-Library).pdf with PyMuPDF
-2025-03-06 13:42:25,070 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/Principles of Plasma Physics for Engineers and Scientists (Umran S. Inan, Marek Gołkowski) (Z-Library).pdf
-2025-03-06 13:42:26,169 - INFO - Successfully processed Measure Theory (Paul R. Halmos) (Z-Library).pdf with PyMuPDF
-2025-03-06 13:42:26,253 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/Organic Chemistry (T. W. Graham Solomons, Craig B. Fryhle etc.) (Z-Library).pdf
-2025-03-06 13:42:28,335 - INFO - Successfully processed Introduction to Elementary Particles, 2nd revised edition (David J. Griffiths) (Z-Library).pdf with PyMuPDF
-2025-03-06 13:42:28,495 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/Number Theory, Volume I Tools and Diophantine Equations (Cohen, Henri) (Z-Library).pdf
-2025-03-06 13:42:28,529 - INFO - Successfully processed Principles of Plasma Physics for Engineers and Scientists (Umran S. Inan, Marek Gołkowski) (Z-Library).pdf with PyMuPDF
-2025-03-06 13:42:28,735 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/Functional Analysis - Second Edition (Walter Rudin) (Z-Library).pdf
-2025-03-06 13:42:35,053 - INFO - Successfully processed Functional Analysis - Second Edition (Walter Rudin) (Z-Library).pdf with PyMuPDF
-2025-03-06 13:42:35,173 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/9312416 (1).pdf
-2025-03-06 13:42:36,503 - INFO - Successfully processed 9312416 (1).pdf with PyMuPDF
-2025-03-06 13:42:36,610 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/An Introduction to Homological Algebra  ( etc.) (Z-Library).pdf
-2025-03-06 13:42:40,180 - INFO - Successfully processed Number Theory, Volume I Tools and Diophantine Equations (Cohen, Henri) (Z-Library).pdf with PyMuPDF
-2025-03-06 13:42:40,375 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/Gravitation (Charles W. Misner, Kip S. Thorne etc.) (Z-Library).pdf
-2025-03-06 13:42:45,474 - INFO - Successfully processed Classical Electrodynamics, 3rd edition (John David Jackson) (Z-Library).pdf with PyMuPDF
-2025-03-06 13:42:45,593 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/ANT.pdf
-2025-03-06 13:42:46,745 - INFO - Successfully processed An Introduction to Homological Algebra  ( etc.) (Z-Library).pdf with PyMuPDF
-2025-03-06 13:42:46,861 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/Asymmetric Synthesis II More Methods and Applications (Mathias Christmann, Stefan Bräse) (Z-Library).pdf
-2025-03-06 13:42:48,928 - INFO - Successfully processed ANT.pdf with PyMuPDF
-2025-03-06 13:42:49,052 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/A Course in Homological Algebra (Peter J. Hilton, Urs Stammbach) (Z-Library).pdf
-2025-03-06 13:42:51,915 - INFO - Successfully processed Asymmetric Synthesis II More Methods and Applications (Mathias Christmann, Stefan Bräse) (Z-Library).pdf with PyMuPDF
-2025-03-06 13:42:52,015 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/Wileys Solomons, Fryhle  Snyder Organic Chemistry For Jee ( Main  Advanced ) (M.S. Chouhan) (Z-Library).pdf
-2025-03-06 13:42:53,809 - INFO - Successfully processed A Course in Homological Algebra (Peter J. Hilton, Urs Stammbach) (Z-Library).pdf with PyMuPDF
-2025-03-06 13:42:54,201 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/Asymmetric Synthesis II More Methods and Applications (Mathias Christmann, Stefan Bräse) (Z-Library) (1).pdf
-2025-03-06 13:43:09,710 - INFO - Successfully processed Asymmetric Synthesis II More Methods and Applications (Mathias Christmann, Stefan Bräse) (Z-Library) (1).pdf with PyMuPDF
-2025-03-06 13:43:10,004 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/1901.03022v1.pdf
-2025-03-06 13:43:12,339 - INFO - Successfully processed Gravitation (Charles W. Misner, Kip S. Thorne etc.) (Z-Library).pdf with PyMuPDF
-2025-03-06 13:43:12,650 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/Combinatorial Optimization Polyhedra and Efficiency (3 volume, A,B,  C) (Alexander Schrijver) (Z-Library).pdf
-2025-03-06 13:43:15,774 - INFO - Successfully processed Organic Chemistry (T. W. Graham Solomons, Craig B. Fryhle etc.) (Z-Library).pdf with PyMuPDF
-2025-03-06 13:43:16,558 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/Gauge Theories in Particle Physics  From Relativistic Quantum Mechanics to QED, Fourth Edition (Aitchison, Ian J. R. Hey, Anthony J. G) (Z-Library).pdf
-2025-03-06 13:43:17,651 - INFO - Successfully processed 1901.03022v1.pdf with PyMuPDF
-2025-03-06 13:43:17,752 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/Many-body quantum theory in condensed matter physics (Henrik Bruus, Karsten Flensberg) (Z-Library).pdf
-2025-03-06 13:43:28,843 - INFO - Successfully processed Many-body quantum theory in condensed matter physics (Henrik Bruus, Karsten Flensberg) (Z-Library).pdf with PyMuPDF
-2025-03-06 13:43:28,894 - INFO - Successfully processed Gauge Theories in Particle Physics  From Relativistic Quantum Mechanics to QED, Fourth Edition (Aitchison, Ian J. R. Hey, Anthony J. G) (Z-Library).pdf with PyMuPDF
-2025-03-06 13:43:29,494 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/Cosmology (Steven Weinberg) (Z-Library).pdf
-2025-03-06 13:43:43,799 - INFO - Successfully processed Cosmology (Steven Weinberg) (Z-Library).pdf with PyMuPDF
-2025-03-06 13:44:01,160 - INFO - Successfully processed Combinatorial Optimization Polyhedra and Efficiency (3 volume, A,B,  C) (Alexander Schrijver) (Z-Library).pdf with PyMuPDF
-2025-03-06 13:44:16,001 - INFO - Successfully processed Wileys Solomons, Fryhle  Snyder Organic Chemistry For Jee ( Main  Advanced ) (M.S. Chouhan) (Z-Library).pdf with PyMuPDF
-2025-03-06 13:44:16,002 - INFO - PDF processing complete! Successfully processed: 27, Failed: 0
+2025-03-20 10:08:46,615 - INFO - Input directory (absolute): /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs
+2025-03-20 10:08:46,615 - INFO - Output directory (absolute): /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/txt
+2025-03-20 10:08:46,615 - INFO - Found 2 PDF files to process
+2025-03-20 10:08:46,615 - INFO - Testing with first PDF: real-and-complex-analysis.pdf
+2025-03-20 10:08:46,615 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/real-and-complex-analysis.pdf
+2025-03-20 10:08:48,419 - INFO - Successfully processed real-and-complex-analysis.pdf with PyMuPDF
+2025-03-20 10:08:48,419 - INFO - Test processing successful, continuing with batch processing
+2025-03-20 10:08:48,420 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/real-and-complex-analysis.pdf
+2025-03-20 10:08:48,420 - INFO - Processing: /Users/tamassimonds/Documents/Code/Ai/BeyondNextTokenPrediction/textbooks/pdfs/james-stewart-calculus-early-transcendentals-7th-edition-2012-1-20ng7to-1ck11on.pdf
+2025-03-20 10:08:52,188 - INFO - Successfully processed real-and-complex-analysis.pdf with PyMuPDF
+2025-03-20 10:09:02,257 - INFO - Successfully processed james-stewart-calculus-early-transcendentals-7th-edition-2012-1-20ng7to-1ck11on.pdf with PyMuPDF
+2025-03-20 10:09:02,258 - INFO - PDF processing complete! Successfully processed: 2, Failed: 0

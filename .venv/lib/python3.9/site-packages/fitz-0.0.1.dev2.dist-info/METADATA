@@ -1,0 +1,30 @@
+Metadata-Version: 2.0
+Name: fitz
+Version: 0.0.1.dev2
+Summary: Fitz: Workflow Mangement for neuroimaging data.
+Home-page: http://github.com/kastman/fitz
+Author: Erik Kastman
+Author-email: erik.kastman@gmail.com
+License: BSD (3-clause)
+Keywords: neuroimaging,workflows
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Dist: configobj
+Requires-Dist: configparser
+Requires-Dist: httplib2
+Requires-Dist: nibabel
+Requires-Dist: nipype
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyxnat
+Requires-Dist: scipy
+
+UNKNOWN
+
+
