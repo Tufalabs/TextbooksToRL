@@ -1,0 +1,21 @@
+# Core dependencies
+openai>=1.0.0
+anthropic>=0.7.0
+aiohttp>=3.8.0
+requests>=2.25.0
+asyncio>=3.4.3
+tqdm>=4.65.0
+PyPDF2>=3.0.0
+pyarrow>=14.0.0
+datasets>=2.14.0
+sympy>=1.12.0
+
+# PDF processing
+pymupdf>=1.22.0  # fitz is part of PyMuPDF
+
+# Type annotations
+typing-extensions>=4.7.0
+
+# Data manipulation
+numpy>=1.24.0
+pandas>=2.0.0 
