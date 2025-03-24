@@ -25,6 +25,8 @@ class QuestionPromptTemplates:
   Avoid trivial or too-simple problems.
   Strictly use what's already in the textbook snippet—do not create new or original problems.
 
+  Don't just point to theorems, lemmas equations etc without including them in the question. Remember I won't have access to the textbook snippet when I'm taking the quiz.
+
   For each question, follow the exact format:
   <question>
   [Include the complete problem statement here, with all required details from the text so it's self-contained.]

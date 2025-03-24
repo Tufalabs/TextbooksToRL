@@ -4,19 +4,21 @@ from lib.question_generator import QuestionGenerator
 from lib.question_generator.models import QuestionDifficulty
 from lib.textbook_manager import TextbookManager
 import os
+import json
+import random
 
 def parse_args():
     """Parse command line arguments."""
     parser = argparse.ArgumentParser(description='Generate questions from textbooks')
     parser.add_argument('--model', 
-                       default="deepseek-chat",
+                       default="Qwen/QwQ-32B",
                        help='Model to use for generation (default: deepseek-chat)')
     parser.add_argument('--output-dir', 
                        default="generated_questions/DS-MATH3.0",
                        help='Directory to save generated questions')
     parser.add_argument('--pages-per-group', 
                        type=int, 
-                       default=5,
+                       default=3,
                        help='Number of pages to process together (default: 5)')
     parser.add_argument('--batch-size', 
                        type=int, 
@@ -30,7 +32,7 @@ def parse_args():
 
 # Initialize manager
 textbook_manager = TextbookManager()
-generator = QuestionGenerator(model_name="deepseek-chat", output_dir="generated_questions/DS-MATH3.0")
+generator = QuestionGenerator(model_name="Qwen/QwQ-32B", output_dir="generated_questions/QWQ")
 
 # Create list of coroutines for each page
 
@@ -71,7 +73,7 @@ async def process_pages(textbook_name, start_page, num_pages=3):
 async def main():
     """Main async function to process textbooks and generate questions."""
     args = parse_args()
-    
+  
     # Initialize manager with command line arguments
     textbook_manager = TextbookManager()
     generator = QuestionGenerator(
@@ -79,9 +81,37 @@ async def main():
         output_dir=args.output_dir
     )
     
-    # Get all textbook names from the TextbookManager
+    # Check for already processed textbooks by looking at output directory
+    processed_textbooks = set()
+    output_dir = args.output_dir
+    if os.path.exists(output_dir):
+        for filename in os.listdir(output_dir):
+            if filename.endswith('.json'):
+                try:
+                    with open(os.path.join(output_dir, filename), 'r') as f:
+                        question_data = json.load(f)
+                        if 'source' in question_data:
+                            source = question_data['source']
+                            # Extract textbook name before '_pages_'
+                            textbook_name = source.split('_pages_')[0]
+                            processed_textbooks.add(textbook_name)
+                except Exception as e:
+                    print(f"Error reading {filename}: {e}")
+    
+    print(f"Found {len(processed_textbooks)} already processed textbooks: {processed_textbooks}")
+    
+    # Get all textbook names and shuffle them
     textbook_names = [f.replace('.txt', '') for f in os.listdir('textbooks/txt') if f.endswith('.txt')]
-    print(f"Found {len(textbook_names)} textbooks: {textbook_names}")
+    random.shuffle(textbook_names)  # Shuffle the textbooks
+    
+    # Filter out already processed textbooks by checking if the textbook name is contained in any processed source
+    unprocessed_textbooks = []
+    for textbook in textbook_names:
+        if not any(textbook in processed_source for processed_source in processed_textbooks):
+            unprocessed_textbooks.append(textbook)
+    
+    textbook_names = unprocessed_textbooks
+    print(f"Found {len(textbook_names)} unprocessed textbooks: {textbook_names}")
     
     all_questions = []
     PAGES_PER_GROUP = args.pages_per_group
