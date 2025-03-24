@@ -1,8 +1,7 @@
 set_api_keys.sh
 
 filtered_results/*
-textbooks/pdfs/*
-textbooks/txt/*
+
 .venv/
 __pycache__/
 generated_questions/*

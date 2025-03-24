@@ -14,20 +14,24 @@ anthropic_api_key = os.getenv('ANTHROPIC_API_KEY')
 deepseek_api_key = os.getenv('DEEPSEEK_API_KEY')
 deepinfra_api_key = os.getenv('DEEPINFRA_API_KEY')
 
-# Initialize clients
-async_openai_client = AsyncOpenAI(api_key=openai_api_key)
+# Initialize clients only when keys are available
+async_openai_client = None
+if openai_api_key:
+    async_openai_client = AsyncOpenAI(api_key=openai_api_key)
 
-deepseek_client = AsyncOpenAI(
-    api_key=deepseek_api_key,
-    base_url="https://api.deepseek.com"
-)
+deepseek_client = None
+if deepseek_api_key:
+    deepseek_client = AsyncOpenAI(
+        api_key=deepseek_api_key,
+        base_url="https://api.deepseek.com"
+    )
 
-
-# Add DeepInfra client initialization
-deepinfra_client = AsyncOpenAI(
-    api_key=deepinfra_api_key,
-    base_url="https://api.deepinfra.com/v1/openai"
-)
+deepinfra_client = None
+if deepinfra_api_key:
+    deepinfra_client = AsyncOpenAI(
+        api_key=deepinfra_api_key,
+        base_url="https://api.deepinfra.com/v1/openai"
+    )
 
 async def generate_text(model: str, prompt: str, max_tokens: int = 8000, temperature: float = 0) -> str:
     """
@@ -42,6 +46,9 @@ async def generate_text(model: str, prompt: str, max_tokens: int = 8000, tempera
     
     # OpenAI models
     if model.startswith("gpt-") or model.startswith("o1"):
+        if not async_openai_client:
+            raise ValueError("OpenAI API key not set or invalid. Set the OPENAI_API_KEY environment variable.")
+        
         response = await async_openai_client.chat.completions.create(
             model=model,
             messages=[{"role": "user", "content": prompt}],
@@ -50,6 +57,9 @@ async def generate_text(model: str, prompt: str, max_tokens: int = 8000, tempera
         return response.choices[0].message.content.strip()
     
     elif model.startswith("ft:gpt") or model.startswith("o1"):
+        if not async_openai_client:
+            raise ValueError("OpenAI API key not set or invalid. Set the OPENAI_API_KEY environment variable.")
+            
         response = await async_openai_client.chat.completions.create(
             model=model,
             messages=[{"role": "user", "content": prompt}],
@@ -60,6 +70,9 @@ async def generate_text(model: str, prompt: str, max_tokens: int = 8000, tempera
     
     # Anthropic (Claude) models
     elif model.startswith("claude-"):
+        if not anthropic_api_key:
+            raise ValueError("Anthropic API key not set or invalid. Set the ANTHROPIC_API_KEY environment variable.")
+            
         async def run_anthropic():
             client = anthropic.Anthropic(api_key=anthropic_api_key)
             if model.startswith("claude-3"):
@@ -83,6 +96,9 @@ async def generate_text(model: str, prompt: str, max_tokens: int = 8000, tempera
     
     # DeepInfra models
     elif model.startswith("meta-llama/") or model.startswith("deepseek-ai") or model.startswith("Qwen/") or model.startswith("Meta-Llama"):
+        if not deepinfra_client:
+            raise ValueError("DeepInfra API key not set or invalid. Set the DEEPINFRA_API_KEY environment variable.")
+            
         response = await deepinfra_client.chat.completions.create(
             model=model,
             messages=[{"role": "user", "content": prompt}],
@@ -93,6 +109,9 @@ async def generate_text(model: str, prompt: str, max_tokens: int = 8000, tempera
     
     # DeepSeek models
     elif model.startswith("deepseek-"):
+        if not deepseek_client:
+            raise ValueError("DeepSeek API key not set or invalid. Set the DEEPSEEK_API_KEY environment variable.")
+            
         try:
             response = await deepseek_client.chat.completions.create(
                 model=model,
