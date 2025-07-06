@@ -1,2 +1,0 @@
-[etsdemo_data]
-introduction = traits.examples._etsdemo_info:introduction
