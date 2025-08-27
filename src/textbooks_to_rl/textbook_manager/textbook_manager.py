@@ -1,72 +1,71 @@
-import os
-from pathlib import Path
-from typing import List, Optional, Dict
 import logging
+import random
+from pathlib import Path
+from typing import Dict, List, Optional
+
+import PyPDF2
+
 from .models import Textbook, TextbookPage
-import PyPDF2  # Add this import at the top
 
 logger = logging.getLogger(__name__)
 
+
 class TextbookManager:
     """Manages textbook content and access."""
-    
+
     def __init__(
         self,
         textbooks_dir: str = "textbooks/txt",
         pdf_dir: Optional[str] = None,
-    ):
+    ) -> None:
         self.textbooks_dir = Path(textbooks_dir)
         self.pdf_dir = Path(pdf_dir) if pdf_dir else None
         self.textbooks: Dict[str, Textbook] = {}
-        
+
         # Create directories if they don't exist
         self.textbooks_dir.mkdir(exist_ok=True, parents=True)
         if self.pdf_dir:
             self.pdf_dir.mkdir(exist_ok=True, parents=True)
-        
+
         # Load all textbooks on initialization
         self._load_textbooks()
 
     def _load_textbooks(self) -> None:
         """Load all textbooks from the txt directory."""
         txt_files = list(self.textbooks_dir.glob("*.txt"))
-        
+
         for txt_path in txt_files:
             name = txt_path.stem
-            
+
             # Create Textbook object
             textbook = Textbook(
-                name=name,
-                path=txt_path,
-                txt_path=txt_path,
-                pages=[],
-                total_pages=0
+                name=name, path=txt_path, txt_path=txt_path, pages=[], total_pages=0
             )
-            
+
             self._load_text_content(textbook)
             self.textbooks[name] = textbook
 
     def _load_text_content(self, textbook: Textbook) -> None:
         """Load content from txt file and split into pages."""
         try:
-            with open(textbook.txt_path, 'r', encoding='utf-8') as f:
+            with open(textbook.txt_path, encoding="utf-8") as f:
                 content = f.read()
-            
+
             # Split content into roughly page-sized chunks (3000 characters each)
             chunk_size = 3000
-            chunks = [content[i:i+chunk_size] for i in range(0, len(content), chunk_size)]
-            
+            chunks = [
+                content[i : i + chunk_size] for i in range(0, len(content), chunk_size)
+            ]
+
             # Create pages
             textbook.pages = [
                 TextbookPage(
-                    content=chunk,
-                    page_number=i+1,
-                    textbook_name=textbook.name
+                    content=chunk, page_number=i + 1, textbook_name=textbook.name
                 )
                 for i, chunk in enumerate(chunks)
             ]
             textbook.total_pages = len(textbook.pages)
-            
+
         except Exception as e:
             logger.error(f"Error loading textbook {textbook.name}: {str(e)}")
             raise
@@ -84,7 +83,6 @@ class TextbookManager:
 
     def get_random_page(self, textbook_name: str) -> Optional[TextbookPage]:
         """Get a random page from a textbook."""
-        import random
         textbook = self.get_textbook(textbook_name)
         if not textbook or not textbook.pages:
             return None
@@ -96,20 +94,20 @@ class TextbookManager:
 
     def get_all_textbooks(self) -> List[Textbook]:
         """Get list of all textbook objects.
-        
+
         Returns:
             List of all Textbook objects managed by this TextbookManager
         """
-        print(f"Textbooks dictionary contains {len(self.textbooks)} items")
+        logger.debug(f"Textbooks dictionary contains {len(self.textbooks)} items")
         textbooks_list = list(self.textbooks.values())
-        print(f"Returning {len(textbooks_list)} textbooks")
+        logger.debug(f"Returning {len(textbooks_list)} textbooks")
         return textbooks_list
 
     def process_directory(self) -> None:
         """Process all PDFs in the pdf directory to text files."""
         if not self.pdf_dir:
             raise ValueError("PDF directory not specified")
-        
+
         pdf_files = list(self.pdf_dir.glob("*.pdf"))
         for pdf_path in pdf_files:
             try:
@@ -124,33 +122,33 @@ class TextbookManager:
     def _process_pdf(self, pdf_path: Path, output_path: Path) -> None:
         """Convert a PDF file to text."""
         try:
-            with open(pdf_path, 'rb') as pdf_file:
+            with open(pdf_path, "rb") as pdf_file:
                 # Create PDF reader object
                 pdf_reader = PyPDF2.PdfReader(pdf_file)
-                
+
                 # Extract text from all pages
                 text = []
                 for page in pdf_reader.pages:
                     text.append(page.extract_text())
-                
+
                 # Write combined text to output file
-                with open(output_path, 'w', encoding='utf-8') as txt_file:
-                    txt_file.write('\n'.join(text))
-                
+                with open(output_path, "w", encoding="utf-8") as txt_file:
+                    txt_file.write("\n".join(text))
+
         except Exception as e:
             logger.error(f"Error processing PDF {pdf_path}: {str(e)}")
             raise
 
     def get_num_pages(self, textbook_name: str) -> Optional[int]:
         """Get the total number of pages in a textbook.
-        
+
         Args:
             textbook_name: Name of the textbook
-            
+
         Returns:
             Total number of pages if textbook exists, None otherwise
         """
         textbook = self.get_textbook(textbook_name)
         if not textbook:
             return None
-        return textbook.total_pages 
+        return textbook.total_pages

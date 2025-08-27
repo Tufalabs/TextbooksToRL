@@ -1,183 +1,201 @@
-import random
-from datasets import load_dataset
-from functools import lru_cache
 import json
+import random
+from functools import lru_cache
+
+from datasets import load_dataset
+
 
 @lru_cache(maxsize=1)
 def load_cached_dataset():
     return load_dataset("lighteval/MATH", split="train")
 
+
 @lru_cache(maxsize=1)
 def load_cached_competition_dataset():
-    return load_dataset("hendrycks/competition_math", split="train", trust_remote_code=True)
+    return load_dataset(
+        "hendrycks/competition_math", split="train", trust_remote_code=True
+    )
+
 
 @lru_cache(maxsize=1)
 def load_cached_test_dataset():
     return load_dataset("lighteval/MATH", split="test")
 
+
 @lru_cache(maxsize=1)
 def load_cached_numina_dataset():
     return load_dataset("AI-MO/NuminaMath-CoT", split="train")
+
 
 @lru_cache(maxsize=1)
 def load_cached_skunkworks_dataset():
     return load_dataset("SkunkworksAI/reasoning-0.01", split="train")
 
+
 @lru_cache(maxsize=1)
 def load_cached_mathinstruct_dataset():
     return load_dataset("TIGER-Lab/MathInstruct", split="train")
+
 
 @lru_cache(maxsize=1)
 def load_cached_aslawliet_dataset():
     return load_dataset("aslawliet/olympiads", split="train")
 
+
 def get_random_math_question():
     # Load the MATH dataset from LightEval (cached)
     dataset = load_cached_dataset()
-    
 
-    
     # Get a random index
     random_index = random.randint(0, len(dataset) - 1)
-    
+
     # Get the random question
     random_question = dataset[random_index]
-    
+
     # Extract the problem and solution from the question
-    problem = random_question['problem']
-    solution = random_question['solution']
-    
+    problem = random_question["problem"]
+    solution = random_question["solution"]
+
     return problem, solution
+
 
 def get_hard_math_question():
     # Load the MATH dataset from LightEval (cached)
     dataset = load_cached_dataset()
-    
+
     # Filter the dataset for Level 5 questions
     hard_questions = [q for q in dataset if q["level"] == "Level 5"]
-    
+
     if not hard_questions:
         raise ValueError("No Level 5 questions found in the dataset")
-    
+
     # Get a random hard question
     random_question = random.choice(hard_questions)
-    
+
     # Extract the problem and solution from the question
-    problem = random_question['problem']
-    solution = random_question['solution']
-    
+    problem = random_question["problem"]
+    solution = random_question["solution"]
+
     return problem, solution
 
 
 def get_medium_math_question():
     # Load the MATH dataset from LightEval (cached)
     dataset = load_cached_dataset()
-    
+
     # Filter the dataset for Level 5 questions
-    hard_questions = [q for q in dataset if q["level"] in ["Level 3", "Level 4", "Level 5"]]
-    
+    hard_questions = [
+        q for q in dataset if q["level"] in ["Level 3", "Level 4", "Level 5"]
+    ]
+
     if not hard_questions:
         raise ValueError("No Level 5 questions found in the dataset")
-    
+
     # Get a random hard question
     random_question = random.choice(hard_questions)
-    
+
     # Extract the problem and solution from the question
-    problem = random_question['problem']
-    solution = random_question['solution']
-    
+    problem = random_question["problem"]
+    solution = random_question["solution"]
+
     return problem, solution
+
 
 def get_competition_math_problem():
     # Load the competition math dataset (cached)
     dataset = load_cached_competition_dataset()
-    
+
     # Get a random index
     random_index = random.randint(0, len(dataset) - 1)
-    
+
     # Get the random question
     random_question = dataset[random_index]
-    
+
     # Extract the problem and solution from the question
-    problem = random_question['problem']
-    solution = random_question['solution']
-    
+    problem = random_question["problem"]
+    solution = random_question["solution"]
+
     return problem, solution
+
 
 def get_hard_competition_math_problem():
     # Load the competition math dataset (cached)
     dataset = load_cached_competition_dataset()
-    
+
     # Filter the dataset for Level 5 questions
     hard_questions = [q for q in dataset if q["level"] == "Level 5"]
-    
+
     if not hard_questions:
         raise ValueError("No Level 5 questions found in the dataset")
-    
+
     # Get a random hard question
     random_question = random.choice(hard_questions)
-    
+
     # Extract the problem and solution from the question
-    problem = random_question['problem']
-    solution = random_question['solution']
-    
+    problem = random_question["problem"]
+    solution = random_question["solution"]
+
     return problem, solution
+
 
 def get_gpqa_question():
     # Load the GPQA questions from JSON file
-    with open('lib/unique_gpqa_questions.json', 'r') as f:
+    with open("lib/unique_gpqa_questions.json") as f:
         questions = json.load(f)
-    
+
     # Get a random question
     random_question = random.choice(questions)
-    
+
     # Extract the problem and solution from the question
-    problem = random_question['question']
-    solution = random_question['correct_answer']
-    explanation = random_question['explanation']
+    problem = random_question["question"]
+    solution = random_question["correct_answer"]
+    explanation = random_question["explanation"]
     returned_solution = f"{solution}\n\n{explanation}"
     return problem, returned_solution
+
 
 def get_test_math_question():
     # Load the MATH test dataset (cached)
     dataset = load_cached_test_dataset()
-    
+
     # Get a random index
     random_index = random.randint(0, len(dataset) - 1)
-    
+
     # Get the random question
     random_question = dataset[random_index]
-    
+
     # Extract the problem and solution from the question
-    problem = random_question['problem']
-    solution = random_question['solution']
-    
+    problem = random_question["problem"]
+    solution = random_question["solution"]
+
     return problem, solution
+
 
 def get_test_gpqa_question():
     # Load the GPQA test questions from JSON file
-    with open('lib/unique_gpqa_test_questions.json', 'r') as f:
+    with open("lib/unique_gpqa_test_questions.json") as f:
         questions = json.load(f)
-    
+
     # Get a random question
     random_question = random.choice(questions)
-    
+
     # Extract the problem and solution from the question
-    problem = random_question['question']
-    solution = random_question['correct_answer']
-    explanation = random_question['explanation']
+    problem = random_question["question"]
+    solution = random_question["correct_answer"]
+    explanation = random_question["explanation"]
     returned_solution = f"{solution}\n\n{explanation}"
     return problem, returned_solution
+
 
 def get_custom_question():
     # Load the custom questions from JSON file
     try:
-        with open('lib/custom_questions.json', 'r') as f:
+        with open("lib/custom_questions.json") as f:
             data = json.load(f)
-            questions = data['questions']
+            questions = data["questions"]
             problem = random.choice(questions)
             solution = "No solution provided. Please verify your answer independently."
-        
+
         return problem, solution
     except FileNotFoundError:
         raise FileNotFoundError("custom_questions.json not found in lib directory")
@@ -186,91 +204,98 @@ def get_custom_question():
     except json.JSONDecodeError:
         raise ValueError("custom_questions.json is not valid JSON")
 
+
 def get_numina_math_question():
     # Load the NuminaMath dataset (cached)
     dataset = load_cached_numina_dataset()
-    
+
     # Get a random index
     random_index = random.randint(0, len(dataset) - 1)
-    
+
     # Get the random question
     random_question = dataset[random_index]
-    
+
     # Extract the problem and solution from the question
-    problem = random_question['problem']
-    solution = random_question['solution']
-    
+    problem = random_question["problem"]
+    solution = random_question["solution"]
+
     return problem, solution
+
 
 def get_skunkworks_question():
     # Load the Skunkworks dataset (cached)
     dataset = load_cached_skunkworks_dataset()
-    
+
     # Get a random index
     random_index = random.randint(0, len(dataset) - 1)
-    
+
     # Get the random question
     random_question = dataset[random_index]
-    
+
     # Extract the problem and solution from the question
-    problem = random_question['instruction']
-    solution = random_question['reasoning']
-    
+    problem = random_question["instruction"]
+    solution = random_question["reasoning"]
+
     return problem, solution
+
 
 def get_mathinstruct_question():
     # Load the MathInstruct dataset (cached)
     dataset = load_cached_mathinstruct_dataset()
-    
+
     # Get a random index
     random_index = random.randint(0, len(dataset) - 1)
-    
+
     # Get the random question
     random_question = dataset[random_index]
-    
+
     # Extract the problem and solution from the question
-    problem = random_question['instruction']
-    solution = random_question['output']
-    
+    problem = random_question["instruction"]
+    solution = random_question["output"]
+
     return problem, solution
+
 
 @lru_cache(maxsize=1)
 def get_cached_olympiad_questions():
     dataset = load_cached_numina_dataset()
     return [q for q in dataset if q["source"] == "olympiads"]
 
+
 def get_numina_olympiad_question(count=1):
     # Use cached filtered questions
     olympiad_questions = get_cached_olympiad_questions()
-    
+
     if not olympiad_questions:
         raise ValueError("No olympiad questions found in the dataset")
-    
+
     # Get random olympiad questions
     if count == 1:
         random_question = random.choice(olympiad_questions)
-        return random_question['problem'], random_question['solution']
+        return random_question["problem"], random_question["solution"]
     else:
         sample_size = min(count, len(olympiad_questions))
         random_questions = random.sample(olympiad_questions, sample_size)
-        return [(q['problem'], q['solution']) for q in random_questions]
+        return [(q["problem"], q["solution"]) for q in random_questions]
+
 
 def get_aslawliet_olympiad_question():
     # Load the aslawliet/olympiads dataset (cached)
     dataset = load_cached_aslawliet_dataset()
-    
+
     # Get a random index
     random_index = random.randint(0, len(dataset) - 1)
-    
+
     # Get the random question
     random_question = dataset[random_index]
-    
+
     # Extract the problem and solution from the question
     # Note: Column names are 'problem' and 'has solution'
-    problem = random_question['problem']
-    solution = random_question['solution']
-    
+    problem = random_question["problem"]
+    solution = random_question["solution"]
+
     return problem, solution
+
 
 # Example usage
 if __name__ == "__main__":

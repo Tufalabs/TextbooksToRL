@@ -1,6 +1,9 @@
 from .inference import generate_text
 
-async def evaluate_text(eval_model: str, modelAnswer: str, groundTruthAnswer: int, temperature: float = 0) -> str:
+
+async def evaluate_text(
+    eval_model: str, modelAnswer: str, groundTruthAnswer: int, temperature: float = 0
+) -> str:
     prompt = f"""
     You will be given a ground truth answer and a model answer. 
     Please output ACCURATE if the model answer matches the ground truth answer or INCORRECT otherwise. Please only return ACCURATE or INACCURATE. 
@@ -26,7 +29,7 @@ async def evaluate_text(eval_model: str, modelAnswer: str, groundTruthAnswer: in
         model=eval_model,
         prompt=prompt,
         max_tokens=10,  # Increased to allow for full "ACCURATE" or "INACCURATE" response
-        temperature=temperature
+        temperature=temperature,
     )
 
     if "ACCURATE" in isAccurate.strip().upper():
@@ -35,4 +38,3 @@ async def evaluate_text(eval_model: str, modelAnswer: str, groundTruthAnswer: in
         return 0, 0
     else:
         return 0, 1  # Return 1 for badResponses
-

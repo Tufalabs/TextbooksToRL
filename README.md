@@ -1,12 +1,12 @@
-# RL Dataset Generator from Textbooks
+# TextbooksToRL
 
-A tool that automatically processes textbooks to create Reinforcement Learning (RL) datasets. This project converts PDF textbooks into structured data that can be used for training RL models.
+A tool that automatically processes textbooks to generate structured question-answer datasets for machine learning and reinforcement learning training.
 
 ## Setup
 
 1. Install dependencies:
 ```bash
-pip install -r requirements.txt
+uv sync
 ```
 
 2. Set up API keys:
@@ -17,75 +17,70 @@ export DEEPSEEK_API_KEY='your-key'
 export DEEPINFRA_API_KEY='your-key'
 ```
 
-## Usage Instructions
+## Usage
+
+### Basic Usage
+```bash
+# Generate questions from textbooks
+uv run textbooks-to-rl --help
+
+# Run with custom settings
+uv run textbooks-to-rl \
+  --model "Qwen/QwQ-32B" \
+  --output-dir "my_questions" \
+  --difficulty undergrad \
+  --verbose
+```
 
 ### Step 1: Add Textbooks
-Place your PDF textbooks in the directory:
+Place PDF files in `textbooks/pdfs/` or process them:
 ```bash
-textbooks/pdf/
+uv run python scripts/process_pdfs.py
 ```
 
-### Step 2: Parse PDFs
-First, run the parsing script to convert PDFs to text format:
+### Step 2: Generate Questions
 ```bash
-python scripts/process_pdfs.py --textbooks-dir textbooks/pdfs --parsed-dir textbooks/txt
-```
-This will:
-- Process all PDFs in `textbooks/pdf/`
-- Convert them to text format
-- Save the results in `textbooks/txt/`
+# Basic generation
+uv run textbooks-to-rl
 
-### Step 3: Generate RL Dataset
-After parsing is complete, run the main script:
-```bash
-python main.py
-```
-
-#### Optional Arguments
-Customize the generation process:
-```bash
-python main.py \
-  --model deepseek-chat \
-  --output-dir generated_questions/DS-MATH3.0 \
+# With custom options
+uv run textbooks-to-rl \
   --pages-per-group 5 \
-  --batch-size 100 \
-  --questions-per-chunk 10
+  --batch-size 50 \
+  --questions-per-chunk 8 \
+  --difficulty grad \
+  --no-verify
 ```
 
-### Step 4: Filter Generated Questions
-Filter the generated questions to identify which ones are solvable:
+### Step 3: Filter Questions (Optional)
 ```bash
-python filter.py --folders generated_questions/DS-MATH3.0 --output-dir filtered_results --model gpt-4o-mini
+uv run python scripts/filter.py \
+  --folders generated_questions \
+  --output-dir filtered_results \
+  --model gpt-4o-mini
 ```
 
-This will process all questions in the specified folders and add a `filter_response` field to each JSON, indicating whether the question is solvable.
+## Options
 
-#### Filter Arguments
+| Option | Description | Default |
+|--------|-------------|---------|
+| `--model` | AI model for generation | Qwen/QwQ-32B |
+| `--output-dir` | Output directory | generated_questions |
+| `--textbooks-dir` | Textbooks directory | textbooks/txt |
+| `--pages-per-group` | Pages per processing group | 3 |
+| `--batch-size` | Parallel batch size | 100 |
+| `--questions-per-chunk` | Questions per chunk | 10 |
+| `--difficulty` | Question difficulty level | undergrad |
+| `--no-verify` | Skip solution verification | False |
+| `--verbose` | Enable debug logging | False |
 
-| Argument | Description | Default |
-|----------|-------------|---------|
-| `--folders` | List of folders containing question JSONs | Required |
-| `--output-dir` | Directory to save filtered results | filtered_questions |
-| `--model` | AI model for filtering | gpt-4o-mini |
-| `--batch-size` | Number of files to process in parallel | 200 |
+## Development
 
-#### Filter Output
-The filter script produces:
-1. Filtered JSON files with added `filter_response` field (true = solvable)
-2. A summary statistics file (`filter_stats.json`) showing how many questions were processed and filtered
+```bash
+# Install with dev dependencies
+uv sync --dev
 
-## Command Line Arguments
-
-| Argument | Description | Default |
-|----------|-------------|---------|
-| `--model` | AI model for generation | deepseek-chat |
-| `--output-dir` | Dataset output directory | generated_questions/DS-MATH3.0 |
-| `--pages-per-group` | Pages per processing group | 5 |
-| `--batch-size` | Parallel processing batch size | 100 |
-| `--questions-per-chunk` | Questions per text chunk | 10 |
-
-## Project Structure
-
-##Passing PDF to text
-
+# Run code quality checks
+uv run ruff check src/ --fix
+uv run pytest
 ```

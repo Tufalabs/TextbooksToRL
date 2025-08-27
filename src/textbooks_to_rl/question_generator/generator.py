@@ -1,25 +1,39 @@
-from typing import List, Optional
-import sys
-import os
-import json
-from datetime import datetime
 import asyncio
+import json
+import logging
+import os
+import sys
+import unittest
+from datetime import datetime
+from typing import List, Optional, Union
+
 from sympy import simplify, sympify
 from sympy.parsing.latex import parse_latex
-import unittest
 
 # Adjust the path so that the inference/evaluation modules can be imported.
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
+sys.path.append(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 
-from src.tobyawesomeailibrary.inference import generate_text
-from src.tobyawesomeailibrary.eval_response import evaluate_text
-from lib.question_generator.models import QuestionAnswer, ValidationResult, QuestionDomain, QuestionDifficulty
-from lib.question_generator.prompt_templates import QuestionPromptTemplates
-from lib.question_generator.parsers import ResponseParser
+try:
+    from src.tobyawesomeailibrary.eval_response import evaluate_text
+    from src.tobyawesomeailibrary.inference import generate_text
+except ImportError:
+    # Fallback for when running as installed package
+    import os
+    import sys
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
+    from src.tobyawesomeailibrary.eval_response import evaluate_text
+    from src.tobyawesomeailibrary.inference import generate_text
+
+from .models import QuestionAnswer, QuestionDifficulty, QuestionDomain, ValidationResult
+from .parsers import ResponseParser
+from .prompt_templates import QuestionPromptTemplates
+
+logger = logging.getLogger(__name__)
 
 # -----------------------------------------------------------------------------
 # Utility Functions for LaTeX Processing and Math Equivalence Checking
 # -----------------------------------------------------------------------------
+
 
 def extract_boxed_expression(latex_str: str) -> str:
     """
@@ -27,26 +41,27 @@ def extract_boxed_expression(latex_str: str) -> str:
     If not found, returns the entire string.
     """
     latex_str = latex_str.strip()
-    
+
     if "\\boxed{" not in latex_str:
         return latex_str.strip()
-    
+
     start_idx = latex_str.index("\\boxed{") + 7  # len("\\boxed{")
     brace_count = 1
     end_idx = start_idx
-    
+
     while brace_count > 0 and end_idx < len(latex_str):
-        if latex_str[end_idx] == '{':
+        if latex_str[end_idx] == "{":
             brace_count += 1
-        elif latex_str[end_idx] == '}':
+        elif latex_str[end_idx] == "}":
             brace_count -= 1
         end_idx += 1
-    
+
     if brace_count == 0:
-        return latex_str[start_idx:end_idx-1].strip()
+        return latex_str[start_idx : end_idx - 1].strip()
     return latex_str.strip()
 
-def _parse_math_expr(expr_str: str):
+
+def _parse_math_expr(expr_str: str) -> Union[object, None]:
     """
     Try parsing the math expression using sympy's LaTeX parser.
     If that fails (e.g. antlr4 isn't installed), fall back to sympy.sympify
@@ -55,8 +70,9 @@ def _parse_math_expr(expr_str: str):
     try:
         return parse_latex(expr_str)
     except Exception:
-        expr_str_modified = expr_str.replace('^', '**')
+        expr_str_modified = expr_str.replace("^", "**")
         return sympify(expr_str_modified)
+
 
 def check_math_equivalence(expected_latex: str, verification_latex: str) -> bool:
     """
@@ -73,7 +89,7 @@ def check_math_equivalence(expected_latex: str, verification_latex: str) -> bool
     # Extract boxed expressions first
     expected_inner = extract_boxed_expression(expected_latex)
     verification_inner = extract_boxed_expression(verification_latex)
-    
+
     # Handle equals signs by taking the right-most part
     if "=" in expected_inner:
         expected_inner = expected_inner.split("=")[-1].strip()
@@ -91,14 +107,21 @@ def check_math_equivalence(expected_latex: str, verification_latex: str) -> bool
     difference = simplify(expected_expr - verification_expr)
     return difference == 0
 
+
 # -----------------------------------------------------------------------------
 # Main Class for Generating and Managing Questions
 # -----------------------------------------------------------------------------
 
+
 class QuestionGenerator:
     """Main class for generating and managing questions."""
-    
-    def __init__(self, model_name: str = "gpt-4o-mini", output_dir: str = "generated_questions", verification_model: Optional[str] = None):
+
+    def __init__(
+        self,
+        model_name: str = "gpt-4o-mini",
+        output_dir: str = "generated_questions",
+        verification_model: Optional[str] = None,
+    ) -> None:
         self.model_name = model_name
         self.verification_model = verification_model or model_name
         self.parser = ResponseParser()
@@ -107,8 +130,8 @@ class QuestionGenerator:
         os.makedirs(self.output_dir, exist_ok=True)
 
     async def generate_questions(
-        self, 
-        passage: str, 
+        self,
+        passage: str,
         num_questions: int = 3,
         difficulty: QuestionDifficulty = QuestionDifficulty.UNDERGRAD,
         verify: bool = True,
@@ -117,27 +140,29 @@ class QuestionGenerator:
         save_json: bool = True,
         add_hints: bool = False,
         classify_domain: bool = False,
-        verification_model: Optional[str] = None
+        verification_model: Optional[str] = None,
     ) -> List[QuestionAnswer]:
         """Generate questions from a passage and return structured data."""
         current_verification_model = verification_model or self.verification_model
-        
+
         # Generate questions using the prompt template.
         prompt = self.templates.question_generation(passage, num_questions, difficulty)
         response = await generate_text(model=self.model_name, prompt=prompt)
-        
+
         qa_pairs = self.parser.extract_qa_pairs(response)
-        print(f"Generated {len(qa_pairs)} initial questions at {difficulty.value} level")
-        
+        logger.info(
+            f"Generated {len(qa_pairs)} initial questions at {difficulty.value} level"
+        )
+
         verified_pairs = []
         for qa in qa_pairs:
             if verify:
                 is_valid = await self._verify_question_solution(
-                    qa, 
-                    passage, 
+                    qa,
+                    passage,
                     verification_threshold,
                     current_verification_model,
-                    verification_attempts=3
+                    verification_attempts=3,
                 )
                 qa.is_valid = is_valid
                 if is_valid:
@@ -161,15 +186,21 @@ class QuestionGenerator:
         # Save questions to JSON files.
         if save_json:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            diff_serializable = difficulty.value if hasattr(difficulty, "value") else difficulty
-            
+            diff_serializable = (
+                difficulty.value if hasattr(difficulty, "value") else difficulty
+            )
+
             # Calculate and print validation percentage
             if verify:
                 valid_count = len(verified_pairs)
                 total_count = len(qa_pairs)
-                valid_percentage = (valid_count / total_count) * 100 if total_count > 0 else 0
-                print(f"Valid questions: {valid_count}/{total_count} ({valid_percentage:.1f}%)")
-            
+                valid_percentage = (
+                    (valid_count / total_count) * 100 if total_count > 0 else 0
+                )
+                logger.info(
+                    f"Valid questions: {valid_count}/{total_count} ({valid_percentage:.1f}%)"
+                )
+
             for i, qa in enumerate(verified_pairs):
                 boxed_solution = None
                 if "\\boxed{" in qa.solution:
@@ -178,12 +209,12 @@ class QuestionGenerator:
                         brace_count = 1
                         last_end = last_start
                         while brace_count > 0 and last_end < len(qa.solution):
-                            if qa.solution[last_end] == '{':
+                            if qa.solution[last_end] == "{":
                                 brace_count += 1
-                            elif qa.solution[last_end] == '}':
+                            elif qa.solution[last_end] == "}":
                                 brace_count -= 1
                             last_end += 1
-                        boxed_solution = qa.solution[last_start:last_end-1]
+                        boxed_solution = qa.solution[last_start : last_end - 1]
                     except ValueError:
                         pass
 
@@ -198,12 +229,12 @@ class QuestionGenerator:
                     "difficulty_description": difficulty.get_description(),
                     "model": self.model_name,
                     "boxed_solution": boxed_solution,
-                    "validated": qa.is_valid
+                    "validated": qa.is_valid,
                 }
-                
-                filename = f"question_{timestamp}_{i+1}.json"
+
+                filename = f"question_{timestamp}_{i + 1}.json"
                 filepath = os.path.join(self.output_dir, filename)
-                with open(filepath, 'w') as f:
+                with open(filepath, "w") as f:
                     json.dump(question_dict, f, indent=4)
 
         return verified_pairs
@@ -221,21 +252,23 @@ class QuestionGenerator:
         Respond with ONLY the domain name from the list above that best matches.
         Do not include any other text in your response.
         """
-        domain_str = await generate_text(model=self.model_name, prompt=classification_prompt)
+        domain_str = await generate_text(
+            model=self.model_name, prompt=classification_prompt
+        )
         domain_str = domain_str.strip().lower()
         try:
             qa.domain = QuestionDomain(domain_str)
         except ValueError:
-            print(f"Warning: Invalid domain '{domain_str}', defaulting to OTHER")
+            logger.warning(f"Invalid domain '{domain_str}', defaulting to OTHER")
             qa.domain = QuestionDomain.OTHER
 
     async def _verify_question_solution(
-        self, 
-        qa: QuestionAnswer, 
+        self,
+        qa: QuestionAnswer,
         source_text: str,
         threshold: float,
         verification_model: str,
-        verification_attempts: int = 3
+        verification_attempts: int = 3,
     ) -> bool:
         """
         Verify a question's solution with multiple concurrent attempts.
@@ -259,27 +292,37 @@ class QuestionGenerator:
         model_solutions = await asyncio.gather(*verification_tasks)
         original_answer = qa.solution
 
-        print("\n=== Solution Comparison ===")
-        print(f"Original boxed: {extract_boxed_expression(original_answer)}")
-        
+        logger.debug("=== Solution Comparison ===")
+        logger.debug(f"Original boxed: {extract_boxed_expression(original_answer)}")
+
         for i, model_solution in enumerate(model_solutions, 1):
             is_equivalent = check_math_equivalence(original_answer, model_solution)
-            print(f"Verification {i} boxed: {extract_boxed_expression(model_solution)}")
-            print(f"Equivalent: {is_equivalent}")
-            
+            logger.debug(
+                f"Verification {i} boxed: {extract_boxed_expression(model_solution)}"
+            )
+            logger.debug(f"Equivalent: {is_equivalent}")
+
             if is_equivalent:
                 return True
         return False
 
-    async def _add_hints(self, qa: QuestionAnswer, difficulty: QuestionDifficulty = QuestionDifficulty.UNDERGRAD) -> None:
+    async def _add_hints(
+        self,
+        qa: QuestionAnswer,
+        difficulty: QuestionDifficulty = QuestionDifficulty.UNDERGRAD,
+    ) -> None:
         """Add hints to a QuestionAnswer object."""
         prompt = self.templates.hint_generation(qa.question, difficulty)
         hints_text = await generate_text(model=self.model_name, prompt=prompt)
         qa.hints = self.parser.extract_hints(hints_text)
 
-    async def validate_solution(self, question: str, student_solution: str, correct_solution: str) -> ValidationResult:
+    async def validate_solution(
+        self, question: str, student_solution: str, correct_solution: str
+    ) -> ValidationResult:
         """Validate a student's solution against the correct solution."""
-        eval_result = await evaluate_text(self.model_name, student_solution, correct_solution)
+        eval_result = await evaluate_text(
+            self.model_name, student_solution, correct_solution
+        )
         boxed_solution = None
         if "\\boxed{" in correct_solution:
             try:
@@ -288,17 +331,19 @@ class QuestionGenerator:
                 boxed_solution = correct_solution[last_start:last_end]
             except ValueError:
                 pass
-        
+
         return ValidationResult(
             is_correct=eval_result[0] == 1,
             score=float(eval_result[0]),
             feedback=None,
-            boxed_solution=boxed_solution
+            boxed_solution=boxed_solution,
         )
+
 
 # -----------------------------------------------------------------------------
 # Unit Tests for the Math Equivalence Checker
 # -----------------------------------------------------------------------------
+
 
 class TestMathEquivalence(unittest.TestCase):
     def test_equivalent_simple(self):
@@ -337,9 +382,10 @@ class TestMathEquivalence(unittest.TestCase):
         expr2 = r"\boxed{1}"
         self.assertTrue(check_math_equivalence(expr1, expr2))
 
+
 # -----------------------------------------------------------------------------
 # Run Unit Tests if executed as main
 # -----------------------------------------------------------------------------
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -1,8 +1,109 @@
-set_api_keys.sh
-
-filtered_results/*
-
-.venv/
+# Python
 __pycache__/
-generated_questions/*
-lib/datasets/*
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# UV
+.uv/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project specific - API keys and secrets
+set_api_keys.sh
+*.key
+*.secret
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Generated content (keep structure but ignore files)
+generated_questions/*.json
+generated_questions/old/
+textbooks/txt/*.txt
+textbooks/pdfs/*.pdf
+!textbooks/txt/.gitkeep
+!textbooks/pdfs/.gitkeep
+filtered_results/
+lib/datasets/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+temp/
+
+
+.ruff_cache
+.github
+.claude
