@@ -6,8 +6,8 @@ A tool that automatically processes textbooks to generate structured question-an
 
 1. **Extract Text**: Converts PDF textbooks to text format
 2. **Process Pages**: Splits content into manageable chunks (3-5 pages)
-3. **Generate Questions**: Uses AI models to create math/science questions from each chunk
-4. **Verify Solutions**: Checks answers using mathematical equivalence testing
+3. **Generate Questions**: Uses AI models to create questions from each chunk
+4. **Verify Solutions**: Checks answers by feeding page back in with question to ensure same answer
 5. **Output Dataset**: Saves structured JSON files with questions, solutions, and metadata
 
 The tool supports multiple difficulty levels (high school → PhD) and various AI models (OpenAI, Anthropic, DeepSeek, etc.).
